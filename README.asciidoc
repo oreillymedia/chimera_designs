@@ -16,10 +16,11 @@ irb(main):004:0> x.save
    (1.6ms)  UPDATE "books" SET "template" = 'default', "updated_at" = '2012-06-15 17:14:47.400240' WHERE "books"."id" = 1
    (1.0ms)  COMMIT
 => true
+----
 
+This repo should eventually be submoduled into the social-books-poc repo so that they live together eventually.  
 
-This repo should be submoduled into the social-books-poc repo so that they live together eventually.  
-
+To deploy it, use S3cmd to put the files onto s3://orm-social-book-dev/templates.  The following sections have an overview of this tool.
 
 == Using s3cmd for working with files
 
