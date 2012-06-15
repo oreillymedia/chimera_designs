@@ -1,0 +1,140 @@
+== Intro
+
+These are the templates used to the social books project.  The idea is that each subdirectory contains a design that is applied to one of the social books when it is displayed. The design is specified in the Book model, which you can change in irb (or Heroku console) like this:
+
+
+----
+$ heroku run console
+
+irb(main):003:0> x = Book.find(1)
+  Book Load (205.9ms)  SELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 1]]
+=> #<Book id: 1, isbn: "1230000000065", title: "Getting Started with Atlas", by_line: "Author", description: "You can write books and stuff.", template: "rune", created_at: "2012-06-14 16:11:32", updated_at: "2012-06-14 17:49:51">
+irb(main):003:0> x.template='default'
+=> "default"
+irb(main):004:0> x.save
+   (47.0ms)  BEGIN
+   (1.6ms)  UPDATE "books" SET "template" = 'default', "updated_at" = '2012-06-15 17:14:47.400240' WHERE "books"."id" = 1
+   (1.0ms)  COMMIT
+=> true
+
+
+This repo should be submoduled into the social-books-poc repo so that they live together eventually.  
+
+
+== Using s3cmd for working with files
+
+link:https://github.com/s3tools/s3cmd[S3cmd] is a nifty FTP-like utility for S3. 
+
+The site lists some great recommendations for working with buckets:
+
+[NOTE]
+====
+Buckets are sort of like directories or folders with some restrictions:
+
+* Each user can only have 100 buckets at the most, 
+* Bucket names must be unique amongst all users of S3, 
+* Buckets can not be nested into a deeper hierarchy and 
+* A name of a bucket can only consist of basic alphanumeric characters plus dot (.) and dash (-). No spaces, no accented or UTF-8 letters, etc. 
+
+It is a good idea to use DNS-compatible bucket names. That for instance means you should not use upper case characters. While DNS compliance is not strictly required some features described below are not available for DNS-incompatible named buckets. One more step further is using a fully qualified domain name (FQDN) for a bucket - that has even more benefits.
+
+* For example "s3://--My-Bucket--" is not DNS compatible.
+* On the other hand "s3://my-bucket" is DNS compatible but is not FQDN.
+* Finally "s3://my-bucket.s3tools.org" is DNS compatible and FQDN provided you own the s3tools.org domain and can create the domain record for "my-bucket.s3tools.org".
+====
+
+
+
+=== Install s3cmd 
+
+
+
+Here are the link:http://populationjim.com/2011/02/21/install-and-setup-s3cmd-on-a-mac/[installation instructions for a Mac link]:
+
+* Download link:http://s3tools.org/download[S3cmd] and extract it
+* Run “sudo python setup.py install” from command.
+* Finally, run “s3cmd --configure” from command to configure S3cmd.
+
+The last command will walk you through a wizard-like config process and ask for various things, like your Amazon credentials.
+
+=== Using S3cmd
+
+==== Listing all buckets 
+
+----
+$ s3cmd ls
+2012-03-16 19:32  s3://orm-atlas-dev
+2012-06-06 19:02  s3://orm-atlas-media
+2012-03-16 19:32  s3://orm-atlas-prod
+2012-06-07 20:14  s3://orm-social-book
+2012-06-07 20:26  s3://orm-social-book-dev
+2012-06-15 14:41  s3://social-book-templates.oreilly.com
+2012-06-15 14:43  s3://test.oreilly.com
+----
+
+==== Creating a bucket
+
+----
+$ s3cmd mb s3://social-book-templates.oreilly.com
+Bucket 's3://social-book-templates.oreilly.com/' created
+----
+
+==== Copying files to a bucket
+
+Use "s3cmd put --recursive templates s3://social-book-templates.oreilly.com" to put the directory "templates" and all it's subdirectories onto S3.  Note that if you add a trailing slash to templates, then the command will just put all the files under a root directory, rather than creating the "template" directory.
+
+----
+$ ls -la
+total 0
+drwxr-xr-x    3 odewahn  staff   102 Jun 15 11:06 .
+drwx------+ 271 odewahn  staff  9214 Jun 15 10:49 ..
+drwxr-xr-x    6 odewahn  staff   204 Jun 15 11:06 templates
+$ s3cmd put --recursive templates s3://social-book-templates.oreilly.com
+WARNING: Module python-magic is not available. Guessing MIME types based on file extensions.
+templates/default/assets.css -> s3://social-book-templates.oreilly.com/templates/default/assets.css  [1 of 6]
+ 20398 of 20398   100% in    0s    70.88 kB/s  done
+templates/default/assets.js -> s3://social-book-templates.oreilly.com/templates/default/assets.js  [2 of 6]
+ 0 of 0     0% in    0s     0.00 B/s  done
+templates/rune/assets.css -> s3://social-book-templates.oreilly.com/templates/rune/assets.css  [3 of 6]
+ 23002 of 23002   100% in    0s    77.89 kB/s  done
+templates/rune/assets.js -> s3://social-book-templates.oreilly.com/templates/rune/assets.js  [4 of 6]
+ 0 of 0     0% in    0s     0.00 B/s  done
+templates/shared.css -> s3://social-book-templates.oreilly.com/templates/shared.css  [5 of 6]
+ 988 of 988   100% in    0s     4.04 kB/s  done
+templates/shared.js -> s3://social-book-templates.oreilly.com/templates/shared.js  [6 of 6]
+ 77208 of 77208   100% in    0s   174.74 kB/s  done
+----
+
+==== Copying the contents from a bucket
+
+Use "s3cmd get" to pull down files.  If you want to grab sub-directories, you can use the "-r" to make it recursive.
+
+----
+$ s3cmd get -r s3://orm-social-book-dev/templates
+ERROR: Skipping ./templates/: Is a directory
+ERROR: Skipping ./templates/default/: Is a directory
+s3://orm-social-book-dev/templates/default/assets.css -> ./templates/default/assets.css  [3 of 9]
+ 20398 of 20398   100% in    0s    62.22 kB/s  done
+s3://orm-social-book-dev/templates/default/assets.js -> ./templates/default/assets.js  [4 of 9]
+ 0 of 0     0% in    0s     0.00 B/s  done
+ERROR: Skipping ./templates/rune/: Is a directory
+s3://orm-social-book-dev/templates/rune/assets.css -> ./templates/rune/assets.css  [6 of 9]
+ 23002 of 23002   100% in    0s    45.44 kB/s  done
+s3://orm-social-book-dev/templates/rune/assets.js -> ./templates/rune/assets.js  [7 of 9]
+ 0 of 0     0% in    0s     0.00 B/s  done
+s3://orm-social-book-dev/templates/shared.css -> ./templates/shared.css  [8 of 9]
+ 988 of 988   100% in    0s     3.71 kB/s  done
+s3://orm-social-book-dev/templates/shared.js -> ./templates/shared.js  [9 of 9]
+ 77208 of 77208   100% in    0s    81.50 kB/s  done
+----
+
+==== Removing a bucket 
+
+----
+$ s3cmd rb s3://test.oreilly.com
+Bucket 's3://test.oreilly.com/' removed
+----
+
+==== Deleting the files from a bucket
+
+$ s3cmd del --recursive --force s3://social-book-templates.oreilly.com
