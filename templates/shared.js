@@ -278,6 +278,7 @@ function enable_scroll_check()
 		// if we're at the top
 		else if(!currentElement && currentElement)
 		{
+			console.log('top')
 			currentElement = null;
 			history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
 		}
