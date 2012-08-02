@@ -269,11 +269,6 @@ function enable_scroll_check()
 			return window_top >= header.top;
 		});
 		
-		console.log("previous");
-		console.log(previousElement);
-		console.log("current");
-		console.log(currentElement);
-		
 		if(currentElement && currentElement !== previousElement)
 		{
 			history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname+'#'+$(currentElement).attr("id"));
@@ -281,10 +276,9 @@ function enable_scroll_check()
 			previousElement = currentElement;
 		}
 		// if we're at the top
-		else if(!currentElement && currentElement)
+		else if(!currentElement && previousElement)
 		{
-			console.log('top')
-			currentElement = null;
+			previousElement = null;
 			history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
 		}
 	
