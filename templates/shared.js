@@ -265,9 +265,14 @@ function enable_scroll_check()
 	  
 		var window_top = $(document).scrollTop();
 	  
-		var currentElement = _.detect(allHeaders, function(header) {
+		var currentElement = _.find(allHeaders, function(header) {
 			return window_top >= header.top;
 		});
+		
+		console.log("previous");
+		console.log(previousElement);
+		console.log("current");
+		console.log(currentElement);
 		
 		if(currentElement && currentElement !== previousElement)
 		{
