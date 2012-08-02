@@ -240,6 +240,17 @@ function add_advertisement()
 
 function enable_scroll_check()
 {
+	//TODO: get back button working
+	/*
+	$(window).bind('popstate',function(){
+	  //console.log(history);
+	 // history.back();
+
+	  //console.log($(previousElement));
+	  //$("html. body").scrollTop($(previousElement).position().top - 210)
+	});*/
+	
+	
 	// we reverse in order to run detect on collection
 	var allHeaders = $("div[id]").toArray().reverse(); 
 	
@@ -250,16 +261,6 @@ function enable_scroll_check()
 
 	var previousElement;
 	
-	//TODO: get back button working
-	/*
-	$(window).bind('popstate',function(){
-	  //console.log(history);
-	 // history.back();
-
-	  //console.log($(previousElement));
-	  //$("html. body").scrollTop($(previousElement).position().top - 210)
-	});*/
-
 	$(document).scroll(function(){
 	  
 		var window_top = $(document).scrollTop();
@@ -270,21 +271,15 @@ function enable_scroll_check()
 		
 		if(currentElement && currentElement !== previousElement)
 		{
-			console.log(currentElement)
-			// push current element state in
-			// history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname+'#'+$(currentElement).attr("id"));
+			history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname+'#'+$(currentElement).attr("id"));
 			//$.post("/books/<book_isbn>/readlog", {"page": page, "section": $(currentElement).attr("id")});
-			// console.log(currentElement);
-			
 			previousElement = currentElement;
 		}
-		else if(!currentElement)
+		// if we're at the top
+		else if(!currentElement && currentElement)
 		{
-			console.log("top");
-
-			// if no currentElement, we're at the top
-			// history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
-			// console.log("top");
+			currentElement = null;
+			history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
 		}
 	
 	});
