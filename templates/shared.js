@@ -275,18 +275,18 @@ function enable_scroll_check()
 			// history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname+'#'+$(currentElement).attr("id"));
 			//$.post("/books/<book_isbn>/readlog", {"page": page, "section": $(currentElement).attr("id")});
 			// console.log(currentElement);
+			
+			previousElement = currentElement;
 		}
 		else if(!currentElement)
 		{
 			console.log("top");
+
+			// if no currentElement, we're at the top
+			// history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
+			// console.log("top");
 		}
-		// if no currentElement, we're at the top
-		// history.pushState({ path: $(currentElement).attr("id") }, '', document.location.pathname);
-		// console.log("top");
-		
-			previousElement = currentElement;
 	
-	  }
 	});
 }
 
