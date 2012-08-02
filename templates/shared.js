@@ -245,7 +245,7 @@ function enable_scroll_check()
 	
 	// cache placement results
 	_.each(allHeaders, function(header) {
-		header.top = $j(header).position().top;
+		header.top = $(header).position().top;
 	});
 
 	var previousElement;
