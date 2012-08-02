@@ -241,7 +241,7 @@ function add_advertisement()
 function enable_scroll_check()
 {
 	// we reverse in order to run detect on collection
-	var allHeaders = $("div[id]").reverse(); 
+	var allHeaders = $("div[id]").toArray().reverse(); 
 	
 	// cache placement results
 	_.each(allHeaders, function(header) {
