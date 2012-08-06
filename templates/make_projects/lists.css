@@ -11,84 +11,74 @@ dd {
   margin-left: 1.5em !important;
 }
 
-ol {
-  list-style-type: decimal;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 20px !important;
-  padding-left: 25px !important;
+
+/* steps */
+
+ol.orderedlist:first-of-type:before {
+content: url('images/steps.png');
+height: 50px;
 }
 
-ol ol {
-  list-style-type: lower-alpha;
+ol.orderedlist:first-of-type {
+margin-top: 50px;
+padding-top: 15px;
 }
 
-ol ol ol {
-  list-style-type: lower-roman;
+ol.orderedlist {
+text-indent: 0;
+padding: 0;
+margin: 0;
 }
 
-ul { 
-  list-style-type: square;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 5px !important;
-  padding-left: 20px !important;
+ol.orderedlist > li.listitem {
+color: #fff;
+list-style-position: inside;
+text-indent: 0;
+padding: 0;
+margin: 40px 0 0 0;
 }
 
-ul ul { 
-  list-style-type: none;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+ol.orderedlist > li.listitem:first-of-type {
+margin: 0 0 0 0;
 }
 
-ul ul li p:before { 
-  content: "\2014 \0020";
+ol.orderedlist > li.listitem > p:first-of-type {
+background-color: #CD2626;
+color: #fff;
+padding: 10px;
 }
 
-ul ul ul li p:before { 
-  content: "";
+ol.orderedlist > li.listitem > p {
+color: #000;
+font-size: 1.1em;
 }
 
-ul ul ul { 
-  list-style-type: square;
-  margin-left: 20px !important;
-  padding-left: 30px !important;
+/* sub steps */
+
+div.orderedlist div.itemizedlist {
+color: #000;
 }
 
-div.orderedlistalpha {
-  list-style-type: upper-alpha;
+div.orderedlist div.itemizedlist ul {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
 }
 
-table.simplelist {
-  margin-left: 20px !important;
-  margin-bottom: 10px;
+div.orderedlist div.itemizedlist ul li {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
 }
 
-table.simplelist td {
-  border: none;
-  font-size: 90%;
+div.orderedlist div.itemizedlist li {
+list-style-type: none;
+list-style-position: outside;
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
 }
 
-table.simplelist tr {
-  border-bottom: none;
-}
-
-table.simplelist tr:nth-of-type(even) {
-  background-color: transparent;
-}
-
-div.calloutlist p:first-child {
- margin-top: -25px !important;
-}
-
-div.calloutlist dd {
-  padding-left: 40px !important;
-}
-
-div.calloutlist img {
-  padding: 0;
-}
-
-a.co img {
-  padding: 0;
+div.itemizedlist ul li p {
+font-weight: normal;
 }
