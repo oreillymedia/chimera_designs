@@ -989,7 +989,7 @@ div.sidebar {
   font-size: 90%;
   padding: 0;
   overflow: hidden;
-  height: 30px;
+  height: 34px;
   transition-property: height,overflow; 
 transition-duration: 0s;
 -moz-transition-property: height,overflow; /* Firefox 4 */
@@ -1012,8 +1012,10 @@ background-position: top left;
 background-repeat: no-repeat;
 background-size: auto 30px;
 color: #fff;
+font-size: 14px;
 text-align: center;
-height: 30px;
+padding-top: 8px;
+padding-bottom: 8px;
 width: 100%;
 }
 
@@ -1265,6 +1267,12 @@ border-radius: 10px;
 padding: 5px 10px 5px 10px;
 margin-top: 5px;
 }
+
+/* search box */
+ form:first-of-type {
+ 
+ }
+ 
 }
 
 @media screen and (max-width: 400px) {
