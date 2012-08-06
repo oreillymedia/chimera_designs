@@ -988,24 +988,26 @@ border-bottom: 2px solid #CD2626;
 div.sidebar {
   margin: 10px 0 !important;
   border-top: 2px solid #CD2626;
+  border-bottom: 0px solid #CD2626;
   background-color: transparent;
   font-size: 90%;
   padding: 0 0 0 50px;
   overflow: hidden;
   height: 34px;
-  transition-property: height,overflow; 
+  transition-property: height,overflow,border-bottom; 
 transition-duration: 0s;
--moz-transition-property: height,overflow; /* Firefox 4 */
+-moz-transition-property: height,overflow,border-bottom; /* Firefox 4 */
 -moz-transition-duration: 0s;
--webkit-transition-property: height,overflow; /* Safari and Chrome */
+-webkit-transition-property: height,overflow,border-bottom; /* Safari and Chrome */
 -webkit-transition-duration: 0s;
--o-transition-property: height,overflow; /* Opera */
+-o-transition-property: height,overflow,border-bottom; /* Opera */
 -o-transition-duration: 0s;
 }
 
 div.sidebar:hover {
 overflow: visible;
 height: auto;
+border-bottom: 2px solid #CD2626;
 }
 
 div.sidebar-title {
