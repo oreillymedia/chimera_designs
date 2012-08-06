@@ -21,11 +21,6 @@ strong, span.bold {
   font-family: serif;
 }
 
-a.ulink, a.xref, a.email {
-  text-decoration: none;
-  color: #8e0012;
-}
-
 sup {  /* bug in webkit? */
   font-size: x-small;
   vertical-align: super;
