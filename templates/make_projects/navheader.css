@@ -5,10 +5,8 @@
 header {
 	text-align: center;
 	margin-bottom: 40px;
-	width: 100%;
 	position: fixed;
 	top: 0;
-	left: 0;
 }
 
 .navheader  div.table, .navheader table {
