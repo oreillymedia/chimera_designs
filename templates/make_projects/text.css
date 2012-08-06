@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+div.book a {
+text-decoration: none;
+color: #00B2EE;
+}
+
+div.book p {
+line-height: 120%;
+}
+
 /* inlines; code and monospace in the code section below */
 
 span.bolditalic {
@@ -10,11 +19,6 @@ span.bolditalic {
 strong, span.bold {
   font-weight: bold;
   font-family: serif;
-}
-
-a.ulink, a.xref, a.email {
-  text-decoration: none;
-  color: #8e0012;
 }
 
 sup {  /* bug in webkit? */
