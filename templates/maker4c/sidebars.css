@@ -8,6 +8,7 @@ div.sidebar {
   background-color: transparent;
   background-image: url('images/square.png');
   background-position: top left;
+  background-repeat: no-repeat;
   font-size: 90%;
   padding: 10px 8px !important;
 }
