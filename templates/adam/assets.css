@@ -32,6 +32,7 @@ body {
   font-family: "Georgia", serif;
   margin-left: 20px;
   margin-right: 400px;
+  background-image: url(rhino.png);
 }
 
 div.toc-title {
@@ -46,7 +47,6 @@ section.chapter div.toc-title { display: none; }
 h2.chaptertitle {
   font-size: 2.2em;
 }
-
 
 /* p margin */
 
