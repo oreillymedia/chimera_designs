@@ -1022,6 +1022,10 @@ padding-bottom: 9px;
 width: 100%;
 }
 
+div.sidebar-title:before {
+content: "Sidebar: ";
+}
+
 div.sidebar ol {
   margin-left: 15px;
 }
@@ -1306,10 +1310,6 @@ height: auto;
 
 div.sidebar-title {
 background-color: #CD2626;
-background-image: url('https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/images/arrow.png');
-background-position: top left;
-background-repeat: no-repeat;
-background-size: auto 30px;
 color: #fff;
 text-align: center;
 height: 30px;
