@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* sidebars */
+
+div.sidebar {
+  margin: 10px 0 !important;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: transparent;
+  font-size: 90%;
+  padding: 10px 8px !important;
+  page-break-inside: avoid;
+}
+
+div.sidebar p.title {
+  font: bold 1em;
+  font-family: "Free Sans Bold", sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4px 0 6px 0 !important;
+  page-break-inside: avoid;
+}
+
+div.sidebar ol {
+  margin-left: 15px;
+}
+
+div.sidebar div.tip, div.sidebar div.note, div.sidebar div.warning,
+div.sidebar div.caution, div.sidebar div.important {
+  margin: 10px 12.5% !important;
+  font-size: 90%;
+  padding: 10px 5px !important;
+  width: 75%;
+}
+
+div.sidebar div.tip, div.sidebar div.note {
+  background-color: #f1f6fc;
+  border: none;
+}
+
+div.sidebar div.warning, div.sidebar div.caution {
+  background-color: #fce5e8;
+}
+
+div.sidebar div.important {
+  background-color: #FBEC5D;
+}
+
+div.sidebar div.figure {
+  border: none;
+}
