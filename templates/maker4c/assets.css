@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/admon.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/code.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/links.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/sidebars.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/toc.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/figures.css";	
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/lists.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/tables.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/headers.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/text.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/title.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/navheader.css";
+
+/* box model reset */
+
+* { 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box; 
+}
+
+/* reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
+dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* end reset */
+
+.comment {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #CBCBCB;
+}
+
+/* Adams Docbook CSS */
+
+/* O'Reilly Media, 2012; version 2.5.2 */
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  margin-left: 275px;
+  margin-right: 275px;
+  padding-top: 0;
+}
+
+#toc {
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 250px;
+padding: 0.5em;
+padding-bottom: 1.5em;
+margin: 0;
+overflow: auto;
+border-right: 3px solid #F8F8F8;
+background-color: white;
+}
+
+#toc ul, div.toc ul { 
+  list-style-type: none;
+  margin-left: 0 !important;
+  padding-left: 10px !important;
+}
+
+#toc ul li, div.toc ul li { 
+	margin-bottom: 5px;
+}
+
+#toc ul a, div.toc ul a {
+	color: #8E0012;
+  text-decoration: none;
+}
+
+#toc span.preface+ul li { display: none; }
+
+#toc ul ul ul { margin-left: 10px !important; }
+
+a#toctoggle { 
+	color: white;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.hidden { visibility: hidden; }
+.unhidden { visibility: visible; }
+
+div.toc-title {
+  text-transform: uppercase;
+  font-family: Verdana, sans-serif;
+  font-size: 1.2em;
+  color: #8E0012;
+}
+
+section.chapter div.toc-title { display: none; }
+
+
+/* p margin */
+
+p { 
+  margin: 18px 0 0;
+	line-height: 1.5em;
+	color: #333333;
+}
+
+/* preserve whitespace in non-pre elements */
+/* Used for special formatting in Using SQLite (9781449394042.EBOOK), which needs verbatim space preserved in a <dt> element, which cannot contain a pre */
+/* See EBK-2920 */
+
+.preserve-whitespace { white-space: pre-wrap; }
+
+div.colophon h1.title {
+  font-size: 1.3em;
+  margin: 0 !important;
+  font-family: "Free serif", serif;
+  font-weight: normal;
+}
+
+div.colophon h2.subtitle {
+  margin: 0 !important;
+  color: #000;
+  font-family: "Free serif", serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+ 
+div.colophon div.author h3.author {
+  font-size: 1.1em;
+  font-family: "Free serif", serif;
+  margin: 10px 0 0 !important;
+  font-weight: normal;
+}
+
+div.colophon div.editor h4, div.colophon div.editor h3.editor {
+  color: #000;
+  font-size: 0.8em;
+  margin: 15px 0 0 !important;
+  font-family: "Free serif", serif;
+  font-weight: normal;
+}
+
+div.colophon div.editor h3.editor {
+  font-size: 0.8em;
+  margin: 0 !important;
+  font-family: "Free serif", serif;
+  font-weight: normal;
+}
+
+div.colophon div.publisher {
+  margin-top: 10px;
+}
+
+div.colophon div.publisher p,
+div.colophon div.publisher span.publishername {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+div.legalnotice p, div.timestamp p {
+  font-size: 0.8em;
+}
+
+div.timestamp p {
+  margin-top: 10pt;
+}
+
+div.colophon[title="About the Author"] h1.title, div.colophon[title="Colophon"] h1.title {
+  font-size: 1.5em;
+  margin: 0 !important;
+  font-family: "Free Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* epigraphs, blockquotes, attributions */
+
+div.attribution {
+  margin: 5px 0 0 50px !important;
+}
+
+h3.author span.orgname { display: none } /* to work around bug */
+
+div.epigraph {
+  margin: 10px 0 10px 20px !important;
+  page-break-inside: avoid;
+  font-size: 90%;
+}
+
+blockquote, div.blockquote {
+  margin: 10px 0 10px 5px !important;
+  page-break-inside: avoid;
+  font-size: 95%;
+}
+
+blockquote p, div.blockquote p {
+  font-style: italic;
+  font-family: "Free Serif", serif;
+}
+
+blockquote div.attribution {  
+  margin: 5px 0 0 30px !important;
+  text-align: right;
+  width: 80%;
+}
+
+blockquote div.attribution p {  
+  font-style: normal;
+}
+
+/* footnotes */
+
+div.footnote {
+  font-size: 90%;
+}
+
+/* refentries */
+
+div.refnamediv h2, div.refnamediv h3, div.refsynopsisdiv h2 {
+  font-size: 1.1em;
+  color: #000;
+  margin-top: 15px !important;
+  margin-bottom: 0px !important;
+}
+
+div.refentry div.refsect1 h2 {
+  font-size: 1.1em;
+  color: #000;
+  margin-top: 15px !important;
+  margin-bottom: 0px !important;
+}
+  
+div.refsect2 h3 {
+  font-size: 1em;
+  color: #000;
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+div.refnamediv p {
+  margin-left: 15px !important;
+}
+
+/* syntax highlighting and coloring text in general */
+
+/* legacy stuff */
+code.boolean, .navy {
+  color: rgb(0,0,128); /* navy */
+}
+code.character, .olive {
+  color: rgb(128,128,0); /* olive */
+}
+code.comment, .blue {
+  color: rgb(0,0,255); /* blue */
+}
+code.conditional, .limegreen {
+  color: rgb(50,205,50); /* limegreen */
+}
+code.constant, .darkorange {
+  color: rgb(255,140,0); /* darkorange */
+}
+code.debug, .darkred {
+  color: rgb(139,0,0); /* darkred */
+}
+code.define, .darkgoldenrod, .gold {
+  color: rgb(184,134,11); /* darkgoldenrod */
+}
+code.delimiter, .dimgray {
+  color: rgb(105,105,105); /* dimgray */
+}
+code.error, .red {
+  color: rgb(255,0,0); /* red */
+}
+code.exception, .salmon {
+  color: rgb(250,128,11); /* salmon */
+}
+code.float, .steelblue {
+  color: rgb(70,130,180); /* steelblue */
+}
+code.function, .green {
+  color: rgb(0,128,0); /* green */
+}
+code.identifier, .royalblue {
+  color: rgb(65,105,225); /* royalblue */
+}
+code.ignore, .gray {
+  color: rgb(128,128,128); /* gray */
+}
+code.include, .purple {
+  color: rgb(128,0,128); /* purple */
+}
+code.keyword, .sienna {
+  color: rgb(160,82,45); /* sienna */
+}
+code.label, .deeppink {
+  color: rgb(255,20,147); /* deeppink */
+}
+code.macro, .orangered {
+  color: rgb(255,69,0); /* orangered */
+}
+code.number, .brown {
+  color: rgb(165,42,42); /* brown */
+}
+code.operator, .black {
+  color: #000; /* black */
+}
+code.preCondit, .teal {
+  color: rgb(0,128,128); /* teal */
+}
+code.preProc, .fuschia {
+  color: rgb(255,0,255); /* fuschia */
+}
+code.repeat, .indigo {
+  color: rgb(75,0,130); /* indigo */
+}
+code.special, .saddlebrown {
+  color: rgb(139,69,19); /* saddlebrown */
+}
+code.specialchar, .magenta {
+  color: rgb(255,0,255); /* magenta */
+}
+code.specialcomment, .seagreen {
+  color: rgb(46,139,87); /* seagreen */
+}
+code.statement, .forestgreen {
+  color: rgb(34,139,34); /* forestgreen */
+}
+code.storageclass, .plum {
+  color: rgb(221,160,221); /* plum */
+}
+code.string, .darkred {
+  color: rgb(139,0,0); /* darkred */
+}
+code.structure, .chocolate {
+  color: rgb(210,106,30); /* chocolate */
+}
+code.tag, .darkcyan {
+  color: rgb(0,139,139); /* darkcyan */
+}
+code.todo, .black {
+  color: #000; /* black */
+}
+code.type, .mediumslateblue {
+  color: rgb(123,104,238); /* mediumslateblue */
+}
+code.typedef, .darkgreen {
+  color: rgb(0,100,0); /* darkgreen */
+}
+code.underlined {
+  text-decoration: underline; /* guess what */
+}
+
+/* Pygments with manni theme */
+pre code.hll { background-color: #ffffcc }
+pre code.c { color: #0099FF; font-style: italic } /* Comment */
+pre code.err { color: #AA0000 } /* Error */
+pre code.k { color: #006699; font-weight: bold } /* Keyword */
+pre code.o { color: #555555 } /* Operator */
+pre code.cm { color: #35586C; font-style: italic } /* Comment.Multiline */
+pre code.cp { color: #009999 } /* Comment.Preproc */
+pre code.c1 { color: #35586C; font-style: italic } /* Comment.Single */
+pre code.cs { color: #35586C; font-weight: bold; font-style: italic } /* Comment.Special */
+pre code.gd { background-color: #FFCCCC } /* Generic.Deleted */
+pre code.ge { font-style: italic } /* Generic.Emph */
+pre code.gr { color: #FF0000 } /* Generic.Error */
+pre code.gh { color: #003300; font-weight: bold } /* Generic.Heading */
+pre code.gi { background-color: #CCFFCC } /* Generic.Inserted */
+pre code.go { color: #AAAAAA } /* Generic.Output */
+pre code.gp { color: #000099; font-weight: bold } /* Generic.Prompt */
+pre code.gs { font-weight: bold } /* Generic.Strong */
+pre code.gu { color: #003300; font-weight: bold } /* Generic.Subheading */
+pre code.gt { color: #99CC66 } /* Generic.Traceback */
+pre code.kc { color: #006699; font-weight: bold } /* Keyword.Constant */
+pre code.kd { color: #006699; font-weight: bold } /* Keyword.Declaration */
+pre code.kn { color: #006699; font-weight: bold } /* Keyword.Namespace */
+pre code.kp { color: #006699 } /* Keyword.Pseudo */
+pre code.kr { color: #006699; font-weight: bold } /* Keyword.Reserved */
+pre code.kt { color: #007788; font-weight: bold } /* Keyword.Type */
+pre code.m { color: #FF6600 } /* Literal.Number */
+pre code.s { color: #CC3300 } /* Literal.String */
+pre code.na { color: #330099 } /* Name.Attribute */
+pre code.nb { color: #336666 } /* Name.Builtin */
+pre code.nc { color: #00AA88; font-weight: bold } /* Name.Class */
+pre code.no { color: #336600 } /* Name.Constant */
+pre code.nd { color: #9999FF } /* Name.Decorator */
+pre code.ni { color: #999999; font-weight: bold } /* Name.Entity */
+pre code.ne { color: #CC0000; font-weight: bold } /* Name.Exception */
+pre code.nf { color: #CC00FF } /* Name.Function */
+pre code.nl { color: #9999FF } /* Name.Label */
+pre code.nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */
+pre code.nt { color: #330099; font-weight: bold } /* Name.Tag */
+pre code.nv { color: #003333 } /* Name.Variable */
+pre code.ow { color: #000000; font-weight: bold } /* Operator.Word */
+pre code.w { color: #bbbbbb } /* Text.Whitespace */
+pre code.mf { color: #FF6600 } /* Literal.Number.Float */
+pre code.mh { color: #FF6600 } /* Literal.Number.Hex */
+pre code.mi { color: #FF6600 } /* Literal.Number.Integer */
+pre code.mo { color: #FF6600 } /* Literal.Number.Oct */
+pre code.sb { color: #CC3300 } /* Literal.String.Backtick */
+pre code.sc { color: #CC3300 } /* Literal.String.Char */
+pre code.sd { color: #CC3300; font-style: italic } /* Literal.String.Doc */
+pre code.s2 { color: #CC3300 } /* Literal.String.Double */
+pre code.se { color: #CC3300; font-weight: bold } /* Literal.String.Escape */
+pre code.sh { color: #CC3300 } /* Literal.String.Heredoc */
+pre code.si { color: #AA0000 } /* Literal.String.Interpol */
+pre code.sx { color: #CC3300 } /* Literal.String.Other */
+pre code.sr { color: #33AAAA } /* Literal.String.Regex */
+pre code.s1 { color: #CC3300 } /* Literal.String.Single */
+pre code.ss { color: #FFCC33 } /* Literal.String.Symbol */
+pre code.bp { color: #336666 } /* Name.Builtin.Pseudo */
+pre code.vc { color: #003333 } /* Name.Variable.Class */
+pre code.vg { color: #003333 } /* Name.Variable.Global */
+pre code.vi { color: #003333 } /* Name.Variable.Instance */
+pre code.il { color: #FF6600 } /* Literal.Number.Integer.Long */
+
+/* Sanders's additions to manni */
+pre code.g { color: #005500 } /* Generic */
+pre code.l { color: #CC6600 } /* Literal */
+pre code.l { color: #FF9900 } /* Literal.Date */
+pre code.n { color: #000088 } /* Name */
+pre code.nx { color: #000088 } /* Name.Other */
+pre code.py { color: #9966FF } /* Name.Property */
+pre code.p { color: #000000 } /* Punctuation */
+pre code.x { color: #FF0066 } /* Other */
+
+/* Special handling for sampler TOC entry rendering */
+
+div.blockquote_sampler_toc {
+  width: 95%;
+  margin: 5px 5px 5px 10px !important;
+}
+
+/* Comment */
+
+#comment_form textarea {
+	border: 1px solid #C9C9C9;
+	width: 400px;
+	height: 100px;
+	padding: 10px;
+}
+
+video {
+	max-width: 800px;
+}
+
+
+/* Adam stuff */
+
+svg {
+  font: 10px sans-serif;
+}
+
+text.title {
+  font: 300 78px Helvetica Neue;
+  fill: #666;
+}
+
+.rule line {
+  stroke: #fff;
+  stroke-opacity: .2;
+  shape-rendering: crispEdges;
+}
+
+.rule:first-child line {
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+rect {
+  fill-opacity: .6;
+  fill: #e377c2;
+}
+
+rect:first-child {
+  fill: #1f77b4;
+}
+
+input#q {
+	border: none;
+	padding: 5px 10px;
+	width: 300px;
+}
+
+/* Search */
+
+#search_results{
+  width: 600px;
+  position:absolute;
+  top: 50;
+  left: 50;
+  z-index: 10000;
+  background-color: #fff;
+  padding: 2px;
+  border: 1px solid #aaa;
+}
+
+#hide_search {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+ul#search_results {
+  margin-left: 10px;
+  padding: 0;
+	display: none;
+}
+
+ul#search_results li {
+  list-style-type: none;
+  clear: both;
+  margin: 10px;
+  padding: 10px;
+  min-height: 130px;
+  font-family: Verdana, sans-serif;
+}
+
+ul#search_results li:nth-of-type(even) {
+  background-color: #f1f6fc;
+}
+
+img { 
+  float: left;
+  margin: 0 10px 5px 0;
+  border-top: white solid 3px;
+  border-bottom: white solid 3px;
+  border-left: white solid 3px;
+  border-right: none;
+}
