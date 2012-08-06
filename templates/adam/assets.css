@@ -166,8 +166,9 @@ h1, h2, h3, h4 {
   adobe-hyphenate: none;
 }
 
-section.chapter > div.titlepage:first-child h1.title,
-{ /* larger chapter title */
+
+/* chapter title */
+section.chapter > div.titlepage:first-child h1.title {
   font-size: 2em;
   line-height: 1;
   margin-bottom: 15px;
