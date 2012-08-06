@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* lists */
+
+dt {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+}
+
+dd {
+  margin-left: 1.5em !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-left: 20px !important;
+  padding-left: 25px !important;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+ul { 
+  list-style-type: square;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-left: 5px !important;
+  padding-left: 20px !important;
+}
+
+ul ul { 
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+ul ul li p:before { 
+  content: "\2014 \0020";
+}
+
+ul ul ul li p:before { 
+  content: "";
+}
+
+ul ul ul { 
+  list-style-type: square;
+  margin-left: 20px !important;
+  padding-left: 30px !important;
+}
+
+div.orderedlistalpha {
+  list-style-type: upper-alpha;
+}
+
+table.simplelist {
+  margin-left: 20px !important;
+  margin-bottom: 10px;
+}
+
+table.simplelist td {
+  border: none;
+  font-size: 90%;
+}
+
+table.simplelist tr {
+  border-bottom: none;
+}
+
+table.simplelist tr:nth-of-type(even) {
+  background-color: transparent;
+}
+
+div.calloutlist p:first-child {
+ margin-top: -25px !important;
+}
+
+div.calloutlist dd {
+  padding-left: 40px !important;
+}
+
+div.calloutlist img {
+  padding: 0;
+}
+
+a.co img {
+  padding: 0;
+}
