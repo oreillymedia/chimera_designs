@@ -55,6 +55,6 @@ div.appendix > div.titlepage:first-child h1.title { /* larger chapter title */
 }
 
 section.chapter div.titlepage h1.title {
-color: #fff;
+color: #000;
 font-size: 30px;
 }
