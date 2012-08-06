@@ -31,7 +31,7 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   font-family: "Georgia", serif;
   margin-left: 20px;
-  margin-right: 275px;
+  margin-right: 400px;
 }
 
 #toc {
@@ -305,13 +305,11 @@ div.sidebar div.figure {
 
 pre {
   white-space: pre-wrap;
-  font-family: "Ubuntu Mono", monospace;
-  margin: 10px 0 10px 20px;
-  font-size: 85%;
-  display: block;
-  -webkit-hyphens: none;
-  hyphens: none;
-  adobe-hyphenate: none;
+  background: #FAFAFA;
+  border: 3px solid #AAA;
+  margin: 26px 0;
+  padding: 0 8.5px;
+  float: right;
 }
 
 code {

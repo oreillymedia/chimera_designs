@@ -66,3 +66,93 @@ span.gray50 {
 .light-gray-background {
   background: #A0A0A0;
 }
+
+
+/* steps */
+
+ol.orderedlist:first-of-type:before {
+content: url('images/steps.png');
+height: 50px;
+}
+
+ol.orderedlist:first-of-type {
+margin-top: 50px;
+padding-top: 15px;
+}
+
+ol.orderedlist {
+text-indent: 0;
+padding: 0;
+margin: 0;
+}
+
+ol.orderedlist > li.listitem {
+color: #fff;
+list-style-position: inside;
+text-indent: 0;
+padding: 0;
+margin: 40px 0 0 0;
+}
+
+ol.orderedlist > li.listitem:first-of-type {
+margin: 0 0 0 0;
+}
+
+ol.orderedlist > li.listitem > p:first-of-type {
+background-color: #CD2626;
+color: #fff;
+padding: 10px;
+}
+
+ol.orderedlist > li.listitem > p {
+color: #000;
+font-size: 1.1em;
+}
+
+/* sub steps */
+
+div.orderedlist div.itemizedlist {
+color: #000;
+}
+
+div.orderedlist div.itemizedlist ul {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.orderedlist div.itemizedlist ul li {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.orderedlist div.itemizedlist li {
+list-style-type: none;
+list-style-position: outside;
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.itemizedlist ul li p {
+font-weight: normal;
+}
+
+p:empty {
+display: none;
+}
+
+strong:empty {
+font-weight: normal;
+}
+
+/* notes */
+
+div.note {
+font-size: .85em;
+border: 2px solid #00B2EE;
+border-radius: 10px;
+padding: 5px 10px 5px 10px;
+margin-top: 5px;
+}
