@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/* header */
+
+header {
+	padding: 5px 10px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
 .navheader  div.table, .navheader table {
   margin: 10px auto !important;
   max-width: 95%;
@@ -12,8 +20,9 @@
 }
 
 div.navheader table tr:first-child td {
+background-color: #CD2626;
 color: #fff;
-font-size: 30px;
+font-size: 35px;
 }
 
 .navheader tr {

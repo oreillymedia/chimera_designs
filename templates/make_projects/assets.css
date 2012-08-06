@@ -13,6 +13,14 @@
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/text.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/title.css";
 
+/* box model reset */
+
+* { 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box; 
+}
+
 /* reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
@@ -45,25 +53,10 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 /* O'Reilly Media, 2012; version 2.5.2 */
 
 body {
-	background-color: #fff;
-  font-family: "Georgia", serif;
+  background-color: #fff;
+  font-family: sans-serif;
   margin-left: 275px;
   margin-right: 275px;
-}
-
-/* header */
-
-header {
-	background-color: #8E0012;
-	padding: 5px 10px;
-	text-align: center;
-	margin-bottom: 40px;
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
 }
 
 #toc {
