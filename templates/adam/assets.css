@@ -36,6 +36,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: -75%;
+  column-count: 2;
+  column-gap: 20px;
+  height: 350px;
 }
 
 div.titlepage { width: 400px; }
@@ -44,10 +47,6 @@ div.toc {
   margin-left: 100px;
   width: 300px;
   float: none;
-}
-
-div.book div.titlepage h1.title:hover {
-  content: url(index.xhtml); 
 }
 
 div.navheader, hr { display: none; }
@@ -336,7 +335,7 @@ div.example-contents pre.programlisting, div.example-contents pre.screen { margi
 div.book div.titlepage h1.title {
   font-size: 3em;
   font-family: "Free Sans Bold", sans-serif;
-  margin: 50px 0 10px 0 !important;
+  margin: 20px 0 10px 0;
   line-height: 1;
   text-align: left;
 }
