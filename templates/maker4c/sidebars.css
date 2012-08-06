@@ -6,6 +6,8 @@ div.sidebar {
   margin: 10px 0 !important;
   border: 2px solid #CD2626;
   background-color: transparent;
+  background-image: url('images/square.png');
+  background-position: top left;
   font-size: 90%;
   padding: 10px 8px !important;
 }
