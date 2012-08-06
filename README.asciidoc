@@ -1,3 +1,11 @@
+== Quickstart
+
+Commit your changes to the templates direcory.  The on mandatory file you need to change it "assets.css"
+
+Go here to view your design as it renders in Chimara: 
+
+http://orm-social-book-poc.herokuapp.com/
+
 == Intro
 
 These are the templates used to the social books project.  The idea is that each subdirectory contains a design that is applied to one of the social books when it is displayed. The design is specified in the Book model, which you can change in the Rails consol (or Heroku console) like this:
@@ -48,8 +56,6 @@ It is a good idea to use DNS-compatible bucket names. That for instance means yo
 
 
 === Install s3cmd 
-
-
 
 Here are the link:http://populationjim.com/2011/02/21/install-and-setup-s3cmd-on-a-mac/[installation instructions for a Mac link]:
 
