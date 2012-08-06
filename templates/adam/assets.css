@@ -34,44 +34,6 @@ body {
   margin-right: 400px;
 }
 
-#toc {
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
-width: 250px;
-padding: 0.5em;
-padding-bottom: 1.5em;
-margin: 0;
-overflow: auto;
-border-right: 3px solid #F8F8F8;
-background-color: white;
-}
-
-#toc ul, div.toc ul { 
-  list-style-type: none;
-  margin-left: 0 !important;
-  padding-left: 10px !important;
-  }
-
-#toc ul a, div.toc ul a {
-  color: gray;
-  text-decoration: none;
-}
-
-#toc span.preface+ul li { display: none; }
-
-#toc ul ul ul { margin-left: 10px !important; }
-
-a#toctoggle { color: gray;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Verdana, sans-serif;
-}
-
-.hidden { visibility: hidden; }
-.unhidden { visibility: visible; }
-
 div.toc-title {
   text-transform: uppercase;
   font-family: Verdana, sans-serif;
@@ -84,7 +46,6 @@ section.chapter div.toc-title { display: none; }
 h2.chaptertitle {
   font-size: 2.2em;
 }
-
 
 
 /* p margin */
@@ -205,9 +166,8 @@ h1, h2, h3, h4 {
   adobe-hyphenate: none;
 }
 
-div.chapter > div.titlepage:first-child h1.title,
-div.preface > div.titlepage:first-child h1.title,
-div.appendix > div.titlepage:first-child h1.title { /* larger chapter title */
+section.chapter > div.titlepage:first-child h1.title,
+{ /* larger chapter title */
   font-size: 2em;
   line-height: 1;
   margin-bottom: 15px;
@@ -916,10 +876,3 @@ pre code.nx { color: #000088 } /* Name.Other */
 pre code.py { color: #9966FF } /* Name.Property */
 pre code.p { color: #000000 } /* Punctuation */
 pre code.x { color: #FF0066 } /* Other */
-
-/* Special handling for sampler TOC entry rendering */
-
-div.blockquote_sampler_toc {
-  width: 95%;
-  margin: 5px 5px 5px 10px !important;
-}
