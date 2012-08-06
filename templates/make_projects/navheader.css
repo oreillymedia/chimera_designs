@@ -3,7 +3,7 @@
 /* header */
 
 header {
-	background-color: #000;
+	background-color: #fff;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 40px;
@@ -68,7 +68,6 @@ border-bottom: 2px solid #CD2626;
 
 .navheader td a {
 	color: #888;
-	font-size: 1.3em;
 	text-decoration: none;
 }
 
