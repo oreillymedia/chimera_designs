@@ -6,13 +6,16 @@ header {
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 40px;
-	margin-left: 275px;
-	margin-right: 275px;
 	padding: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
+}
+
+div.navheader {
+	margin-left: 275px;
+	margin-right: 275px;
 }
 
 .navheader  div.table, .navheader table {
