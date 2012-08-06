@@ -38,6 +38,6 @@ h4 {
 	margin: 9px 0 !important;
 }
 
-#search-form, header {
+#search-form, header, hr {
 	visibility: hidden;
 }
