@@ -7,7 +7,7 @@ div.sidebar {
   border: 2px solid #CD2626;
   background-color: transparent;
   font-size: 90%;
-  padding: 10px 8px !important;
+  padding: 0;
 }
 
 div.sidebar-title {
