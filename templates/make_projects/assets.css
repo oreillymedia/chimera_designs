@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+@import "headers.css";
+@import "toc.css";
+@import "text.css";
+@import "figures.css";
+
 .comment {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -9,8 +16,6 @@
 }
 
 /* Adams Docbook CSS */
-
-@charset "UTF-8";
 
 /* O'Reilly Media, 2012; version 2.5.2 */
 
