@@ -4,8 +4,12 @@
 
 header {
 	text-align: center;
+	margin-top: 0;
 	margin-bottom: 40px;
-	width: inherit;
+	margin-left: 275px;
+	margin-right: 275px;
+	padding: 0;
+	width: 100%;
 	position: fixed;
 	top: 0;
 }
