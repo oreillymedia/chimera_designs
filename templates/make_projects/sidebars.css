@@ -4,23 +4,15 @@
 
 div.sidebar {
   margin: 10px 0 !important;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #000;
+  border: 2px solid #CD2626;
   background-color: transparent;
   font-size: 90%;
   padding: 10px 8px !important;
-  page-break-inside: avoid;
 }
 
-div.sidebar p.title {
-  font: bold 1em;
-  font-family: "Free Sans Bold", sans-serif;
-  text-transform:uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 4px 0 6px 0 !important;
-  page-break-inside: avoid;
+div.sidebar-title {
+background-color: #CD2626;
+width: 100%;
 }
 
 div.sidebar ol {
