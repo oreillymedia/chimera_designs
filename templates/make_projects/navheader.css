@@ -43,6 +43,7 @@ background-color: #CD2626;
 color: #fff;
 font-size: 18px;
 padding: 7px 0 7px 0;
+margin-top: 0;
 }
 
 div.navheader table tr:nth-child(2) {
