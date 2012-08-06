@@ -45,6 +45,10 @@ div.toc {
   width: 200px;
 }
 
+div.book div.titlepage h1.title:hover {
+  content: url(index.xhtml); 
+}
+
 div.navheader, hr { display: none; }
 
 #id393895 { display: none; }
