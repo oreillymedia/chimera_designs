@@ -1,15 +1,13 @@
-.comment {
-	margin-top: 20px;
-	margin-left: 10px;
-	padding: 10px;
-	border: 1px solid #CBCBCB;
-}
-
-/* Adams Docbook CSS */
-
 @charset "UTF-8";
 
-/* O'Reilly Media, 2012; version 2.5.2 */
+
+/* box model reset */
+
+* { 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box; 
+}
 
 /* reset */
 
@@ -28,10 +26,29 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* end reset */
 
+@media screen and (min-width: 400px) {
+
+.comment {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #CBCBCB;
+}
+
+/* Adams Docbook CSS */
+
+/* O'Reilly Media, 2012; version 2.5.2 */
+
 body {
-  font-family: "Georgia", serif;
-  margin-left: 275px;
-  margin-right: 275px;
+  background-color: #fff;
+  font-family: sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 0;
+  min-width: 400px;
 }
 
 #toc {
@@ -52,10 +69,14 @@ background-color: white;
   list-style-type: none;
   margin-left: 0 !important;
   padding-left: 10px !important;
-  }
+}
+
+#toc ul li, div.toc ul li { 
+	margin-bottom: 5px;
+}
 
 #toc ul a, div.toc ul a {
-  color: gray;
+	color: #8E0012;
   text-decoration: none;
 }
 
@@ -63,10 +84,11 @@ background-color: white;
 
 #toc ul ul ul { margin-left: 10px !important; }
 
-a#toctoggle { color: gray;
+a#toctoggle { 
+	color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  font-family: Verdana, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
 }
 
 .hidden { visibility: hidden; }
@@ -81,83 +103,13 @@ div.toc-title {
 
 section.chapter div.toc-title { display: none; }
 
-h2.chaptertitle {
-  font-size: 2.2em;
-}
-
-
 
 /* p margin */
 
 p { 
-  margin: 8px 0 0;
-}
-
-/* inlines; code and monospace in the code section below */
-
-span.bolditalic {
-  font-weight: bold;
-  font-style: italic;
-}
-
-strong, span.bold {
-  font-weight: bold;
-  font-family: serif;
-}
-
-a.ulink, a.xref, a.email {
-  text-decoration: none;
-  color: #8e0012;
-}
-
-sup {  /* bug in webkit? */
-  font-size: x-small;
-  vertical-align: super;
-} 
-
-sub {
-  font-size: smaller;
-  vertical-align: sub;
-}
-
-span.lineannotation {
-  font-style: italic;
-  color: red;
-  font-family: serif;
-}
-
-span.underline { text-decoration: underline; }
-
-span.strikethrough { text-decoration: line-through; }
-
-span.smallcaps { font-variant: small-caps; }
-
-span.cursor { background: #000; color: #FFF; } /* for Learning GNU Emacs, 3e */
-
-/* added for special formatting in Regular Expressions Cookbook, 1e (9780596802783.EBOOK) */
-
-.boxedtext, .keycap {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #000;
-  padding: 1px;
-}
-
-span.gray50 {
-  color: #7F7F7F; /* 50 % gray */
-}
-
-/* added for special formatting in Bioinformatics Programming Using Python, 1e (9781449378677.EBOOK) */
-
-.gray-background, .reverse-video {
-  background: #2E2E2E;
-  color: #FFF;
-}
-
-/* added for special formatting in Working with Microsoft Visual Studio 2005, 1e (9780735649958.EBOOK) */
-
-.light-gray-background {
-  background: #A0A0A0;
+  margin: 18px 0 0;
+	line-height: 1.5em;
+	color: #333333;
 }
 
 /* preserve whitespace in non-pre elements */
@@ -165,251 +117,6 @@ span.gray50 {
 /* See EBK-2920 */
 
 .preserve-whitespace { white-space: pre-wrap; }
-
-/* headings */
-
-h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family: "Free Sans Bold", sans-serif;
-  margin-top: 20px !important;
-}
-
-h2 { 
-  font-size: 1.3em;
-  font-weight: bold;
-  font-family: "Free Sans Bold", sans-serif;
-  color: #8e0012;
-  margin: 15px 0 8px 0 !important;
-}
-
-h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-  font-family: "Free Sans Bold", sans-serif;
-  margin: 10px 0 8px 0 !important;
-}
-
-h4 {
-  font-size: bold;
-  font-weight: 1em;
-  font-family: "Free Sans Bold", sans-serif;
-  color: #555;
-  margin: 9px 0 !important;
-}
-
-/* Appropriate heading hyphenation suppression for different ereaders */
-h1, h2, h3, h4 { 
-  -webkit-hyphens: none;
-  hyphens: none;
-  adobe-hyphenate: none;
-}
-
-div.chapter > div.titlepage:first-child h1.title,
-div.preface > div.titlepage:first-child h1.title,
-div.appendix > div.titlepage:first-child h1.title { /* larger chapter title */
-  font-size: 2em;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-  
-/* images  */
-
-img {
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-div.figure {
-  margin: 10px 0 !important;
-  text-align: center;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background-color: transparent;
-  padding: 5px !important;
-  page-break-inside: avoid;
-}
-
-div.figure p.title, div.informalfigure div.caption {
-  font-size: 90%;
-  text-align: center;
-  font-weight: normal;
-  font-style: italic;
-  font-family: "Free Serif", serif;
-  color: #000;
-  padding: 5px !important;
-  page-break-before: avoid;
-  page-break-after: avoid;
-}
-
-div.informalfigure {
-  text-align: center;
-  padding: 5px 0 !important;
-}
-
-/* sidebars */
-
-div.sidebar {
-  margin: 10px 0 !important;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background-color: transparent;
-  font-size: 90%;
-  padding: 10px 8px !important;
-  page-break-inside: avoid;
-}
-
-div.sidebar p.title {
-  font: bold 1em;
-  font-family: "Free Sans Bold", sans-serif;
-  text-transform:uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 4px 0 6px 0 !important;
-  page-break-inside: avoid;
-}
-
-div.sidebar ol {
-  margin-left: 15px;
-}
-
-div.sidebar div.tip, div.sidebar div.note, div.sidebar div.warning,
-div.sidebar div.caution, div.sidebar div.important {
-  margin: 10px 12.5% !important;
-  font-size: 90%;
-  padding: 10px 5px !important;
-  width: 75%;
-}
-
-div.sidebar div.tip, div.sidebar div.note {
-  background-color: #f1f6fc;
-  border: none;
-}
-
-div.sidebar div.warning, div.sidebar div.caution {
-  background-color: #fce5e8;
-}
-
-div.sidebar div.important {
-  background-color: #FBEC5D;
-}
-
-div.sidebar div.figure {
-  border: none;
-}
-
-/* code */
-
-pre {
-  white-space: pre-wrap;
-  font-family: "Ubuntu Mono", monospace;
-  margin: 10px 0 10px 20px;
-  font-size: 85%;
-  display: block;
-  -webkit-hyphens: none;
-  hyphens: none;
-  adobe-hyphenate: none;
-}
-
-code {
-  font-family: "Ubuntu Mono", monospace;
-}
-
-code strong em, code em strong, pre em strong, pre strong em,
-strong code em code, em code strong code, span.bolditalic code { /* yes, all of these variations are needed */
-  font-weight: bold;
-  font-style: italic;
-  font-family: "Ubuntu Mono BoldItal", monospace;
-}
-
-code em, em code, pre em, em.replaceable {
-  font-family: "Ubuntu Mono Ital", monospace;
-  font-style: italic;
-}
-
-code strong, strong code, pre strong, strong.userinput {
-  font-family: "Ubuntu Mono Bold", monospace;
-  font-weight: bold;
-}
-
-div.example {
-  margin: 10px 0 15px 0 !important;
-}
-
-div.example p.title {
-  font-style: italic;
-  font-weight: normal;
-  font-family: "Free Serif", serif;
-  margin: 10px 0 5px 0 !important;
-}
-
-li pre.example {
-  padding: 10px 0 !important;
-}
-
-div.example-contents pre.programlisting, div.example-contents pre.screen { margin: 0; }
-
-
-/* title and copyright page */
-
-
-div.book div.titlepage h1.title {
-  font-size: 3em;
-  font-family: "Free Sans Bold", sans-serif;
-  margin: 50px 0 10px 0 !important;
-  line-height: 1;
-  text-align: center;
-}
-
-div.book div.titlepage h2.subtitle {
-  text-align: center;
-  color: #000;
-  margin: 0 !important;
-  font-style: italic;
-  font-family: serif;
-  font-size: 1.5em;
-}
-
-div.book div.titlepage div.author h3 {
-  font-size: 2em;
-  font-family: "Free Sans Bold", sans-serif;
-  color: #8e0012;
-  margin: 50px 0 !important;
-  text-align: center;
-}
-
-div.book div.titlepage div.publishername {
-  margin-top: 60%;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 1.25em;
-}
-
-div.book div.titlepage div.locations p {
-  margin: 0;
-  text-align: center;
-}
-
-div.book div.titlepage div.locations p.cities {
-  font-size: 80%;
-  text-align: center;
-}
-
-div.preface[title="Dedication"] > div.titlepage h1.title { 
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-div.preface[title="Dedication"] p {
-  font-style: italic;
-  text-align: center;
-}
 
 div.colophon h1.title {
   font-size: 1.3em;
@@ -539,203 +246,6 @@ div.refsect2 h3 {
 
 div.refnamediv p {
   margin-left: 15px !important;
-}
-
-/* lists */
-
-dt {
-  padding-top: 10px !important;
-  padding-bottom: 0 !important;
-}
-
-dd {
-  margin-left: 1.5em !important;
-}
-
-ol {
-  list-style-type: decimal;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 20px !important;
-  padding-left: 25px !important;
-}
-
-ol ol {
-  list-style-type: lower-alpha;
-}
-
-ol ol ol {
-  list-style-type: lower-roman;
-}
-
-ul { 
-  list-style-type: square;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 5px !important;
-  padding-left: 20px !important;
-}
-
-ul ul { 
-  list-style-type: none;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-ul ul li p:before { 
-  content: "\2014 \0020";
-}
-
-ul ul ul li p:before { 
-  content: "";
-}
-
-ul ul ul { 
-  list-style-type: square;
-  margin-left: 20px !important;
-  padding-left: 30px !important;
-}
-
-div.orderedlistalpha {
-  list-style-type: upper-alpha;
-}
-
-table.simplelist {
-  margin-left: 20px !important;
-  margin-bottom: 10px;
-}
-
-table.simplelist td {
-  border: none;
-  font-size: 90%;
-}
-
-table.simplelist tr {
-  border-bottom: none;
-}
-
-table.simplelist tr:nth-of-type(even) {
-  background-color: transparent;
-}
-
-div.calloutlist p:first-child {
- margin-top: -25px !important;
-}
-
-div.calloutlist dd {
-  padding-left: 40px !important;
-}
-
-div.calloutlist img {
-  padding: 0;
-}
-
-a.co img {
-  padding: 0;
-}
-
-/* admonitions */
- 
-div.tip, div.note, div.warning, div.caution, div.important {
-  margin: 10px 0 !important;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 90%;
-  padding: 10px 8px 20px 8px !important;
-  page-break-inside: avoid;
-}
-
-div.tip, div.note {
-  border: 1px solid #6cafd0;
-  background-color: transparent;
-}
-
-div.warning, div.caution {
-  border: 1px solid #8e0012;
-  background-color: #fce5e8;
-}
-
-div.important {
-  background-color: #FFF68F;
-  border: 1px solid #615E3F;
-}
-
-div.tip h3, div.note h3, div.warning h3, div.caution h3, div.important h3 {
-  font: bold 90%;
-  font-family: "Free Sans Bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 4px 0 6px !important;
-  color: #000;
-}
-
-/* tables */
-
-div.table, table {
-  margin: 10px auto !important;
-  max-width: 95%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-div.table, div.informaltable {
-  page-break-inside: avoid;
-}
-
-tr {
-  border-bottom: 1px solid #c3c3c3;
-}
-
-tr th {
-  border-bottom: #9d9d9d 2px solid !important;
-  border-top: #9d9d9d 2px solid !important; 
-}
-
-tr:nth-of-type(even) {
-  background-color: #f1f6fc;
-}
-
-th {
-  font-family: "Free Sans Bold", sans-serif;
-  color: #000;
-  font-weight: bold;
-}
-
-td, th {
-  padding: 0.3em;
-  text-align: left;
-  vertical-align: baseline;
-  font-size: 80%;
-}
-
-div.informaltable table {
-  margin: 10px auto !important;
-}
-
-div.informaltable table tr {
-  border-bottom: none;
-}
-
-div.informaltable table tr:nth-of-type(even) {
-  background-color: transparent;
-}
-
-div.informaltable td, div.informaltable th {
-  border: #9d9d9d 1px solid;
-}
-
-div.table p.title {
-  font-weight: normal;
-  font-style: italic;
-  font-family: "Free Serif", serif;
-  margin: 20px 0 0 0 !important;
-  text-align: center;
-  padding: 0;
-}
-
-table code {
-  font-size: smaller;
 }
 
 /* syntax highlighting and coloring text in general */
@@ -925,4 +435,885 @@ pre code.x { color: #FF0066 } /* Other */
 div.blockquote_sampler_toc {
   width: 95%;
   margin: 5px 5px 5px 10px !important;
+}
+
+/* Comment */
+
+#comment_form textarea {
+	border: 1px solid #C9C9C9;
+	width: 400px;
+	height: 100px;
+	padding: 10px;
+}
+
+video {
+	max-width: 800px;
+}
+
+
+/* Adam stuff */
+
+svg {
+  font: 10px sans-serif;
+}
+
+text.title {
+  font: 300 78px Helvetica Neue;
+  fill: #666;
+}
+
+.rule line {
+  stroke: #fff;
+  stroke-opacity: .2;
+  shape-rendering: crispEdges;
+}
+
+.rule:first-child line {
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+rect {
+  fill-opacity: .6;
+  fill: #e377c2;
+}
+
+rect:first-child {
+  fill: #1f77b4;
+}
+
+input#q {
+	border: none;
+	padding: 5px 10px;
+	width: 300px;
+}
+
+/* Search */
+
+#search_results{
+  width: 600px;
+  position:absolute;
+  top: 50;
+  left: 50;
+  z-index: 10000;
+  background-color: #fff;
+  padding: 2px;
+  border: 1px solid #aaa;
+}
+
+#hide_search {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+ul#search_results {
+  margin-left: 10px;
+  padding: 0;
+	display: none;
+}
+
+ul#search_results li {
+  list-style-type: none;
+  clear: both;
+  margin: 10px;
+  padding: 10px;
+  min-height: 130px;
+  font-family: Verdana, sans-serif;
+}
+
+ul#search_results li:nth-of-type(even) {
+  background-color: #f1f6fc;
+}
+
+img { 
+  float: left;
+  margin: 0 10px 5px 0;
+  border-top: white solid 3px;
+  border-bottom: white solid 3px;
+  border-left: white solid 3px;
+  border-right: none;
+}
+
+/* title and copyright page */
+
+div.book div.titlepage h1.title {
+  font-size: 3em;
+  font-family: "Free Sans Bold", sans-serif;
+  margin: 50px 0 10px 0 !important;
+  line-height: 1;
+  text-align: center;
+}
+
+div.book div.titlepage h2.subtitle {
+  text-align: center;
+  color: #000;
+  margin: 0 !important;
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.5em;
+}
+
+div.book div.titlepage div.author h3 {
+  font-size: 2em;
+  font-family: "Free Sans Bold", sans-serif;
+  color: #8e0012;
+  margin: 50px 0 !important;
+  text-align: center;
+}
+
+div.book div.titlepage div.publishername {
+  margin-top: 60%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+div.book div.titlepage div.locations p {
+  margin: 0;
+  text-align: center;
+}
+
+div.book div.titlepage div.locations p.cities {
+  font-size: 80%;
+  text-align: center;
+}
+
+div.preface[title="Dedication"] > div.titlepage h1.title { 
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.preface[title="Dedication"] p {
+  font-style: italic;
+  text-align: center;
+}
+
+/* admonitions */
+ 
+div.tip, div.note, div.warning, div.caution, div.important {
+  margin: 10px 0 !important;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 90%;
+  padding: 10px 8px 20px 8px !important;
+  page-break-inside: avoid;
+}
+
+div.tip, div.note {
+  border: 1px solid #6cafd0;
+  background-color: transparent;
+}
+
+div.warning, div.caution {
+  border: 1px solid #8e0012;
+  background-color: #fce5e8;
+}
+
+div.important {
+  background-color: #FFF68F;
+  border: 1px solid #615E3F;
+}
+
+div.tip h3, div.note h3, div.warning h3, div.caution h3, div.important h3 {
+  font: bold 90%;
+  font-family: "Free Sans Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4px 0 6px !important;
+  color: #000;
+}
+
+/* code */
+
+pre {
+  white-space: pre-wrap;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 10px 0 10px 20px;
+  font-size: 85%;
+  display: block;
+  -webkit-hyphens: none;
+  hyphens: none;
+  adobe-hyphenate: none;
+}
+
+code {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+code strong em, code em strong, pre em strong, pre strong em,
+strong code em code, em code strong code, span.bolditalic code { /* yes, all of these variations are needed */
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Ubuntu Mono BoldItal", monospace;
+}
+
+code em, em code, pre em, em.replaceable {
+  font-family: "Ubuntu Mono Ital", monospace;
+  font-style: italic;
+}
+
+code strong, strong code, pre strong, strong.userinput {
+  font-family: "Ubuntu Mono Bold", monospace;
+  font-weight: bold;
+}
+
+div.example-title {
+font-size: .9em;
+font-style: italic;
+border-bottom: 2px solid #CD2626;
+}
+
+div.example {
+  margin: 10px 0 15px 0 !important;
+}
+
+/*div.example p.title {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Free Serif", serif;
+  margin: 10px 0 5px 0 !important;
+}*/
+
+li pre.example {
+  padding: 10px 0 !important;
+}
+
+div.example-contents pre.programlisting, div.example-contents pre.screen { margin: 0; }
+
+/* images  */
+
+img {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.figure {
+  margin: 10px 0 !important;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 5px !important;
+  page-break-inside: avoid;
+}
+
+div.figure p.title, div.informalfigure div.caption {
+  font-size: 90%;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Free Serif", serif;
+  color: #000;
+  padding: 5px !important;
+  page-break-before: avoid;
+  page-break-after: avoid;
+}
+
+div.informalfigure {
+  text-align: center;
+  padding: 5px 0 !important;
+}
+
+/* headings */
+
+h1, h2, h3, h4 { 
+  -webkit-hyphens: none;
+  hyphens: none;
+  adobe-hyphenate: none;
+	color: #2d2d2d;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px !important;
+}
+
+h2 { 
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 24px 0 8px 0 !important;
+}
+
+h2.chaptertitle {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 10px 0 8px 0 !important;
+}
+
+h4 {
+  font-size: bold;
+  font-weight: 1em;
+  margin: 9px 0 !important;
+}
+
+hr {
+	color: #9C9C9C;
+	background-color: #9C9C9C;
+	height: 2px;
+	margin: 20px 0px;
+	border: none;
+}
+
+div.chapter > div.titlepage:first-child h1.title,
+div.preface > div.titlepage:first-child h1.title,
+div.appendix > div.titlepage:first-child h1.title { /* larger chapter title */
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+section.chapter {
+margin-top: 80px;
+}
+
+section.chapter div.titlepage h1.title {
+color: #000;
+font-size: 30px;
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+  color: #8e0012;
+}
+
+/* lists */
+
+dt {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+}
+
+dd {
+  margin-left: 1.5em !important;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-left: 20px !important;
+  padding-left: 25px !important;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+ul { 
+  list-style-type: square;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-left: 5px !important;
+  padding-left: 20px !important;
+}
+
+ul ul { 
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+ul ul li p:before { 
+  content: "\2014 \0020";
+}
+
+ul ul ul li p:before { 
+  content: "";
+}
+
+ul ul ul { 
+  list-style-type: square;
+  margin-left: 20px !important;
+  padding-left: 30px !important;
+}
+
+div.orderedlistalpha {
+  list-style-type: upper-alpha;
+}
+
+table.simplelist {
+  margin-left: 20px !important;
+  margin-bottom: 10px;
+}
+
+table.simplelist td {
+  border: none;
+  font-size: 90%;
+}
+
+table.simplelist tr {
+  border-bottom: none;
+}
+
+table.simplelist tr:nth-of-type(even) {
+  background-color: transparent;
+}
+
+div.calloutlist p:first-child {
+ margin-top: -25px !important;
+}
+
+div.calloutlist dd {
+  padding-left: 40px !important;
+}
+
+div.calloutlist img {
+  padding: 0;
+}
+
+a.co img {
+  padding: 0;
+}
+
+/* header */
+
+header {
+background-color: #fff;
+text-align: center;
+margin-top: 0;
+margin-bottom: 40px;
+padding-top: 0;
+padding-left: 20%;
+padding-right: 20%;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 4;
+}
+
+div.navheader {
+padding-top: 0;
+margin-top: 0;
+}
+
+div.navheader table {
+padding-top: 0;
+margin-top: 0;
+}
+
+.navheader  div.table, .navheader table {
+  margin: 10px auto !important;
+  max-width: 95%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navheader div.table, .navheader div.informaltable {
+  page-break-inside: avoid;
+}
+
+div.navheader table tr:first-child {
+text-align: left;
+margin-top: 0;
+padding-top: 0;
+}
+
+div.navheader table tr:first-child td {
+background-color: #CD2626;
+color: #fff;
+font-size: 18px;
+text-align: left;
+padding: 7px 0 7px 0;
+margin-top: 0;
+}
+
+div.navheader table tr:nth-child(2) {
+background-color: #fff;
+color: #888;
+font-size: 16px;
+border-bottom: 2px solid #CD2626;
+}
+
+.navheader td a {
+	color: #888;
+	text-decoration: none;
+}
+
+.navheader tr {
+  border-top: none;
+  border-bottom: none;
+}
+
+.navheader hr {
+	display: none;
+}
+
+/*.navheader tr:nth-of-type(even) {
+  background-color: #8E0012;
+}
+
+.navheader th {
+  font-family: "Free Sans Bold", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.navheader td, .navheader th {
+  padding: 0.3em;
+  text-align: left;
+  vertical-align: baseline;
+  font-size: 80%;
+}
+*/
+
+/* navfooter */
+
+.navfooter table a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #8E0012;
+}
+
+/* sidebars */
+
+div.sidebar {
+  margin: 10px 0 !important;
+  border: 2px solid #CD2626;
+  background-color: transparent;
+  font-size: 90%;
+  padding: 0;
+  overflow: hidden;
+  height: 34px;
+  transition-property: height,overflow; 
+transition-duration: 0s;
+-moz-transition-property: height,overflow; /* Firefox 4 */
+-moz-transition-duration: 0s;
+-webkit-transition-property: height,overflow; /* Safari and Chrome */
+-webkit-transition-duration: 0s;
+-o-transition-property: height,overflow; /* Opera */
+-o-transition-duration: 0s;
+}
+
+div.sidebar:hover {
+overflow: visible;
+height: auto;
+}
+
+div.sidebar-title {
+background-color: #CD2626;
+background-image: url('https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/images/arrow.png');
+background-position: top right;
+background-repeat: no-repeat;
+background-size: auto 30px;
+color: #fff;
+font-size: 14px;
+text-transform: uppercase;
+text-align: center;
+padding-top: 7px;
+padding-bottom: 9px;
+width: 100%;
+}
+
+div.sidebar ol {
+  margin-left: 15px;
+}
+
+div.sidebar div.tip, div.sidebar div.note, div.sidebar div.warning,
+div.sidebar div.caution, div.sidebar div.important {
+  margin: 10px 12.5% !important;
+  font-size: 90%;
+  padding: 10px 5px !important;
+  width: 75%;
+}
+
+div.sidebar div.tip, div.sidebar div.note {
+  background-color: #f1f6fc;
+  border: none;
+}
+
+div.sidebar div.warning, div.sidebar div.caution {
+  background-color: #fce5e8;
+}
+
+div.sidebar div.important {
+  background-color: #FBEC5D;
+}
+
+div.sidebar div.figure {
+  border: none;
+}
+
+/* tables */
+
+div.table, table {
+  margin: 10px auto !important;
+  max-width: 95%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div.table, div.informaltable {
+  page-break-inside: avoid;
+}
+
+tr {
+  border-bottom: 1px solid #c3c3c3;
+}
+
+tr th {
+  border-bottom: #9d9d9d 2px solid !important;
+  border-top: #9d9d9d 2px solid !important; 
+}
+
+tr:nth-of-type(even) {
+  background-color: #f1f6fc;
+}
+
+th {
+  font-family: "Free Sans Bold", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 0.3em;
+  text-align: left;
+  vertical-align: baseline;
+  font-size: 80%;
+}
+
+div.informaltable table {
+  margin: 10px auto !important;
+}
+
+div.informaltable table tr {
+  border-bottom: none;
+}
+
+div.informaltable table tr:nth-of-type(even) {
+  background-color: transparent;
+}
+
+div.informaltable td, div.informaltable th {
+  border: #9d9d9d 1px solid;
+}
+
+div.table p.title {
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Free Serif", serif;
+  margin: 20px 0 0 0 !important;
+  text-align: center;
+  padding: 0;
+}
+
+table code {
+  font-size: smaller;
+}
+
+/* inlines; code and monospace in the code section below */
+
+span.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+strong, span.bold {
+  font-weight: bold;
+  font-family: serif;
+}
+
+a.ulink, a.xref, a.email {
+  text-decoration: none;
+  color: #8e0012;
+}
+
+sup {  /* bug in webkit? */
+  font-size: x-small;
+  vertical-align: super;
+} 
+
+sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+span.lineannotation {
+  font-style: italic;
+  color: red;
+  font-family: serif;
+}
+
+span.underline { text-decoration: underline; }
+
+span.strikethrough { text-decoration: line-through; }
+
+span.smallcaps { font-variant: small-caps; }
+
+span.cursor { background: #000; color: #FFF; } /* for Learning GNU Emacs, 3e */
+
+/* added for special formatting in Regular Expressions Cookbook, 1e (9780596802783.EBOOK) */
+
+.boxedtext, .keycap {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  padding: 1px;
+}
+
+span.gray50 {
+  color: #7F7F7F; /* 50 % gray */
+}
+
+/* added for special formatting in Bioinformatics Programming Using Python, 1e (9781449378677.EBOOK) */
+
+.gray-background, .reverse-video {
+  background: #2E2E2E;
+  color: #FFF;
+}
+
+/* added for special formatting in Working with Microsoft Visual Studio 2005, 1e (9780735649958.EBOOK) */
+
+.light-gray-background {
+  background: #A0A0A0;
+}
+
+
+/* steps */
+
+ol.orderedlist:first-of-type {
+margin-top: 50px;
+padding-top: 15px;
+}
+
+ol.orderedlist {
+text-indent: 0;
+padding: 0;
+margin: 0;
+}
+
+ol.orderedlist > li.listitem {
+color: #fff;
+list-style-position: inside;
+text-indent: 0;
+padding: 0;
+margin: 40px 0 0 0;
+}
+
+ol.orderedlist > li.listitem:first-of-type {
+margin: 0 0 0 0;
+}
+
+ol.orderedlist > li.listitem > p:first-of-type {
+background-color: #CD2626;
+color: #fff;
+padding: 10px;
+}
+
+ol.orderedlist > li.listitem > p {
+color: #000;
+font-size: 1.1em;
+}
+
+/* sub steps */
+
+div.orderedlist div.itemizedlist {
+color: #000;
+}
+
+div.orderedlist div.itemizedlist ul {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.orderedlist div.itemizedlist ul li {
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.orderedlist div.itemizedlist li {
+list-style-type: none;
+list-style-position: outside;
+text-indent: 0;
+padding: 0;
+margin: 0 0 0 0;
+}
+
+div.itemizedlist ul li p {
+font-weight: normal;
+}
+
+p:empty {
+display: none;
+}
+
+strong:empty {
+font-weight: normal;
+}
+
+/* notes */
+
+div.note {
+font-size: .85em;
+border: 2px solid #00B2EE;
+border-radius: 10px;
+padding: 5px 10px 5px 10px;
+margin-top: 5px;
+}
+
+/* search box */
+ form:first-of-type {
+ position: fixed;
+ top: 15px;
+ right: -20%;
+ z-index: 5;
+ }
+ 
+}
+
+@media screen and (max-width: 400px) {
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0;
+}
+
+div.sidebar {
+  margin: 10px 0 !important;
+  border: 2px solid #CD2626;
+  background-color: transparent;
+  font-size: 90%;
+  padding: 0;
+  overflow: visible;
+  height: auto;
+}
+
+div.sidebar:hover {
+overflow: visible;
+height: auto;
+}
+
+div.sidebar-title {
+background-color: #CD2626;
+background-image: url('https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/images/arrow.png');
+background-position: top left;
+background-repeat: no-repeat;
+background-size: auto 30px;
+color: #fff;
+text-align: center;
+height: 30px;
+width: 100%;
+}
+
 }
