@@ -8,16 +8,16 @@ div.sidebar {
   background-color: transparent;
   font-size: 90%;
   padding: 0;
-  overflow: clip;
+  overflow: hidden;
   height: 30px;
   transition-property: height,overflow; 
-transition-duration: 1s;
+transition-duration: 0s;
 -moz-transition-property: height,overflow; /* Firefox 4 */
--moz-transition-duration: 1s;
+-moz-transition-duration: 0s;
 -webkit-transition-property: height,overflow; /* Safari and Chrome */
--webkit-transition-duration: 1s;
+-webkit-transition-duration: 0s;
 -o-transition-property: height,overflow; /* Opera */
--o-transition-duration: 1s;
+-o-transition-duration: 0s;
 }
 
 div.sidebar:hover {
