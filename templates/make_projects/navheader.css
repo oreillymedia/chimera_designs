@@ -11,7 +11,7 @@
   page-break-inside: avoid;
 }
 
-div.navheader > table > tr:first-of-type {
+div.navheader > table > tr:first-child {
 color: #fff;
 font-size: 30px;
 }
