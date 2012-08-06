@@ -8,6 +8,21 @@ div.sidebar {
   background-color: transparent;
   font-size: 90%;
   padding: 0;
+  overflow: clip;
+  height: 30px;
+  transition-property: height,overflow; 
+transition-duration: 1s;
+-moz-transition-property: height,overflow; /* Firefox 4 */
+-moz-transition-duration: 1s;
+-webkit-transition-property: height,overflow; /* Safari and Chrome */
+-webkit-transition-duration: 1s;
+-o-transition-property: height,overflow; /* Opera */
+-o-transition-duration: 1s;
+}
+
+div.sidebar:hover {
+overflow: visible;
+height: auto;
 }
 
 div.sidebar-title {
