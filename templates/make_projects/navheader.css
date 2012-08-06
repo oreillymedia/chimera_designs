@@ -3,9 +3,12 @@
 /* header */
 
 header {
-	padding: 5px 10px;
 	text-align: center;
 	margin-bottom: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .navheader  div.table, .navheader table {
@@ -22,8 +25,8 @@ header {
 div.navheader table tr:first-child td {
 background-color: #CD2626;
 color: #fff;
-font-size: 35px;
-padding: 10px 0 10px 0;
+font-size: 20px;
+padding: 15px 0 15px 0;
 }
 
 div.navheader table tr:nth-child(2) {
