@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-div.book a {
+.chapter a {
 text-decoration: none;
 color: #00B2EE;
 }
 
-div.book p {
+.chapter p {
 line-height: 120%;
 }
 
