@@ -1,10 +1,11 @@
 == Intro
 
-These are the templates used to the social books project.  The idea is that each subdirectory contains a design that is applied to one of the social books when it is displayed. The design is specified in the Book model, which you can change in irb (or Heroku console) like this:
+These are the templates used to the social books project.  The idea is that each subdirectory contains a design that is applied to one of the social books when it is displayed. The design is specified in the Book model, which you can change in the Rails consol (or Heroku console) like this:
 
 
 ----
-$ heroku run console
+$ cd /vagrant
+$ rails console
 
 irb(main):003:0> x = Book.find(1)
   Book Load (205.9ms)  SELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 1]]
