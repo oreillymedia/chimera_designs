@@ -36,9 +36,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: -75%;
-  column-count: 2;
-  column-gap: 20px;
-  height: 350px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
 }
 
 div.titlepage { width: 400px; }
