@@ -1010,11 +1010,12 @@ height: auto;
 div.sidebar-title {
 background-color: #CD2626;
 background-image: url('https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/images/arrow.png');
-background-position: top left;
+background-position: top right;
 background-repeat: no-repeat;
 background-size: auto 30px;
 color: #fff;
 font-size: 14px;
+text-transform: uppercase;
 text-align: center;
 padding-top: 7px;
 padding-bottom: 9px;
