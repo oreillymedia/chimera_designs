@@ -23,14 +23,13 @@ div.navheader table tr:first-child td {
 background-color: #CD2626;
 color: #fff;
 font-size: 35px;
-padding: 5px 0 0 5px;
+padding: 10px 0 10px 0;
 }
 
 div.navheader table tr:nth-child(2) {
 background-color: #fff;
 color: #888;
-font-size: 11px;
-padding: 10px 0 10px 0;
+font-size: 14px;
 border-bottom: 2px solid #CD2626;
 }
 
