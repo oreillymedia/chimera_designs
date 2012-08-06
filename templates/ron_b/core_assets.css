@@ -45,8 +45,8 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   background-color: #fff;
   font-family: sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding-top: 0;
   min-width: 400px;
 }
@@ -890,8 +890,8 @@ text-align: center;
 margin-top: 0;
 margin-bottom: 40px;
 padding-top: 0;
-padding-left: 20%;
-padding-right: 20%;
+padding-left: 5%;
+padding-right: 5%;
 width: 100%;
 position: fixed;
 top: 0;
