@@ -6,15 +6,15 @@ div.sidebar {
   margin: 10px 0 !important;
   border: 2px solid #CD2626;
   background-color: transparent;
-  background-image: url('images/square.png');
-  background-position: top left;
-  background-repeat: no-repeat;
   font-size: 90%;
   padding: 10px 8px !important;
 }
 
 div.sidebar-title {
 background-color: #CD2626;
+background-image: url('images/square.png');
+background-position: top left;
+background-repeat: no-repeat;
 width: 100%;
 }
 
