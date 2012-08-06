@@ -46,6 +46,7 @@ div.navheader table tr:first-child td {
 background-color: #CD2626;
 color: #fff;
 font-size: 18px;
+text-align: left;
 padding: 7px 0 7px 0;
 margin-top: 0;
 }
