@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.navheader  div.table, .navheader table {
+  margin: 10px auto !important;
+  max-width: 95%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navheader div.table, .navheader div.informaltable {
+  page-break-inside: avoid;
+}
+
+.navheader tr {
+  border-bottom: none;
+}
+
+.navheader tr th {
+  border-bottom: none !important;
+  border-top: none !important; 
+}
+
+.navheader tr:nth-of-type(even) {
+  background-color: #8E0012;
+}
+
+.navheader th {
+  font-family: "Free Sans Bold", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.navheader td, .navheader th {
+  padding: 0.3em;
+  text-align: left;
+  vertical-align: baseline;
+  font-size: 80%;
+}
+
+.navheader hr {
+	display: none;
+}
+
+.navheader td a {
+	color: #ECCCC9;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+/* navfooter */
+
+.navfooter table a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #8E0012;
+}

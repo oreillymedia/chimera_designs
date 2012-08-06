@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+/* images  */
+
+img {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.figure {
+  margin: 10px 0 !important;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 5px !important;
+  page-break-inside: avoid;
+}
+
+div.figure p.title, div.informalfigure div.caption {
+  font-size: 90%;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Free Serif", serif;
+  color: #000;
+  padding: 5px !important;
+  page-break-before: avoid;
+  page-break-after: avoid;
+}
+
+div.informalfigure {
+  text-align: center;
+  padding: 5px 0 !important;
+}
