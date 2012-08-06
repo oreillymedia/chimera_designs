@@ -38,6 +38,10 @@ body {
   background-position: -75%;
 }
 
+div.navheader { display: none; }
+
+#id393895 { display: none; }
+
 div.toc-title {
   text-transform: uppercase;
   font-family: Verdana, sans-serif;
@@ -634,7 +638,7 @@ div.tip h3, div.note h3, div.warning h3, div.caution h3, div.important h3 {
 /* tables */
 
 div.table, table {
-  margin: 10px auto !important;
+  margin: 10px 0;
   max-width: 95%;
   border-collapse: collapse;
   border-spacing: 0;
