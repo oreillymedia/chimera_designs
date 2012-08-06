@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/admon.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/code.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/links.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/sidebars.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/toc.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/figures.css";	
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/lists.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/tables.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/headers.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/text.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/title.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/navheader.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/admon.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/code.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/links.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/sidebars.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/toc.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/figures.css";	
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/lists.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/tables.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/headers.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/text.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/title.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/navheader.css";
 
 /* box model reset */
 
