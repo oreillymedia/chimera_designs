@@ -31,14 +31,21 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   font-family: "Georgia", serif;
   margin-left: 20px;
-  margin-right: 400px;
+  margin-right: 100px;
   background-image: url(rhino.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: -75%;
 }
 
-div.navheader { display: none; }
+div.titlepage { width: 400px; }
+
+div.toc { 
+  float: right;
+  width: 200px;
+}
+
+div.navheader, hr { display: none; }
 
 #id393895 { display: none; }
 
@@ -326,11 +333,11 @@ div.book div.titlepage h1.title {
   font-family: "Free Sans Bold", sans-serif;
   margin: 50px 0 10px 0 !important;
   line-height: 1;
-  text-align: center;
+  text-align: left;
 }
 
 div.book div.titlepage h2.subtitle {
-  text-align: center;
+  text-align: left;
   color: #000;
   margin: 0 !important;
   font-style: italic;
@@ -343,24 +350,24 @@ div.book div.titlepage div.author h3 {
   font-family: "Free Sans Bold", sans-serif;
   color: #8e0012;
   margin: 50px 0 !important;
-  text-align: center;
+  text-align: left;
 }
 
 div.book div.titlepage div.publishername {
   margin-top: 60%;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   font-size: 1.25em;
 }
 
 div.book div.titlepage div.locations p {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 div.book div.titlepage div.locations p.cities {
   font-size: 80%;
-  text-align: center;
+  text-align: left;
 }
 
 div.preface[title="Dedication"] > div.titlepage h1.title { 
