@@ -58,15 +58,11 @@ border-bottom: 2px solid #CD2626;
 }
 
 .navheader tr {
+  border-top: none;
   border-bottom: none;
 }
 
-.navheader tr th {
-  border-bottom: none !important;
-  border-top: none !important; 
-}
-
-.navheader tr:nth-of-type(even) {
+/*.navheader tr:nth-of-type(even) {
   background-color: #8E0012;
 }
 
@@ -91,7 +87,7 @@ border-bottom: 2px solid #CD2626;
 	color: #ECCCC9;
 	font-size: 1.3em;
 	text-decoration: none;
-}
+}*/
 
 /* navfooter */
 
