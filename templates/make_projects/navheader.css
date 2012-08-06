@@ -9,13 +9,16 @@ header {
 	padding-top: 0;
 	padding-left: 275px;
 	padding-right: 275px;
+	margin-top: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 
-div.navheader {
+div.navheader table {
+padding-top: 0;
+margin-top: 0;
 }
 
 .navheader  div.table, .navheader table {

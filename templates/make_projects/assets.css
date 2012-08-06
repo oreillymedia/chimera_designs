@@ -57,6 +57,7 @@ body {
   font-family: sans-serif;
   margin-left: 275px;
   margin-right: 275px;
+  padding-top: 0;
 }
 
 #toc {
