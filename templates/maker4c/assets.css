@@ -45,9 +45,10 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   background-color: #fff;
   font-family: sans-serif;
-  margin-left: 275px;
-  margin-right: 275px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-top: 0;
+  min-width: 400px;
 }
 
 #toc {
