@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* code */
+
+pre {
+  white-space: pre-wrap;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 10px 0 10px 20px;
+  font-size: 85%;
+  display: block;
+  -webkit-hyphens: none;
+  hyphens: none;
+  adobe-hyphenate: none;
+}
+
+code {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+code strong em, code em strong, pre em strong, pre strong em,
+strong code em code, em code strong code, span.bolditalic code { /* yes, all of these variations are needed */
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Ubuntu Mono BoldItal", monospace;
+}
+
+code em, em code, pre em, em.replaceable {
+  font-family: "Ubuntu Mono Ital", monospace;
+  font-style: italic;
+}
+
+code strong, strong code, pre strong, strong.userinput {
+  font-family: "Ubuntu Mono Bold", monospace;
+  font-weight: bold;
+}
+
+div.example {
+  margin: 10px 0 15px 0 !important;
+}
+
+div.example p.title {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Free Serif", serif;
+  margin: 10px 0 5px 0 !important;
+}
+
+li pre.example {
+  padding: 10px 0 !important;
+}
+
+div.example-contents pre.programlisting, div.example-contents pre.screen { margin: 0; }

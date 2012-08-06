@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* inlines; code and monospace in the code section below */
+
+span.bolditalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+strong, span.bold {
+  font-weight: bold;
+  font-family: serif;
+}
+
+a.ulink, a.xref, a.email {
+  text-decoration: none;
+  color: #8e0012;
+}
+
+sup {  /* bug in webkit? */
+  font-size: x-small;
+  vertical-align: super;
+} 
+
+sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+span.lineannotation {
+  font-style: italic;
+  color: red;
+  font-family: serif;
+}
+
+span.underline { text-decoration: underline; }
+
+span.strikethrough { text-decoration: line-through; }
+
+span.smallcaps { font-variant: small-caps; }
+
+span.cursor { background: #000; color: #FFF; } /* for Learning GNU Emacs, 3e */
+
+/* added for special formatting in Regular Expressions Cookbook, 1e (9780596802783.EBOOK) */
+
+.boxedtext, .keycap {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  padding: 1px;
+}
+
+span.gray50 {
+  color: #7F7F7F; /* 50 % gray */
+}
+
+/* added for special formatting in Bioinformatics Programming Using Python, 1e (9781449378677.EBOOK) */
+
+.gray-background, .reverse-video {
+  background: #2E2E2E;
+  color: #FFF;
+}
+
+/* added for special formatting in Working with Microsoft Visual Studio 2005, 1e (9780735649958.EBOOK) */
+
+.light-gray-background {
+  background: #A0A0A0;
+}
