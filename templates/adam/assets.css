@@ -41,8 +41,9 @@ body {
 div.titlepage { width: 400px; }
 
 div.toc { 
-  margin-right: 100px;
+  margin-left: 100px;
   width: 300px;
+  float: none;
 }
 
 div.book div.titlepage h1.title:hover {
