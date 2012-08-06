@@ -2,7 +2,12 @@
 
 @import "core_assets.css";
 
-body, header {
-	margin-left: 5%;
-	margin-right: 5%;
+body,  {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+header {
+	margin-left: 0%;
+	margin-right: 0%;
 }
