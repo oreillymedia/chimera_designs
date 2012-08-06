@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+div.book a {
+text-decoration: none;
+color: #00B2EE;
+}
+
+div.book p {
+line-height: 120%;
+}
+
 /* inlines; code and monospace in the code section below */
 
 span.bolditalic {
