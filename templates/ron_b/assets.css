@@ -37,7 +37,3 @@ h4 {
 	color: #555;
 	margin: 9px 0 !important;
 }
-
-#search-form, header, hr {
-	visibility: hidden;
-}
