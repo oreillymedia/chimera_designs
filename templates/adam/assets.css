@@ -40,9 +40,12 @@ body {
 
 div.titlepage { width: 400px; }
 
-div.toc { float: right; }
+div.toc { 
+  float: right;
+  width: 200px;
+}
 
-div.navheader { display: none; }
+div.navheader, hr { display: none; }
 
 #id393895 { display: none; }
 
