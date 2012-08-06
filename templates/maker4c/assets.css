@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/admon.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/code.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/links.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/sidebars.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/toc.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/figures.css";	
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/lists.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/tables.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/headers.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/text.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/title.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/maker4c/navheader.css";
 
 /* box model reset */
 
@@ -37,6 +25,8 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent; }
 
 /* end reset */
+
+@media screen and (min-width: 400px) {
 
 .comment {
 	-webkit-border-radius: 10px;
@@ -1273,4 +1263,36 @@ border: 2px solid #00B2EE;
 border-radius: 10px;
 padding: 5px 10px 5px 10px;
 margin-top: 5px;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+div.sidebar {
+  margin: 10px 0 !important;
+  border: 2px solid #CD2626;
+  background-color: transparent;
+  font-size: 90%;
+  padding: 0;
+  overflow: visible;
+  height: auto;
+}
+
+div.sidebar:hover {
+overflow: visible;
+height: auto;
+}
+
+div.sidebar-title {
+background-color: #CD2626;
+background-image: url('images/arrow.png');
+background-position: top left;
+background-repeat: no-repeat;
+background-size: auto 30px;
+color: #fff;
+text-align: center;
+height: 30px;
+width: 100%;
+}
+
 }
