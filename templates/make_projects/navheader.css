@@ -11,6 +11,11 @@
   page-break-inside: avoid;
 }
 
+.navheader table tr:first-of-type {
+color: #fff;
+font-size: 30px;
+}
+
 .navheader tr {
   border-bottom: none;
 }
