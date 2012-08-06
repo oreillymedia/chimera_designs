@@ -70,11 +70,6 @@ span.gray50 {
 
 /* steps */
 
-ol.orderedlist:first-of-type:before {
-content: url('images/steps.png');
-height: 50px;
-}
-
 ol.orderedlist:first-of-type {
 margin-top: 50px;
 padding-top: 15px;
