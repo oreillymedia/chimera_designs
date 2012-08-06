@@ -35,7 +35,7 @@ body {
   background-image: url(rhino.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 25%;
+  background-position: -75%;
 }
 
 div.toc-title {
