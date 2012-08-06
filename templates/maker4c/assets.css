@@ -664,6 +664,7 @@ div.example-title {
 font-size: .9em;
 font-style: italic;
 border-bottom: 2px solid #CD2626;
+margin-bottom: 5px;
 }
 
 div.example {
