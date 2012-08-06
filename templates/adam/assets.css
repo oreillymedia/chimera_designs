@@ -31,12 +31,16 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 body {
   font-family: "Georgia", serif;
   margin-left: 20px;
-  margin-right: 400px;
+  margin-right: 100px;
   background-image: url(rhino.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: -75%;
 }
+
+div.titlpage { width: 400px; }
+
+div.toc { float: right; }
 
 div.navheader { display: none; }
 
