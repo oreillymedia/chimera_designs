@@ -10,7 +10,6 @@ header {
 	padding-top: 0;
 	padding-left: 275px;
 	padding-right: 275px;
-	margin-top: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -36,6 +35,11 @@ margin-top: 0;
 
 .navheader div.table, .navheader div.informaltable {
   page-break-inside: avoid;
+}
+
+div.navheader table tr:first-child {
+margin-top: 0;
+padding-top: 0;
 }
 
 div.navheader table tr:first-child td {
