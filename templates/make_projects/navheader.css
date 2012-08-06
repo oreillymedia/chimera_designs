@@ -17,6 +17,11 @@ header {
 	left: 0;
 }
 
+div.navheader {
+padding-top: 0;
+margin-top: 0;
+}
+
 div.navheader table {
 padding-top: 0;
 margin-top: 0;
@@ -36,7 +41,7 @@ margin-top: 0;
 div.navheader table tr:first-child td {
 background-color: #CD2626;
 color: #fff;
-font-size: 15px;
+font-size: 18px;
 padding: 7px 0 7px 0;
 }
 
