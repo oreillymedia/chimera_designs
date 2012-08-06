@@ -36,8 +36,8 @@ margin-top: 0;
 div.navheader table tr:first-child td {
 background-color: #CD2626;
 color: #fff;
-font-size: 20px;
-padding: 15px 0 15px 0;
+font-size: 15px;
+padding: 7px 0 7px 0;
 }
 
 div.navheader table tr:nth-child(2) {
