@@ -99,7 +99,7 @@ border-bottom: 2px solid #CD2626;
 }
 
 .navfooter tr:nth-child(1) {
-    border-bottom: 2px solid #CD2626;
+    border-top: 2px solid #CD2626;
 }
 
 .navfooter tr:nth-child(2) {
