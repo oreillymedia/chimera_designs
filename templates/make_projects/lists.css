@@ -49,13 +49,6 @@ ul ul ul {
   padding-left: 30px ;
 }
 
-.siderbar ol, .siderbar ul {
-  margin-top: 8px ;
-  margin-bottom: 8px ;
-  margin-left: 20px ;
-  padding-left: 25px ;
-}
-
 div.orderedlistalpha {
   list-style-type: upper-alpha;
 }
@@ -164,4 +157,11 @@ margin: 0 0 0 0;
 
 div.itemizedlist ul li p {
 font-weight: normal;
+}
+
+.siderbar ol, .siderbar ul {
+  margin-top: 8px ;
+  margin-bottom: 8px ;
+  margin-left: 20px ;
+  padding-left: 25px ;
 }
