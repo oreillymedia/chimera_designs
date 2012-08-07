@@ -93,7 +93,17 @@ border-bottom: 2px solid #CD2626;
 /* navfooter */
 
 .navfooter table a {
-	font-size: 1.2em;
 	text-decoration: none;
-	color: #8E0012;
+	color: #888;
+}
+
+.navfooter tr:nth-child(1) {
+    border-bottom: 2px solid #CD2626;
+}
+
+.navfooter tr:nth-child(2) {
+    background-color: #CD2626;
+    color: white;
+    font-size: 18px;
+    text-align: left;
 }
