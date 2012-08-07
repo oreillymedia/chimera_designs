@@ -44,6 +44,7 @@ div.titlepage { width: 400px; }
 
 div.toc { 
   margin-left: 0;
+  -webkit-margin-before: 0;
   -webkit-column-break-before: always;
 }
 
@@ -154,7 +155,7 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
   font-family: "Free Sans Bold", sans-serif;
-  margin-top: 20px !important;
+  margin-top: 20px;
 }
 
 h2 { 
@@ -162,14 +163,14 @@ h2 {
   font-weight: bold;
   font-family: "Free Sans Bold", sans-serif;
   color: #8e0012;
-  margin: 15px 0 8px 0 !important;
+  margin: 15px 0 8px 0;
 }
 
 h3 {
   font-size: 1.1em;
   font-weight: bold;
   font-family: "Free Sans Bold", sans-serif;
-  margin: 10px 0 8px 0 !important;
+  margin: 10px 0 8px 0;
 }
 
 h4 {
@@ -177,7 +178,7 @@ h4 {
   font-weight: 1em;
   font-family: "Free Sans Bold", sans-serif;
   color: #555;
-  margin: 9px 0 !important;
+  margin: 9px 0;
 }
 
 /* Appropriate heading hyphenation suppression for different ereaders */
@@ -204,13 +205,13 @@ img {
 }
 
 div.figure {
-  margin: 10px 0 !important;
+  margin: 10px 0;
   text-align: center;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #000;
   background-color: transparent;
-  padding: 5px !important;
+  padding: 5px;
   page-break-inside: avoid;
 }
 
@@ -221,26 +222,26 @@ div.figure p.title, div.informalfigure div.caption {
   font-style: italic;
   font-family: "Free Serif", serif;
   color: #000;
-  padding: 5px !important;
+  padding: 5px;
   page-break-before: avoid;
   page-break-after: avoid;
 }
 
 div.informalfigure {
   text-align: center;
-  padding: 5px 0 !important;
+  padding: 5px 0;
 }
 
 /* sidebars */
 
 div.sidebar {
-  margin: 10px 0 !important;
+  margin: 10px 0;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #000;
   background-color: transparent;
   font-size: 90%;
-  padding: 10px 8px !important;
+  padding: 10px 8px;
   page-break-inside: avoid;
 }
 
@@ -250,7 +251,7 @@ div.sidebar p.title {
   text-transform:uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin: 4px 0 6px 0 !important;
+  margin: 4px 0 6px 0;
   page-break-inside: avoid;
 }
 
@@ -260,9 +261,9 @@ div.sidebar ol {
 
 div.sidebar div.tip, div.sidebar div.note, div.sidebar div.warning,
 div.sidebar div.caution, div.sidebar div.important {
-  margin: 10px 12.5% !important;
+  margin: 10px 12.5%;
   font-size: 90%;
-  padding: 10px 5px !important;
+  padding: 10px 5px;
   width: 75%;
 }
 
@@ -315,18 +316,18 @@ code strong, strong code, pre strong, strong.userinput {
 }
 
 div.example {
-  margin: 10px 0 15px 0 !important;
+  margin: 10px 0 15px 0;
 }
 
 div.example p.title {
   font-style: italic;
   font-weight: normal;
   font-family: "Free Serif", serif;
-  margin: 10px 0 5px 0 !important;
+  margin: 10px 0 5px 0;
 }
 
 li pre.example {
-  padding: 10px 0 !important;
+  padding: 10px 0;
 }
 
 div.example-contents pre.programlisting, div.example-contents pre.screen { margin: 0; }
@@ -346,7 +347,7 @@ div.book div.titlepage h1.title {
 div.book div.titlepage h2.subtitle {
   text-align: left;
   color: #000;
-  margin: 0 !important;
+  margin: 0;
   font-style: italic;
   font-family: serif;
   font-size: 1.5em;
@@ -356,7 +357,7 @@ div.book div.titlepage div.author h3 {
   font-size: 2em;
   font-family: "Free Sans Bold", sans-serif;
   color: #8e0012;
-  margin: 50px 0 !important;
+  margin: 50px 0;
   text-align: left;
 }
 
@@ -392,13 +393,13 @@ div.preface[title="Dedication"] p {
 
 div.colophon h1.title {
   font-size: 1.3em;
-  margin: 0 !important;
+  margin: 0;
   font-family: "Free serif", serif;
   font-weight: normal;
 }
 
 div.colophon h2.subtitle {
-  margin: 0 !important;
+  margin: 0;
   color: #000;
   font-family: "Free serif", serif;
   font-size: 1em;
@@ -408,21 +409,21 @@ div.colophon h2.subtitle {
 div.colophon div.author h3.author {
   font-size: 1.1em;
   font-family: "Free serif", serif;
-  margin: 10px 0 0 !important;
+  margin: 10px 0 0;
   font-weight: normal;
 }
 
 div.colophon div.editor h4, div.colophon div.editor h3.editor {
   color: #000;
   font-size: 0.8em;
-  margin: 15px 0 0 !important;
+  margin: 15px 0 0;
   font-family: "Free serif", serif;
   font-weight: normal;
 }
 
 div.colophon div.editor h3.editor {
   font-size: 0.8em;
-  margin: 0 !important;
+  margin: 0;
   font-family: "Free serif", serif;
   font-weight: normal;
 }
@@ -447,7 +448,7 @@ div.timestamp p {
 
 div.colophon[title="About the Author"] h1.title, div.colophon[title="Colophon"] h1.title {
   font-size: 1.5em;
-  margin: 0 !important;
+  margin: 0;
   font-family: "Free Sans", sans-serif;
   font-weight: bold;
 }
@@ -455,19 +456,19 @@ div.colophon[title="About the Author"] h1.title, div.colophon[title="Colophon"] 
 /* epigraphs, blockquotes, attributions */
 
 div.attribution {
-  margin: 5px 0 0 50px !important;
+  margin: 5px 0 0 50px;
 }
 
 h3.author span.orgname { display: none } /* to work around bug */
 
 div.epigraph {
-  margin: 10px 0 10px 20px !important;
+  margin: 10px 0 10px 20px;
   page-break-inside: avoid;
   font-size: 90%;
 }
 
 blockquote, div.blockquote {
-  margin: 10px 0 10px 5px !important;
+  margin: 10px 0 10px 5px;
   page-break-inside: avoid;
   font-size: 95%;
 }
@@ -478,7 +479,7 @@ blockquote p, div.blockquote p {
 }
 
 blockquote div.attribution {  
-  margin: 5px 0 0 30px !important;
+  margin: 5px 0 0 30px;
   text-align: right;
   width: 80%;
 }
@@ -498,45 +499,45 @@ div.footnote {
 div.refnamediv h2, div.refnamediv h3, div.refsynopsisdiv h2 {
   font-size: 1.1em;
   color: #000;
-  margin-top: 15px !important;
-  margin-bottom: 0px !important;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 div.refentry div.refsect1 h2 {
   font-size: 1.1em;
   color: #000;
-  margin-top: 15px !important;
-  margin-bottom: 0px !important;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
   
 div.refsect2 h3 {
   font-size: 1em;
   color: #000;
-  margin-top: 10px !important;
-  margin-bottom: 0 !important;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 div.refnamediv p {
-  margin-left: 15px !important;
+  margin-left: 15px;
 }
 
 /* lists */
 
 dt {
-  padding-top: 10px !important;
-  padding-bottom: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 dd {
-  margin-left: 1.5em !important;
+  margin-left: 1.5em;
 }
 
 ol {
   list-style-type: decimal;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 20px !important;
-  padding-left: 25px !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  padding-left: 25px;
 }
 
 ol ol {
@@ -549,16 +550,16 @@ ol ol ol {
 
 ul { 
   list-style-type: square;
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  margin-left: 5px !important;
-  padding-left: 20px !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+  padding-left: 20px;
 }
 
 ul ul { 
   list-style-type: none;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 ul ul li p:before { 
@@ -571,8 +572,8 @@ ul ul ul li p:before {
 
 ul ul ul { 
   list-style-type: square;
-  margin-left: 20px !important;
-  padding-left: 30px !important;
+  margin-left: 20px;
+  padding-left: 30px;
 }
 
 div.orderedlistalpha {
@@ -580,7 +581,7 @@ div.orderedlistalpha {
 }
 
 table.simplelist {
-  margin-left: 20px !important;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
@@ -598,11 +599,11 @@ table.simplelist tr:nth-of-type(even) {
 }
 
 div.calloutlist p:first-child {
- margin-top: -25px !important;
+ margin-top: -25px;
 }
 
 div.calloutlist dd {
-  padding-left: 40px !important;
+  padding-left: 40px;
 }
 
 div.calloutlist img {
@@ -616,11 +617,11 @@ a.co img {
 /* admonitions */
  
 div.tip, div.note, div.warning, div.caution, div.important {
-  margin: 10px 0 !important;
+  margin: 10px 0;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-size: 90%;
-  padding: 10px 8px 20px 8px !important;
+  padding: 10px 8px 20px 8px;
   page-break-inside: avoid;
 }
 
@@ -645,7 +646,7 @@ div.tip h3, div.note h3, div.warning h3, div.caution h3, div.important h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin: 4px 0 6px !important;
+  margin: 4px 0 6px;
   color: #000;
 }
 
@@ -667,8 +668,8 @@ tr {
 }
 
 tr th {
-  border-bottom: #9d9d9d 2px solid !important;
-  border-top: #9d9d9d 2px solid !important; 
+  border-bottom: #9d9d9d 2px solid;
+  border-top: #9d9d9d 2px solid; 
 }
 
 tr:nth-of-type(even) {
@@ -689,7 +690,7 @@ td, th {
 }
 
 div.informaltable table {
-  margin: 10px auto !important;
+  margin: 10px auto;
 }
 
 div.informaltable table tr {
@@ -708,7 +709,7 @@ div.table p.title {
   font-weight: normal;
   font-style: italic;
   font-family: "Free Serif", serif;
-  margin: 20px 0 0 0 !important;
+  margin: 20px 0 0 0;
   text-align: center;
   padding: 0;
 }
