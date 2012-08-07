@@ -46,9 +46,10 @@ div.toc {
   margin-left: 100px;
   width: 300px;
   -webkit-column-break-before: always;
-  list-style-type: none;
 }
 
+div.toc ul { list-style-type: none; }
+  
 div.navheader, hr, form { display: none; }
 
 #id393895 { display: none; }
