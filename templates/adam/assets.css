@@ -46,7 +46,7 @@ div.toc {
   margin-left: 0;
   -webkit-margin-before: 0;
   -webkit-column-break-before: always;
-  transition: height 2s;
+  -webkit-transition: height 2s;
   height: 1.2em;
 }
 
