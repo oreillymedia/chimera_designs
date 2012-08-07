@@ -46,6 +46,7 @@ div.toc {
   margin-left: 100px;
   width: 300px;
   -webkit-column-break-before: always;
+  list-style-type: none;
 }
 
 div.navheader, hr, form { display: none; }
