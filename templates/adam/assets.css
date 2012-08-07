@@ -43,12 +43,14 @@ body {
 div.titlepage { width: 400px; }
 
 div.toc { 
-  margin-left: 100px;
-  width: 300px;
+  margin-left: 0;
   -webkit-column-break-before: always;
 }
 
-div.toc ul { list-style-type: none; }
+div.toc ul { 
+  list-style-type: none;
+  margin-left: 0;
+}
   
 div.navheader, hr, form { display: none; }
 
