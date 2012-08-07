@@ -49,7 +49,7 @@ div.toc {
 }
 
 footer {
-  -webkit-column-sspan: all;
+  -webkit-column-span: all;
 }
 
 div.toc ul { 
