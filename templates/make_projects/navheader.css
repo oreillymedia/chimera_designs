@@ -92,9 +92,15 @@ border-bottom: 2px solid #CD2626;
 
 /* navfooter */
 
-.navfooter table a, .navfooter tr:nth-child(1) a {
+.navfooter table a {
 	text-decoration: none;
 	color: #888;
+        font-size: 14px;
+}
+
+ .navfooter tr:nth-child(1) a {
+	text-decoration: none;
+	color: #fff;
 	margin: 0 3px;
 }
 
