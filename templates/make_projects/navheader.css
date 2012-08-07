@@ -109,3 +109,7 @@ border-bottom: 2px solid #CD2626;
     text-align: left;
     padding: 7px 0;
 }
+
+.navfooter td {
+    padding: 0 3px;	
+}
