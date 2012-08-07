@@ -44,7 +44,6 @@ div.titlepage { width: 400px; }
 
 div.toc { 
   margin-left: 0;
-  padding-left: 0;
   -webkit-margin-before: 0;
   -webkit-column-break-before: always;
 }
@@ -52,8 +51,14 @@ div.toc {
 div.toc ul { 
   list-style-type: none;
   margin-left: 0;
+  padding-left: 0;
 }
-  
+
+div.toc ul a {
+  text-decoration: none;
+  color: #C4C4C4;
+}
+
 div.navheader, hr, form { display: none; }
 
 #id393895 { display: none; }
