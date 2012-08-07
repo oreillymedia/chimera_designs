@@ -48,7 +48,7 @@ div.toc {
   -webkit-column-break-before: always;
 }
 
-div.navheader, hr { display: none; }
+div.navheader, hr, form { display: none; }
 
 #id393895 { display: none; }
 
