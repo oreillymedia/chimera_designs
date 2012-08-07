@@ -44,6 +44,7 @@ div.titlepage { width: 400px; }
 
 div.toc { 
   margin-left: 0;
+  padding-left: 0;
   -webkit-margin-before: 0;
   -webkit-column-break-before: always;
 }
