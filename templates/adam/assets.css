@@ -46,10 +46,11 @@ div.toc {
   margin-left: 0;
   -webkit-margin-before: 0;
   -webkit-column-break-before: always;
-  height: 30px;
 }
 
-div.toc:hover { height: auto; }
+footer {
+  -webkit-column-sspan: all;
+}
 
 div.toc ul { 
   list-style-type: none;
