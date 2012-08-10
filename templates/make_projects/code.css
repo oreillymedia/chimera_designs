@@ -34,16 +34,22 @@ code strong, strong code, pre strong, strong.userinput {
   font-weight: bold;
 }
 
+div.example-title {
+font-size: .9em;
+font-style: italic;
+border-bottom: 2px solid #CD2626;
+}
+
 div.example {
   margin: 10px 0 15px 0 !important;
 }
 
-div.example p.title {
+/*div.example p.title {
   font-style: italic;
   font-weight: normal;
   font-family: "Free Serif", serif;
   margin: 10px 0 5px 0 !important;
-}
+}*/
 
 li pre.example {
   padding: 10px 0 !important;

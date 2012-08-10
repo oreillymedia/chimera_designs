@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+/* header */
+
+header {
+	background-color: #fff;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 40px;
+	padding-top: 0;
+	padding-left: 16%;
+	padding-right: 16%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+div.navheader {
+padding-top: 0;
+margin-top: 0;
+}
+
+div.navheader table {
+padding-top: 0;
+margin-top: 0;
+}
+
 .navheader  div.table, .navheader table {
   margin: 10px auto !important;
   max-width: 95%;
@@ -11,21 +37,42 @@
   page-break-inside: avoid;
 }
 
-div.navheader > table > tr:first-child > td {
+div.navheader table tr:first-child {
+margin-top: 0;
+padding-top: 0;
+}
+
+div.navheader table tr:first-child td {
+background-color: #CD2626;
 color: #fff;
-font-size: 30px;
+font-size: 18px;
+text-align: left;
+padding: 7px 0 7px 0;
+margin-top: 0;
+}
+
+div.navheader table tr:nth-child(2) {
+background-color: #fff;
+color: #888;
+font-size: 14px;
+border-bottom: 2px solid #CD2626;
 }
 
 .navheader tr {
+  border-top: none;
   border-bottom: none;
 }
 
-.navheader tr th {
-  border-bottom: none !important;
-  border-top: none !important; 
+.navheader hr {
+	display: none;
 }
 
-.navheader tr:nth-of-type(even) {
+.navheader td a {
+	color: #888;
+	text-decoration: none;
+}
+
+/*.navheader tr:nth-of-type(even) {
   background-color: #8E0012;
 }
 
@@ -41,21 +88,33 @@ font-size: 30px;
   vertical-align: baseline;
   font-size: 80%;
 }
-
-.navheader hr {
-	display: none;
-}
-
-.navheader td a {
-	color: #ECCCC9;
-	font-size: 1.3em;
-	text-decoration: none;
-}
+*/
 
 /* navfooter */
 
 .navfooter table a {
-	font-size: 1.2em;
 	text-decoration: none;
-	color: #8E0012;
+	color: #888;
+        font-size: 14px;
+}
+
+.navfooter tr:nth-child(2) a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 3px;
+	font-size: 18px;
+}
+
+.navfooter tr:nth-child(1) {
+    border-top: 2px solid #CD2626;
+}
+
+.navfooter tr:nth-child(2) {
+    background-color: #CD2626;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}    
+.navfooter tr:nth-child(2) td {    
+    padding: 7px 3px;
 }

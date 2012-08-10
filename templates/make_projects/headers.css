@@ -39,8 +39,8 @@ h4 {
 }
 
 hr {
-	color: #9C9C9C;
-	background-color: #9C9C9C;
+	color: #00B2EE;
+	background-color: #00B2EE;
 	height: 2px;
 	margin: 20px 0px;
 	border: none;
@@ -54,7 +54,11 @@ div.appendix > div.titlepage:first-child h1.title { /* larger chapter title */
   margin-bottom: 15px;
 }
 
+section.chapter {
+margin-top: 80px;
+}
+
 section.chapter div.titlepage h1.title {
-color: #fff;
+color: #000;
 font-size: 30px;
 }

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "core_assets.css";
+
+body,  {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+header {
+	margin-left: 0%;
+	margin-right: 0%;
+}
