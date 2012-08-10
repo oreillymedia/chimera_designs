@@ -9,6 +9,11 @@ body {
 	color: #191919;
 }
 
+header {
+	height: 0px;
+	overflow: hidden;
+}
+
 /* Fonts
 ------------------------------------------------ */
 
