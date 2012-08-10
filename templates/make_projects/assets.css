@@ -534,7 +534,7 @@ ul#search_results li:nth-of-type(even) {
 }
 
 img { 
-  float: left;
+  /* float: left; */
   margin: 0 10px 5px 0;
   border-top: white solid 3px;
   border-bottom: white solid 3px;
