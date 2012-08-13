@@ -353,6 +353,16 @@ form#new_comment input[type="submit"] {
 	margin-top: 10px;
 }
 
+#comment-form textarea {
+	width: 535px;
+	resize: none;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border: 1px dashed #CCC;
+	padding: 10px;
+}
+
 /* Processing JS Live Coding
 ------------------------------------------------ */
 
