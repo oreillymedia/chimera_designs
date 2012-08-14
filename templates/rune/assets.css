@@ -203,6 +203,13 @@ img {
 	line-height: 20px;
 }
 
+/* Graphs
+------------------------------------------------ */
+
+div.graph {
+	overflow-x: scroll;
+}
+
 /* Lists
 ------------------------------------------------ */
 
@@ -218,11 +225,11 @@ ol li, ul li {
 }
 
 ol {
-	list-style: disc;
+	list-style: decimal;
 }
 
 ul {
-	list-style: decimal;
+	list-style: disc;
 }
 
 ol ol, ul ul {
@@ -236,6 +243,10 @@ div.variablelist dt {
 
 div.variablelist dd {
 	margin-bottom: 6px;
+}
+
+dt code.literal {
+	font-style: normal;
 }
 
 /* Pre
