@@ -242,6 +242,7 @@ pre {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	margin-bottom: 20px;
+	overflow-x: scroll;
 }
 
 /* Basic Boxes
