@@ -245,6 +245,13 @@ pre {
 	overflow-x: scroll;
 }
 
+/* Example Titles
+------------------------------------------------ */
+
+div.example-title {
+	font-style: italic;
+}
+
 /* Basic Boxes
 ------------------------------------------------ */
 
@@ -296,6 +303,36 @@ pre {
 ------------------------------------------------ */
 
 .sidebar .sidebar-title {
+	margin-bottom: 10px;
+}
+
+/* Tables
+------------------------------------------------ */
+
+div.table table thead tr {
+	border-bottom: 2px solid #D8D8D8;
+}
+
+div.table table tbody tr {
+	border-bottom: 1px solid #D8D8D8;
+}
+
+div.table table tr p {
+	padding: 4px;
+	margin: 0;
+}
+
+div.table table tbody tr:nth-of-type(even) {
+	background-color: #f0f0f0;
+}
+
+div.table table thead td {
+	padding: 4px;
+	margin: 0;
+}
+
+div.table-title {
+	font-style: italic;
 	margin-bottom: 10px;
 }
 
