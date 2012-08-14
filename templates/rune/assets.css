@@ -238,6 +238,10 @@ div.variablelist dd {
 	margin-bottom: 6px;
 }
 
+dt code.literal {
+	font-style: normal;
+}
+
 /* Pre
 ------------------------------------------------ */
 
