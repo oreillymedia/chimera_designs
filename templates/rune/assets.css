@@ -218,11 +218,11 @@ ol li, ul li {
 }
 
 ol {
-	list-style: disc;
+	list-style: decimal;
 }
 
 ul {
-	list-style: decimal;
+	list-style: disc;
 }
 
 ol ol, ul ul {
