@@ -67,7 +67,7 @@ header hr {
 
 header table a {
 	position: fixed;
-	top: 10px;
+	top: 50px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
@@ -87,14 +87,6 @@ header table a[accesskey="n"] {
 	right: 10px;
 }
 
-/* Search
------------------------------------------------- */
-
-/* Hide search for now */
-
-#search-form {
-	display: none;
-}
 
 /* Main Sections
 ------------------------------------------------ */
@@ -382,24 +374,12 @@ footer {
 /* Comments
 ------------------------------------------------ */
 
-form#new_comment {
+.comments {
 	margin: 0 auto;
 	width: 600px;
 	padding: 0px 80px 20px 80px;
 	border-right: 1px dashed #D8D8D8;
 	border-left: 1px dashed #D8D8D8;
-}
-
-form#new_comment textarea {
-	width: 100%;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	border: 1px dashed #BFBFBF;
-	padding: 10px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	height: 150px;
 }
 
 form#new_comment input[type="submit"] {
@@ -413,6 +393,16 @@ form#new_comment input[type="submit"] {
 	font-family: Verdana;
 	font-size: 11px;
 	margin-top: 10px;
+}
+
+#comment-form textarea {
+	width: 535px;
+	resize: none;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border: 1px dashed #CCC;
+	padding: 10px;
 }
 
 /* Processing JS Live Coding
