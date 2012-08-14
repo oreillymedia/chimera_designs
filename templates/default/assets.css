@@ -312,6 +312,7 @@ pre {
   -webkit-hyphens: none;
   hyphens: none;
   adobe-hyphenate: none;
+  overflow-x: scroll;
 }
 
 code {
