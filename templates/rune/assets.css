@@ -67,7 +67,7 @@ header hr {
 
 header table a {
 	position: fixed;
-	top: 10px;
+	top: 50px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
