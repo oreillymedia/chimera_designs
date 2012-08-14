@@ -157,8 +157,16 @@ section, .book .titlepage, .book .toc {
 	margin-top: 40px;
 }
 
+div.blockquote {
+	margin: 0 50px 0 50px;
+}
+
 .blockquote tr td:first-child {
 	display: none;
+}
+
+table.blockquote tr:last-of-type {
+	text-align: right;
 }
 
 .blockquote p {
@@ -167,11 +175,6 @@ section, .book .titlepage, .book .toc {
 }
 
 .blockquote .attribution {
-	display: block;
-	text-align: left;
-	font-family: "heading", Georgia, sans-serif;
-	font-size: 14px;
-	line-height: 20px;
 }
 
 /* Images
@@ -224,6 +227,15 @@ ul {
 
 ol ol, ul ul {
 	margin-top: 10px;
+}
+
+div.variablelist dt {
+	font-style: italic;
+	margin-bottom: 2px;
+}
+
+div.variablelist dd {
+	margin-bottom: 6px;
 }
 
 /* Pre
