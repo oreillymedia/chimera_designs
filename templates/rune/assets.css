@@ -157,8 +157,16 @@ section, .book .titlepage, .book .toc {
 	margin-top: 40px;
 }
 
+div.blockquote {
+	margin: 0 50px 0 50px;
+}
+
 .blockquote tr td:first-child {
 	display: none;
+}
+
+table.blockquote tr:last-of-type {
+	text-align: right;
 }
 
 .blockquote p {
@@ -167,11 +175,6 @@ section, .book .titlepage, .book .toc {
 }
 
 .blockquote .attribution {
-	display: block;
-	text-align: left;
-	font-family: "heading", Georgia, sans-serif;
-	font-size: 14px;
-	line-height: 20px;
 }
 
 /* Images
@@ -226,6 +229,15 @@ ol ol, ul ul {
 	margin-top: 10px;
 }
 
+div.variablelist dt {
+	font-style: italic;
+	margin-bottom: 2px;
+}
+
+div.variablelist dd {
+	margin-bottom: 6px;
+}
+
 /* Pre
 ------------------------------------------------ */
 
@@ -242,6 +254,14 @@ pre {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	margin-bottom: 20px;
+	overflow-x: scroll;
+}
+
+/* Example Titles
+------------------------------------------------ */
+
+div.example-title {
+	font-style: italic;
 }
 
 /* Basic Boxes
@@ -295,6 +315,36 @@ pre {
 ------------------------------------------------ */
 
 .sidebar .sidebar-title {
+	margin-bottom: 10px;
+}
+
+/* Tables
+------------------------------------------------ */
+
+div.table table thead tr {
+	border-bottom: 2px solid #D8D8D8;
+}
+
+div.table table tbody tr {
+	border-bottom: 1px solid #D8D8D8;
+}
+
+div.table table tr p {
+	padding: 4px;
+	margin: 0;
+}
+
+div.table table tbody tr:nth-of-type(even) {
+	background-color: #f0f0f0;
+}
+
+div.table table thead td {
+	padding: 4px;
+	margin: 0;
+}
+
+div.table-title {
+	font-style: italic;
 	margin-bottom: 10px;
 }
 
