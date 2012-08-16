@@ -122,8 +122,8 @@ section, .book .titlepage, .book .toc {
 	width: 600px;
 	padding: 60px 80px 20px 80px;
 	background-color: #FFF;
-	border-right: 1px solid red;
-	border-left: 1px solid red;
+	border-right: 2px dashed #CD2626;
+	border-left: 2px dashed #CD2626;
 }
 
 /* Title Page
