@@ -132,9 +132,12 @@ header table a {
 }
 
 header table a[accesskey="p"] {
-	-webkit-border-top-left-radius: 10px;
-	-moz-border-top-left-radius: 10px;
-	border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 50px;
+	-moz-border-top-left-radius: 50px;
+	border-top-left-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-bottom-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 	height: 100px
 	top: 50%;
 	left: 10px;
