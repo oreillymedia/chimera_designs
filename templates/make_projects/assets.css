@@ -92,12 +92,12 @@ header table a {
 	position: fixed;
 	top: 50px;
 	display: block;
-	background-color: #333;
+	background-color: #CD2626;
 	padding: 7px 15px;
 	color: #FFF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	text-decoration: none;
 	font-size: 12px;
 }
