@@ -14,7 +14,7 @@ $("body").scroll(function() {
     	var elemBottom = elemTop + $(this).height();
 
     	if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-    		var myLocation = $(this).children("div.titlepage div div h2.title");
+    		var myLocation = $(this).find("h2.title");
     		$("div.navheader table tr:first-of-type td").append( ": ", myLocation.html() );
     	};
     
