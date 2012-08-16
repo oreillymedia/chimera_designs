@@ -35,6 +35,10 @@ body {
 header {
 }
 
+div.menu {
+background-color: #CD2626;
+}
+
 /* Fonts
 ------------------------------------------------ */
 
@@ -321,7 +325,7 @@ div.tip, div.note, div.warning, div.caution, div.important {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-size: 90%;
-  padding: 10px 8px 10px 8px !important;
+  padding: 10px 8px 5px 8px !important;
   page-break-inside: avoid;
 }
 
