@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/admon.css";
+/*@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/admon.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/code.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/links.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/sidebars.css";
@@ -11,7 +11,7 @@
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/headers.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/text.css";
 @import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/title.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/navheader.css";
+@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/navheader.css";*/
 
 /* box model reset */
 
@@ -103,10 +103,12 @@ header table a {
 }
 
 header table a[accesskey="p"] {
+	top: 50%;
 	left: 10px;
 }
 
 header table a[accesskey="n"] {
+	top: 50%;
 	right: 10px;
 }
 
