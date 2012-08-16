@@ -99,7 +99,7 @@ margin: 0;
 border-bottom: 2px solid #CD2626;
 position: fixed;
 top: 40px;
-/*left: -1px;*/
+left: -1px;
 }
 
 header table tr:first-child td {
