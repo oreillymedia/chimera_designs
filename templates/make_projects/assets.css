@@ -653,10 +653,30 @@ header table a {
 
 header table a[accesskey="p"] {
 border-right: 1px solid #fff;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-top-left-radius: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-bottom-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-top: 0px;
+	height: auto;
+	top: 0;
+	left: 0;
 }
 
 header table a[accesskey="n"] {
 border-left: 1px solid #fff;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-top-right-radius: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-bottom-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding-top: 0px;
+	height: auto;
+	top: 0;
+	right: 0;
 }
 
 /* Main Sections
