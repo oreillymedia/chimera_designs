@@ -8,6 +8,7 @@ var myLocation = $("h2.title").first();
 var myTD = $("div.navheader table tr td");
 document.getElementById("whenever_you_ad").innerHTML = myLocation.html();
 myTD.innerHTML = ": " + myLocation.html();
+$("div.navheader table tr:first-of-type td").append( myLocation.html() );
 }
 
 window.onload = init;
