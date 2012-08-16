@@ -67,10 +67,6 @@ h2 {
 	letter-spacing: -1px;
 }
 
-section h2.title {
-string-set: ;
-}
-
 h3 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 18px;
@@ -93,6 +89,11 @@ a {
 /* Hide chapter name in table */
 
 header {
+}
+
+header table tr:first-child {
+position: fixed;
+top: 50px;
 }
 
 header table tr:first-child td {
