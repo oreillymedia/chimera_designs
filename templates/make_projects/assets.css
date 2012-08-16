@@ -92,6 +92,7 @@ header {
 }
 
 header table tr:first-child {
+background-color: #CD2626;
 width: 100%;
 border-bottom: 2px solid #CD2626;
 position: fixed;
