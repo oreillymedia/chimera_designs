@@ -1,8 +1,7 @@
-javascript:var s=document.createElement('script');
-s.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
-document.getElementsByTagName('body')[0].appendChild(s);
-alert('thank you for using jquery!');
-void(s);
+var script = document.createElement('script');
+script.src = 'http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
 var myPath = String(window.location);
 var myPathArray = myPath.split("/");
