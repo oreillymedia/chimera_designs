@@ -1,4 +1,10 @@
+javascript:var s=document.createElement('script');
+s.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
+document.getElementsByTagName('body')[0].appendChild(s);
+alert('thank you for using jquery!');
+void(s);
+
 var myPath = String(window.location);
 var myPathArray = myPath.split("/");
 var myLocation = myPathArray.shift();
-document.getElementsByClassName("navheader").getElementsByTagName("table")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[0].innerHTML=myLocation;
+var myTD = $("div.navheader table tr:first-of-type td");
