@@ -35,10 +35,6 @@ body {
 header {
 }
 
-div.menu {
-background-color: #CD2626;
-}
-
 /* Fonts
 ------------------------------------------------ */
 
@@ -96,6 +92,7 @@ header {
 }
 
 header table tr:first-child {
+width: 100%;
 position: fixed;
 top: 50px;
 }
