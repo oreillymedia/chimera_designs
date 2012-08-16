@@ -33,8 +33,6 @@ body {
 }
 
 header {
-	/*height: 0px;
-	overflow: hidden;*/
 }
 
 /* Fonts
@@ -69,6 +67,10 @@ h2 {
 	letter-spacing: -1px;
 }
 
+section h2.title {
+string-set: ;
+}
+
 h3 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 18px;
@@ -95,7 +97,13 @@ header {
 
 header table tr:first-child td {
 	color: #000;
-	font-size: 24px;
+	font-size: .8em;
+	border-bottom: 2px solid #CD2626;
+}
+
+header table tr:first-child td:after {
+	color: #000;
+	font-size: .8em;
 	border-bottom: 2px solid #CD2626;
 }
 
