@@ -5,5 +5,4 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 var myLocation = $("h2.title");
 var myTD = $("div.navheader table tr:first-of-type td");
-document.getElementById("the_first_thing_id2").innerHTML = "myLocation";
 myTD.innerHTML = myLocation;
