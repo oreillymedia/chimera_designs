@@ -149,6 +149,7 @@ section, .book .titlepage, .book .toc {
 	margin: 0 auto;
 	width: 650px;
 	padding: 0px 80px 20px 80px;
+	margin-top: 40px;
 	background-color: #FFF;
 	border-right: 0px dashed #CD2626;
 	border-left: 0px dashed #CD2626;
