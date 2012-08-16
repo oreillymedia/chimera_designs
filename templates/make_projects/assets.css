@@ -545,19 +545,20 @@ header table a[accesskey="n"] {
 /* Hide chapter name in table */
 
 header {
-}
-
-header table tr:first-child {
 background-color: #CD2626;
-width: 100%;
-padding: 5px;
-margin: 0;
 border-bottom: 2px solid #CD2626;
 border-right: 1px solid #CD2626;
+width: 100%;
 position: fixed;
 top: 40px;
 left: -1px;
 z-index: 9999;
+}
+
+header table tr:first-child {
+padding: 5px;
+margin: 0;
+
 }
 
 header table tr:first-child td {
