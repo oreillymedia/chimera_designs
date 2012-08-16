@@ -321,12 +321,12 @@ div.tip, div.note, div.warning, div.caution, div.important {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-size: 90%;
-  padding: 10px 8px 20px 8px !important;
+  padding: 10px 8px 10px 8px !important;
   page-break-inside: avoid;
 }
 
 div.tip, div.note {
-  border: 1px solid #6cafd0;
+  border: 2px solid #6cafd0;
   background-color: transparent;
 }
 
