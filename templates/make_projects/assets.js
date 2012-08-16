@@ -5,22 +5,20 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 function init() {
 
-var elem = $(".sect1");
+$("body").scroll(function() {
+	$(".sect1").each(function() {
+    	var docViewTop = $(window).scrollTop();
+    	var docViewBottom = docViewTop + $(window).height();
 
-$(".sect1").each(function() {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+   		var elemTop = $(this).offset().top;
+    	var elemBottom = elemTop + $(this).height();
 
-    var elemTop = $(this).offset().top;
-    var elemBottom = elemTop + $(this).height();
-
-    var isVisible = ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-    if  isVisible = true {
-    var myLocation = $(this).children("div.titlepage div div h2.title");
-    $("div.navheader table tr:first-of-type td").append( ": ", myLocation.html() );
-    return false;
-    }
+    	if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+    		var myLocation = $(this).children("div.titlepage div div h2.title");
+    		$("div.navheader table tr:first-of-type td").append( ": ", myLocation.html() );
+    	};
     
+	});
 });
 
 }
