@@ -577,19 +577,17 @@ header hr {
 }
 
 header table a {
-	background-color: #CD2626;
-	padding: 7px 15px;
 	color: #FFF;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: .8em;
 }
 
 header table a[accesskey="p"] {
-
+border-right: 1px solid #fff;
 }
 
 header table a[accesskey="n"] {
-
+border-left: 1px solid #fff;
 }
 
 }
