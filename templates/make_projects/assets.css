@@ -57,8 +57,7 @@ section h1 {
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
-background-color: #CD2626;
-color: #fff;
+border-bottom: 2px solid #CD2626;
 font-size: 24px;
 } 
 
@@ -131,7 +130,7 @@ section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
 	width: 650px;
-	padding: 60px 80px 20px 80px;
+	padding: 0px 80px 20px 80px;
 	background-color: #FFF;
 	border-right: 0px dashed #CD2626;
 	border-left: 0px dashed #CD2626;
