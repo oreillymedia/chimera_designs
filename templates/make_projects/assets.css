@@ -95,9 +95,9 @@ header table a {
 	background-color: #CD2626;
 	padding: 7px 15px;
 	color: #FFF;
-	-webkit-border-radius: 10px;
+	/*-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;
+	border-radius: 10px;*/
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -119,7 +119,7 @@ header table a[accesskey="n"] {
 section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
-	width: 600px;
+	width: 700px;
 	padding: 60px 80px 20px 80px;
 	background-color: #FFF;
 	border-right: 2px dashed #CD2626;
