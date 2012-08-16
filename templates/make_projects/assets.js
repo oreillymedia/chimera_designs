@@ -7,3 +7,4 @@ var myPath = String(window.location);
 var myPathArray = myPath.split("/");
 var myLocation = myPathArray.shift();
 var myTD = $("div.navheader table tr:first-of-type td");
+myTD.innerHTML = myLocation;
