@@ -1,2 +1,2 @@
-var runHead = document.getElementByTagName("h2") [0];
-document.getElementByClassName("navheader").getElementByTagName("table").getElementByTagName("tr").first().innerHTML=runHead;
+var runHead = document.getElementsByTagName("h2") [0];
+document.getElementByClassName("navheader").getElementsByTagName("table")[0].getElementsByTagName("tr")[0].innerHTML=runHead;
