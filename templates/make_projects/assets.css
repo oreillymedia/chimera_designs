@@ -42,6 +42,17 @@ header {
 
 h1 {
 	font-family: "heading", Georgia, sans-serif;
+	font-size: 36px;
+	line-height: 46px;
+	margin-bottom: 20px;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #BFBFBF;
+	color: #333;
+} 
+
+section h1 {
+	font-family: "heading", Georgia, sans-serif;
 	line-height: 46px;
 	margin-bottom: 20px;
 	letter-spacing: -1px;
