@@ -316,33 +316,38 @@ div.example-title {
 /* Basic Boxes
 ------------------------------------------------ */
 
-.tip, .note, .sidebar, .processingjslive {
-	padding: 15px 20px;
-	margin-bottom: 20px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	margin-left: -15px;
-	margin-right: -15px;
-	position: relative;
-	background-color: #EDEDED;
-	border: 1px dashed #BFBFBF;
+div.tip, div.note, div.warning, div.caution, div.important {
+  margin: 10px 0 !important;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 90%;
+  padding: 10px 8px 20px 8px !important;
+  page-break-inside: avoid;
 }
 
-.tip .title, .note .title, .sidebar .sidebar-title {
-	margin-top: 0px;
-	font-size: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #E5E5E5;
+div.tip, div.note {
+  border: 1px solid #6cafd0;
+  background-color: transparent;
 }
 
-.tip p:last-child,
-.note p:last-child,
-.sidebar p:last-child {
-	margin-bottom: 0px;
+div.warning, div.caution {
+  border: 1px solid #8e0012;
+  background-color: #fce5e8;
+}
+
+div.important {
+  background-color: #FFF68F;
+  border: 1px solid #615E3F;
+}
+
+div.tip h3, div.note h3, div.warning h3, div.caution h3, div.important h3 {
+  font: bold 90%;
+  font-family: "Free Sans Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4px 0 6px !important;
+  color: #000;
 }
 
 /* Tip Box
