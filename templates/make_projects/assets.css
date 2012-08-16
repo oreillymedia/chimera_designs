@@ -95,10 +95,11 @@ header table tr:first-child {
 background-color: #CD2626;
 width: 100%;
 padding: 5px;
+margin: 0;
 border-bottom: 2px solid #CD2626;
 position: fixed;
 top: 40px;
-left: -1px;
+/*left: -1px;*/
 }
 
 header table tr:first-child td {
@@ -131,6 +132,10 @@ header table a {
 }
 
 header table a[accesskey="p"] {
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 100px
 	top: 50%;
 	left: 10px;
 }
