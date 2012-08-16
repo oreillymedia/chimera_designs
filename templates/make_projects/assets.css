@@ -46,7 +46,7 @@ h1 {
 	line-height: 46px;
 	margin-bottom: 20px;
 	letter-spacing: -1px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-bottom: 1px dashed #BFBFBF;
 	color: #333;
 } 
@@ -91,7 +91,7 @@ a {
 /* Hide chapter name in table */
 
 header table tr:first-child {
-	display: none;
+	/*display: none;*/
 }
 
 header hr {
