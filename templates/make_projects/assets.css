@@ -90,6 +90,10 @@ a {
 
 /* Hide chapter name in table */
 
+header {
+margin-top: 50px;
+}
+
 header table tr:first-child {
 	/*display: none;*/
 }
