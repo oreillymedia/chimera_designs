@@ -7,7 +7,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var myLocation = $("h2.title").first();
 var myTD = $("div.navheader table tr:first-of-type td");
 document.getElementById("whenever_you_ad").innerHTML = myLocation.html();
-myTD.innerHTML = myLocation;
+myTD.innerHTML = myLocation.html();
 }
 
 window.onload = init;
