@@ -15,13 +15,13 @@ $(function() {
 				return window_top >= $(header).position().top;
 		});
 		
-		if(newHeading !== currentHeading)
-		{
-			$("div.navheader table tr:first td").html($(newHeading).text());
-		}
-		else if(!newHeading)
+		if(!newHeading)
 		{
 			$("div.navheader table tr:first td").html(defaultText);
+		}
+		else if(newHeading !== currentHeading)
+		{
+			$("div.navheader table tr:first td").html($(newHeading).text());
 		}
 
 	});
