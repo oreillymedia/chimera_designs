@@ -30,10 +30,10 @@ $(function() {
 		// get the number of pixels above the screen
 		var window_top = $(document).scrollTop();
 
-		// find the first heading in the array where the header top is less than the window_top. _.find is a function from the
+		// find the first heading in the array where the window top is greater than the header top. _.find is a function from the
 		// underscore library that will find the first item where the iterator function returns true
 		var newHeading = _.find(headings, function(header) {
-				return header.top <= window_top;
+				return window_top >= header.top;
 		});
 		
 		// if there is not any heading with a top less than the window_top, just show the default text
