@@ -608,6 +608,12 @@ section, .book .titlepage, .book .toc {
 
 @media screen and (max-device-width: 480px) {
 
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	color: #191919;
+}
+
 /* Header
 ------------------------------------------------ */
 
