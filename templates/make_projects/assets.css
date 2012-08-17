@@ -462,7 +462,7 @@ border-right: 1px solid #CD2626;
 position: fixed;
 top: 40px;
 left: -1px;
-z-index: 9999;
+z-index: 8888;
 }
 
 header table tr:first-child td {
