@@ -1,18 +1,18 @@
-@font-face {
+/* @font-face {
   font-family: "heading";
   src: url("http://orm-social-book-dev.s3.amazonaws.com/templates/video/MyriadPro-Light.ttf");
-}
+} */
 
 div.navheader {
   display: none;
 }
 
 section.chapter {
-  margin: 25% 0 25% 0;
+  margin: 0 10% 0 10%;
 }
 
 h1 {
-  font-family: "heading", Verdana, Arial, Helvetica, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16pt;
   color: #333;
