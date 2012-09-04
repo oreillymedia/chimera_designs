@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "heading";
+  src: url("http://orm-social-book-dev.s3.amazonaws.com/templates/video/MyriadPro-Light.otf");
+}
+
+div.navheader {
+  display: none;
+}
+
+section.chapter {
+  margin: 25% 0 25% 0;
+}
+
+h1 {
+  font-family: "heading", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16pt;
+  color: #333;
+}
+
 div.mediaobject video {
   width: 75%;
 }
