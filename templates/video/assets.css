@@ -124,6 +124,7 @@ footer { display: none; }
 
 .informalfigure {
   z-index: 100;
+  position: relative;
 }
 
 #lightsout {
@@ -136,13 +137,16 @@ footer { display: none; }
   display:none;
 }
 
-#turnoff {
-      cursor:pointer;
-      cursor:hand;
-      color:#0000ff;
-      padding:5px;
-      background-color:white;
-      position:relative;
-      z-index:1000;
+ul#turnoff {
+  cursor: pointer;
+  cursor: hand;
+  color: #333;
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+  float: right;
+  margin: 0;
+  list-style-type: none;
+  display: inline;
 }
 
