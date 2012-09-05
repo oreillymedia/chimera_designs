@@ -149,7 +149,7 @@ footer { display: none; }
 }
 
 #standout ul p {
-  display: inline:
+  display: inline;
   background-color: #fff;
   color: #333;
 }
