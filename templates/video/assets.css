@@ -140,8 +140,6 @@ footer { display: none; }
 #standout ul {
   cursor: pointer;
   cursor: hand;
-  color: #333;
-  background-color: white;
   position: relative;
   z-index: 1000;
   float: right;
@@ -150,3 +148,8 @@ footer { display: none; }
   display: inline;
 }
 
+#standout ul p {
+  display: inline:
+  background-color: #fff;
+  color: #333;
+}

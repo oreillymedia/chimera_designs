@@ -14,9 +14,9 @@
         $(".informalfigure").fadeTo("slow",0.8);
         });
       $("#turnon").click(function () {
-        document.getElementById("#lightsout").style.display="block";
+        document.getElementById("lightsout").style.display="block";
         $("#lightsout").fadeTo("slow",0,function() {
-        document.getElementById("#lightsout").style.display="none";
+        document.getElementById("lightsout").style.display="none";
         });
       $(".informalfigure").fadeTo("slow",0);
       });
