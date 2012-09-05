@@ -135,6 +135,9 @@ footer { display: none; }
   top:0;
   left:0;
   display:none;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s; 
+  -o-transition: background-color 0.5s;
 }
 
 ul {
@@ -160,11 +163,5 @@ ul p {
   color: #fff;
   font-size: 8pt;
   padding: 0 10px 0 10px;
-}
-
-body {
-  -moz-transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s; 
-  -o-transition: background-color 0.5s;
 }
 
