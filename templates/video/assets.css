@@ -3,10 +3,6 @@
   src: url("http://orm-social-book-dev.s3.amazonaws.com/templates/video/MyriadPro-Light.otf");
 }
 
-div.navheader {
-  display: none;
-}
-
 section.chapter {
   margin: 0 10% 0 10%;
 }
@@ -130,3 +126,4 @@ form#new_comment input[type="submit"] {
 	padding: 10px;
 }
 
+footer { display: none; }
