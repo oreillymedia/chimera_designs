@@ -142,13 +142,14 @@ footer { display: none; }
   position: relative;
   z-index: 1000;
   float: right;
-  margin: 0;
+  margin: 0 0 5px 0;
   list-style-type: none;
-  display: inline-block;
+  background: #fff;
 }
 
 #standout ul li {
   display: inline-block;
+  padding: 0 0 5px 0;
 }
 
 #standout ul p {
@@ -156,5 +157,5 @@ footer { display: none; }
   background-color: #fff;
   color: #333;
   font-size: 8pt;
-  padding: 0 0 3px 0;
+  padding: 0;
 }
