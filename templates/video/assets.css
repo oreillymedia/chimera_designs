@@ -139,7 +139,6 @@ footer { display: none; }
 
 #standout ul {
   cursor: pointer;
-  cursor: hand;
   position: relative;
   z-index: 1000;
   float: right;
@@ -148,9 +147,14 @@ footer { display: none; }
   display: inline-block;
 }
 
+#standout ul li {
+  display: inline-block;
+}
+
 #standout ul p {
   display: inline;
   background-color: #fff;
   color: #333;
   font-size: 8pt;
+  padding: 0 0 3px 0;
 }
