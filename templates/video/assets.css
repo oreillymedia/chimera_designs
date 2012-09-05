@@ -68,7 +68,9 @@ header table a[accesskey="n"] {
   right: 10px;
 }
 
-header table a[accesskey="n"]:after {
+
+
+header table a[accesskey="n"]:hover:after{
 content: "";
 position: absolute;
 width: 50px;
@@ -76,12 +78,13 @@ height: 50px;
 -webkit-transform: rotate(45deg);
 top: -12px;
 right: 15px;
-box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.5);
-}
+box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.5);}
 
-header table a[accesskey="n"]:hover:after, header table a[accesskey="p"]:hover:after {
+/*
+, header table a[accesskey="p"]:hover:after {
   box-shadow: none;
 }
+*/
 
 .comments {
 	margin: 0 auto;
