@@ -145,6 +145,7 @@ footer { display: none; }
   margin: 0 0 5px 0;
   list-style-type: none;
   background: #fff;
+  border-radius: 5px;
 }
 
 #standout ul li {
@@ -157,5 +158,4 @@ footer { display: none; }
   background-color: #fff;
   color: #333;
   font-size: 8pt;
-  padding: 0;
 }
