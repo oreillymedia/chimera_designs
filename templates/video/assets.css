@@ -53,8 +53,6 @@ header table a[accesskey="p"] {
 	-webkit-border-bottom-left-radius: 50px;
 	-moz-border-bottom-left-radius: 50px;
 	border-bottom-left-radius: 50px;
-	padding-top: 44px;
-	height: 100px;
 	top: 50%;
 	left: 10px;
 }
@@ -66,8 +64,6 @@ header table a[accesskey="n"] {
 	-webkit-border-bottom-right-radius: 50px;
 	-moz-border-bottom-right-radius: 50px;
 	border-bottom-right-radius: 50px;
-	padding-top: 44px;
-	height: 100px;
 	top: 50%;
 	right: 10px;
 }
