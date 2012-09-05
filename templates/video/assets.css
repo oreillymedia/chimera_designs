@@ -144,19 +144,20 @@ footer { display: none; }
   float: right;
   margin: 0 0 5px 0;
   list-style-type: none;
-  background: #fff;
+  background-color: #333;
   border-radius: 5px;
+  padding: 0;
 }
 
 #standout ul li {
   display: inline-block;
-  padding: 0 0 5px 0;
+  padding: 0;
 }
 
 #standout ul p {
   display: inline;
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   font-size: 8pt;
   padding: 0 10px 0 10px;
 }
