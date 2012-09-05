@@ -23,4 +23,8 @@ div.mediaobject video {
   width: 100%;
 }
 
-p { font-family: Georgia }
+p { 
+  font-family: Georgia;
+  color: #fff;
+  background-color: #000;
+}
