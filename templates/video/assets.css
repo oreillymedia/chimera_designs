@@ -151,7 +151,7 @@ footer { display: none; }
 
 #standout ul li {
   display: inline-block;
-  padding: 0;
+  padding: 0 0 3px 0;
 }
 
 #standout ul p {
