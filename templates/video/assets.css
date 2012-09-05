@@ -65,10 +65,8 @@ box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
 
 header table a[accesskey="n"] {
   top: 50%;
-  right: 10px;
+  right: 15px;
 }
-
-
 
 header table a[accesskey="n"]:hover:after{
 content: "";
@@ -77,8 +75,8 @@ width: 50px;
 height: 50px;
 -webkit-transform: rotate(45deg);
 top: -12px;
-right: 15px;
-box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.5);}
+right: 10px;
+box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.25);}
 
 /*
 , header table a[accesskey="p"]:hover:after {
