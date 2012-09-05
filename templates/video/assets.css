@@ -47,25 +47,13 @@ header table a {
 }
 
 header table a[accesskey="p"] {
-	-webkit-border-top-left-radius: 50px;
-	-moz-border-top-left-radius: 50px;
-	border-top-left-radius: 50px;
-	-webkit-border-bottom-left-radius: 50px;
-	-moz-border-bottom-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-	top: 50%;
-	left: 10px;
+  top: 50%;
+  left: 10px;
 }
 
 header table a[accesskey="n"] {
-	-webkit-border-top-right-radius: 50px;
-	-moz-border-top-right-radius: 50px;
-	border-top-right-radius: 50px;
-	-webkit-border-bottom-right-radius: 50px;
-	-moz-border-bottom-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-	top: 50%;
-	right: 10px;
+  top: 50%;
+  right: 10px;
 }
 
 .comments {
