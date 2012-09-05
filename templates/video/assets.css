@@ -14,12 +14,13 @@ section.chapter {
 h1 {
   font-family: heading, Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 16pt;
+  font-size: 22pt;
+
   color: #333;
 }
 
 div.mediaobject video {
-  width: 75%;
+  width: 100%;
 }
 
 p { font-family: Georgia }
