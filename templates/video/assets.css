@@ -121,3 +121,8 @@ form#new_comment input[type="submit"] {
 }
 
 footer { display: none; }
+
+.informalfigure {
+  z-index: 100;
+}
+
