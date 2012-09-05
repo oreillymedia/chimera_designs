@@ -1,12 +1,12 @@
  $(document).ready(function(){
         $(".turnoff").click(function () {
-        $(".lightsout").css({'background-color' : '#000','display' : 'block'});
+        $(".lightsout").css({'display' : 'block','background-color' : '#000'});
         });
       $(".soft").click(function () {
-        $(".lightsout").css({'background-color' : '#4F4F4F','display' : 'block'});
+        $(".lightsout").css({'display' : 'block','background-color' : '#4F4F4F'});
         });
       $(".turnon").click(function () {
-        $(".lightsout").css({'background-color' : 'transparent','display' : 'none'});
+        $(".lightsout").css({'display' : 'none','background-color' : 'transparent'});
       });
     });
 
