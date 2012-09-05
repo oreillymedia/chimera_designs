@@ -1,7 +1,7 @@
  $(document).ready(function(){
       
       $("#lightsout").fadeTo(1,0);
-      document.getElementsById("lightsout").style.display="none";
+      document.getElementById("lightsout").style.display="none";
 
       $("#turnoff").click(function () {
         $("#lightsout").css({'display' : 'block'});
