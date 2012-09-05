@@ -137,7 +137,7 @@ footer { display: none; }
   display:none;
 }
 
-ul#turnoff {
+#standout ul {
   cursor: pointer;
   cursor: hand;
   color: #333;
