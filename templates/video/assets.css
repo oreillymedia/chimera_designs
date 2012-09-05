@@ -28,45 +28,22 @@ p {
 }
 
 header table tr:first-child {
-background-color: #CD2626;
-width: 100%;
-padding: 5px;
-margin: 0;
-border-bottom: 2px solid #CD2626;
-border-right: 1px solid #CD2626;
-position: fixed;
-top: 40px;
-left: -1px;
-z-index: 8888;
-}
-
-header table tr:first-child td {
-	color: #fff;
-	font-size: .8em;
-}
-
-header table tr:first-child td:after {
-	color: #000;
-	font-size: .8em;
-	border-bottom: 2px solid #CD2626;
+ display: none;
 }
 
 header hr {
-	display: none;
+  display: none;
 }
 
 header table a {
-	position: fixed;
-	top: 50px;
-	display: block;
-	background-color: #CD2626;
-	padding: 7px 15px;
-	color: #FFF;
-	/*-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;*/
-	text-decoration: none;
-	font-size: 12px;
+  position: fixed;
+  display: block;
+  background-color: #333;
+  padding: 7px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12pt;
+  font-family: heading, Verdana, Arial, Helvetica, sans-serif;
 }
 
 header table a[accesskey="p"] {
