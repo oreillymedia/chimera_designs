@@ -145,11 +145,12 @@ footer { display: none; }
   float: right;
   margin: 0;
   list-style-type: none;
-  display: inline;
+  display: inline-block;
 }
 
 #standout ul p {
   display: inline;
   background-color: #fff;
   color: #333;
+  font-size: 8pt;
 }
