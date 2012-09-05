@@ -18,7 +18,7 @@
         $("#lightsout").fadeTo("slow",0,function() {
         document.getElementById("lightsout").style.display="none";
         });
-      $(".informalfigure").fadeTo("slow",0);
+      $(".informalfigure").fadeTo("slow",1);
       });
     });
 
