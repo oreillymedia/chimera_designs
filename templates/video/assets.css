@@ -60,7 +60,7 @@ height: 50px;
 -webkit-transform: rotate(45deg);
 top: -12px;
 left: 15px;
-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 header table a[accesskey="n"] {
@@ -75,8 +75,8 @@ width: 50px;
 height: 50px;
 -webkit-transform: rotate(45deg);
 top: -12px;
-left: 15px;
-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+right: 15px;
+box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .comments {
