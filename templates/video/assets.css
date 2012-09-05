@@ -32,6 +32,7 @@ div.mediaobject video {
 
 p { 
   font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
   color: #fff;
   background-color: #333;
   padding: 10px;
@@ -93,9 +94,7 @@ header table a[accesskey="n"]:hover:after{
 .comments {
   margin: 0 10%;
   width: 600px;
-  padding: 0px 80px 20px 80px;
-  border-right: 1px dashed #D8D8D8;
-  border-left: 1px dashed #D8D8D8;
+  padding: 20px 80px 0 80px;
 }
 
 form#new_comment input[type="submit"] {
