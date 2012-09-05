@@ -1,15 +1,12 @@
  $(document).ready(function(){
         $(".turnoff").click(function () {
-        $("body").css({'background-color' : 'black'});
-        $("body").fadeTo("slow",1);
+        $("body").css({'background-color' : '#000'});
         });
       $(".soft").click(function () {
-        $("body").css({'background-color' : 'black'});
-        $("body").fadeTo("slow",0.8);
+        $("body").css({'background-color' : '#4F4F4F'});
         });
       $(".turnon").click(function () {
         $("body").css({'background-color' : 'transparent'});
-        $("body").fadeTo("slow",0);
       });
     });
 
