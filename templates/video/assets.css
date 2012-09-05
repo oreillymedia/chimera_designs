@@ -126,3 +126,23 @@ footer { display: none; }
   z-index: 100;
 }
 
+#lightsout {
+  background-color:#000;
+  height:100%;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+}
+
+#turnoff {
+      cursor:pointer;
+      cursor:hand;
+      color:#0000ff;
+      padding:5px;
+      background-color:white;
+      position:relative;
+      z-index:1000;
+}
+
