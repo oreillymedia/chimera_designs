@@ -7,7 +7,7 @@
          </ul>').insertBefore('.informalfigure');
       
       $(".turnoff").click(function () {
-        $(".lightsout").css({'display' : 'block', 'background-color' : '#000', 'opacity' : '1'});
+        $(".lightsout").css({'display' : 'block', 'background-color' : '#000', 'opacity' : '1', '-webkit-transition' : 'background-color 0.5s'});
         });
       $(".soft").click(function () {
         $(".lightsout").css({'display' : 'block', 'background-color' : '#000', 'opacity' : '0.85'});
