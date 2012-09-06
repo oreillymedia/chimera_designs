@@ -1,22 +1,30 @@
  $(document).ready(function(){
-      $('<p class="lightsout" />\
-         <ul>\
-           <li><p class="turnoff">Lights Out</p></li>\
-           <li><p class="soft">Soft Light</p></li>\
-           <li><p class="turnon">Lights On</p></li>\
+      $('<p id="the_lights" />\
+         <ul id="switches">\
+           <li><p id="turnoff">Lights Out</p></li>\
+           <li><p id="soft">Soft Light</p></li>\
+           <li><p id="turnon">Lights On</p></li>\
          </ul>').insertBefore('.informalfigure');
-      
-      $(".turnoff").click(function () {
-        $(".lightsout").css({'display' : 'block', 'background-color' : '#000', 'opacity' : '1', '-webkit-transition' : 'background-color 0.5s'});
-        });
-      $(".soft").click(function () {
-        $(".lightsout").css({'display' : 'block', 'background-color' : '#000', 'opacity' : '0.85'});
-        });
-      $(".turnon").click(function () {
-        $(".lightsout").css({'display' : 'none', 'background-color' : 'transparent'});
+
+      $("#the_lights").fadeTo(1,0);
+      document.getElementById("the_lights").style.display="none";
+
+      $("#turnoff").click(function () {
+      $("#the_lights").css({'display' : 'block'});
+      $("#the_lights").fadeTo("slow",1);
+      $(".informalfigure").fadeTo("slow",1);
       });
-    });
-
-
-
-
+      $("#soft").click(function () {
+      document.getElementById("the_lights").style.display="block";
+      $("#the_lights").fadeTo("slow",0.8);
+      $(".informalfigure").fadeTo("slow",0.8);
+      });
+      $("#turnon").click(function () {
+      document.getElementById("the_lights").style.display="block";
+      $("#the_lights").fadeTo("slow",0,function() {
+      document.getElementById("the_lights").style.display="none";
+      });
+      $(".informalfigure").fadeTo("slow",1);
+      });
+      });
+  

@@ -136,7 +136,7 @@ footer { display: none; }
   display: none;
 }
 
-ul {
+ul#switches {
   cursor: pointer;
   position: relative;
   z-index: 1000;
@@ -148,12 +148,12 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul#switches li {
   display: inline-block;
   padding: 0 0 3px 0;
 }
 
-ul p {
+ul#switches p {
   display: inline;
   background-color: #333;
   color: #fff;
