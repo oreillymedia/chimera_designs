@@ -161,3 +161,36 @@ ul#switches p {
   padding: 0 10px 0 10px;
 }
 
+div.book h1 { text-align: center; }
+
+div.toc-title { display: none; }
+
+div.toc {
+  margin: 0 20% 0 25%;
+}
+
+div.toc ul {
+  list-style-type: none;
+}
+
+div.toc a { text-decoration: none; }
+
+div.toc a:visited { color: #333; }
+
+div.toc li {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  text-align: left;
+  color: #333;
+}
+
+div.toc li {
+  padding: 5px;
+  border-top: #333 dashed 1px;
+  border-left: #333 dashed 1px;
+  border-right: #333 dashed 1px;
+}
+
+div.toc li:last-of-type {
+  border-bottom: #333 dashed 1px;
+}
