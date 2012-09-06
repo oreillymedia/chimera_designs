@@ -7,10 +7,12 @@
          </ul>').insertBefore('.informalfigure');
       
       $(".turnoff").click(function () {
-        $(".lightsout").css({'display' : 'block','background-color' : '#000'});
+        $(".lightsout").css({'display' : 'block'});
+        $(".lightsout").fadeTo("slow",1);
         });
       $(".soft").click(function () {
-        $(".lightsout").css({'display' : 'block','background-color' : '#4F4F4F'});
+        $(".lightsout").css({'display' : 'block'});
+        $("#the_lights").fadeTo("slow",0.8);
         });
       $(".turnon").click(function () {
         $(".lightsout").css({'display' : 'none','background-color' : 'transparent'});
