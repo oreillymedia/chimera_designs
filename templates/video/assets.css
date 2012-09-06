@@ -127,7 +127,7 @@ footer { display: none; }
   position: relative;
 }
 
-.lightsout {
+p#the_lights {
   height: 100%;
   width: 100%;
   position: fixed;
