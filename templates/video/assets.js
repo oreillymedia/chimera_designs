@@ -5,7 +5,10 @@
            <li class="listitem"><p id="soft_light" class="soft">Soft Light</p></li>\
            <li class="listitem"><p id="lights_on" class="turnon">Lights On</p></li>\
          </ul>').insertBefore('.informalfigure');
-      
+     
+      $(".lightsout").fadeTo(1,0);
+      document.getElementByClassName(".lightsout").style.display="none";
+
       $(".turnoff").click(function () {
         $(".lightsout").css({'display' : 'block'});
         $(".lightsout").fadeTo("slow",1);
