@@ -15,7 +15,7 @@
         $("#the_lights").fadeTo("slow",0.8);
         });
       $(".turnon").click(function () {
-        $(".lightsout").css({'display' : 'none','background-color' : 'transparent'});
+        $(".lightsout").css({'display' : 'none'});
       });
     });
 
