@@ -134,9 +134,6 @@ footer { display: none; }
   top: 0;
   left: 0;
   display: none;
-  -moz-transition: display 0.5s;
-  -webkit-transition: display 0.5s; 
-  -o-transition: display 0.5s;
 }
 
 ul {
