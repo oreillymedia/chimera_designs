@@ -128,16 +128,16 @@ footer { display: none; }
 }
 
 .lightsout {
-  background-color:#000;
-  height:100%;
-  width:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  display:none;
-  /*-moz-transition: background-color 0.5s;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  -moz-transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s; 
-  -o-transition: background-color 0.5s;*/
+  -o-transition: background-color 0.5s;
 }
 
 ul {
