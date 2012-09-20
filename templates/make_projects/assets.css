@@ -351,15 +351,14 @@ footer {
 ------------------------------------------------ */
 
 .comments {
-	margin: 0 auto;
+	margin: 40px auto;
 	width: 600px;
 	padding: 0px 30px 20px 30px;
-	border-right: 1px dashed #D8D8D8;
-	border-left: 1px dashed #D8D8D8;
+	border-top: 2px dashed #CD2626;
 }
 
 form#new_comment input[type="submit"] {
-	background-color: #333;
+	background-color: #CD2626;
 	color: #FFF;
 	border: none;
 	padding: 8px 15px;
@@ -377,7 +376,7 @@ form#new_comment input[type="submit"] {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border: 1px dashed #CCC;
+	border: 1px solid #CCC;
 	padding: 10px;
 }
 
