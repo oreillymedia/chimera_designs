@@ -42,15 +42,16 @@ section h1 {
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
-border-bottom: 4px dashed #CD2626;
-font-size: 2em;
+border-bottom: 4px solid #CD2626;
+font-size: 3em;
+color: #00B2EE;
 } 
 
 h2 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 1.5em;
 	margin-top: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	letter-spacing: -1px;
 	color: #fff;
 	background-color: #CD2626;
@@ -190,11 +191,11 @@ ol li, ul li {
 }
 
 ol {
-	list-style: disc;
+	list-style: decimal;
 }
 
 ul {
-	list-style: decimal;
+	list-style-image: url('images/bullet.png');
 }
 
 ol ol, ul ul {
