@@ -135,9 +135,9 @@ a {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 18px;
 	margin-bottom: 20px;
-	color: #CD2626;
-	/*padding-bottom: 5px;
-	border-bottom: 2px solid #CD2626;*/
+	color: #fff;
+	background-color: #CD2626;
+	padding: 10px;
 }
 
 /* Blockquotes
