@@ -71,7 +71,8 @@ p {
 }
 
 a {
-	color: #1F3C99;
+	color: #00B2EE;
+	text-decoration: none;
 }
 
 /* Title Page
@@ -444,11 +445,11 @@ header {
 }
 
 header table tr:first-child {
-background-color: #CD2626;
+background-color: none;
 width: 100%;
 padding: 5px;
 margin: 0;
-border-bottom: 2px solid #CD2626;
+border-bottom: 3px dashed #CD2626;
 border-right: 1px solid #CD2626;
 position: fixed;
 top: 40px;
@@ -457,7 +458,7 @@ z-index: 8888;
 }
 
 header table tr:first-child td {
-	color: #fff;
+	color: #CD2626;
 	font-size: .8em;
 }
 
