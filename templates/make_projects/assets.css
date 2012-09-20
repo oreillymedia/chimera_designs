@@ -445,6 +445,10 @@ form#new_comment input[type="submit"] {
 background-color: #C1F0F6;
 }
 
+#book-title {
+color: #999;
+}
+
 header {
 }
 
@@ -453,7 +457,7 @@ background-color: #C1F0F6;
 width: 100%;
 padding: 5px;
 margin: 0;
-border-bottom: 0px dashed #CD2626;
+border-bottom: 1px solid #B0E0E6;
 position: fixed;
 top: 40px;
 left: -1px;
@@ -461,7 +465,7 @@ z-index: 8888;
 }
 
 header table tr:first-child td {
-	color: #fff;
+	color: #999;
 	font-size: .8em;
 }
 
