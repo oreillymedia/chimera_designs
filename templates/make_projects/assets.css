@@ -441,6 +441,10 @@ form#new_comment input[type="submit"] {
 
 /* Hide chapter name in table */
 
+#menu {
+background-color: #C1F0F6;
+}
+
 header {
 }
 
@@ -450,7 +454,6 @@ width: 100%;
 padding: 5px;
 margin: 0;
 border-bottom: 0px dashed #CD2626;
-border-right: 1px solid #CD2626;
 position: fixed;
 top: 40px;
 left: -1px;
@@ -460,7 +463,6 @@ z-index: 8888;
 header table tr:first-child td {
 	color: #fff;
 	font-size: .8em;
-	padding: 10px;
 }
 
 header table tr:first-child td:after {
