@@ -1,18 +1,5 @@
 @charset "UTF-8";
 
-/*@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/admon.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/code.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/links.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/sidebars.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/toc.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/figures.css";	
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/lists.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/tables.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/headers.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/text.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/title.css";
-@import "https://s3.amazonaws.com/orm-social-book-dev/templates/make_projects/navheader.css";*/
-
 /* box model reset */
 
 * { 
@@ -55,16 +42,19 @@ section h1 {
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
-border-bottom: 2px solid #CD2626;
+border-bottom: 4px dashed #CD2626;
 font-size: 2em;
 } 
 
 h2 {
 	font-family: "heading", Georgia, sans-serif;
-	font-size: 1.75em;
+	font-size: 1.5em;
 	margin-top: 30px;
 	margin-bottom: 10px;
 	letter-spacing: -1px;
+	color: #fff;
+	background-color: #CD2626;
+	padding: 10px 5px 10px 5px;
 }
 
 h3 {
@@ -484,7 +474,7 @@ header table a {
 	position: fixed;
 	top: 50px;
 	display: block;
-	background-color: #CD2626;
+	background-color: #00B2EE;
 	padding: 7px 15px;
 	color: #FFF;
 	/*-webkit-border-radius: 10px;
@@ -526,7 +516,7 @@ header table a[accesskey="n"] {
 section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
-	width: 650px;
+	width: 750px;
 	padding: 0px 80px 20px 80px;
 	margin-top: 40px;
 	background-color: #FFF;
