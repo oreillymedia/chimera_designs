@@ -352,8 +352,8 @@ footer {
 
 .comments {
 	margin: 40px auto;
-	width: 600px;
-	padding: 0px 30px 20px 30px;
+	width: 650px;
+	padding: 20px 0px 20px 0px;
 	border-top: 2px dashed #CD2626;
 }
 
@@ -371,7 +371,7 @@ form#new_comment input[type="submit"] {
 }
 
 #comment-form textarea {
-	width: 535px;
+	width: 650px;
 	resize: none;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
