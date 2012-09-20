@@ -445,7 +445,7 @@ header {
 }
 
 header table tr:first-child {
-background-color: #fff;
+background-color: #C1F0F6;
 width: 100%;
 padding: 5px;
 margin: 0;
@@ -458,7 +458,6 @@ z-index: 8888;
 }
 
 header table tr:first-child td {
-background-color: #CD2626;
 	color: #fff;
 	font-size: .8em;
 	padding: 10px;
