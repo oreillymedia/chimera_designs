@@ -405,6 +405,46 @@ form#new_comment input[type="submit"] {
 	padding: 10px;
 }
 
+/* Nellies custom stuff */
+
+.sidebar.coderunner1 .button1 {
+border: 1px solid red;
+width: auto;
+background-color: #FFE4E1;
+opacity: .2;
+transition-property: opacity;
+transition-duration: 1s;
+transition-timing-function: ease;
+transition-delay: 1s;
+}
+
+.sidebar.coderunner1 .button1:hover {
+border: 1px solid black;
+width: 100%;
+background-color: #555555;
+opacity: 1;
+}
+
+.style1link {
+border-top: 1px dashed #555555;
+}
+
+.style4link {
+border-top: 1px dashed #555555;
+}
+
+.style7link {
+border-top: 1px dashed #555555;
+}
+
+.style10link {
+border-top: 1px dashed #555555;
+}
+
+.style12link {
+border-bottom: 1px dashed #555555;
+}
+
 /* Processing JS Live Coding
 ------------------------------------------------ */
 
@@ -453,44 +493,4 @@ form#new_comment input[type="submit"] {
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 12px;
-}
-
-/* Nellies custom stuff */
-
-.sidebar.coderunner1 .button1 {
-border: 1px solid red;
-width: auto;
-background-color: #FFE4E1;
-opacity: .2;
-transition-property: opacity;
-transition-duration: 1s;
-transition-timing-function: ease;
-transition-delay: 1s;
-}
-
-.sidebar.coderunner1 .button1:hover {
-border: 1px solid black;
-width: 100%;
-background-color: #555555;
-opacity: 1;
-}
-
-.style1link {
-border-top: 1px dashed #555555;
-}
-
-.style4link {
-border-top: 1px dashed #555555;
-}
-
-.style7link {
-border-top: 1px dashed #555555;
-}
-
-.style10link {
-border-top: 1px dashed #555555;
-}
-
-.style12link {
-border-bottom: 1px dashed #555555;
 }
