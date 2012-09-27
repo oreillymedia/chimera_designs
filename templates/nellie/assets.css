@@ -457,7 +457,7 @@ form#new_comment input[type="submit"] {
 
 /* Nellies custom stuff */
 
-.coderunner1 .button {
+.sidebar.coderunner1 .button1 {
 border: 1px solid red;
 width: auto;
 background-color: #FFE4E1;
@@ -468,7 +468,7 @@ transition-timing-function: ease;
 transition-delay: 1s;
 }
 
-.coderunner1 .button:hover {
+.sidebar.coderunner1 .button1:hover {
 border: 1px solid black;
 width: 100%;
 background-color: #555555;
