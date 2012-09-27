@@ -425,8 +425,15 @@ background-color: #555555;
 opacity: 1;
 }
 
+.sidebar.coderunner .ulink {
+margin: 0;
+padding: 0;
+}
+
 .style1link {
 border-top: 1px dashed #555555;
+margin-bottom: 0;
+padding-bottom: 0;
 }
 
 .style4link {
