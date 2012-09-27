@@ -1,9 +1,13 @@
+// runes thing //
+
 $(function() {
 	// hide the legalnotices
 	$(".titlepage .copyright").click(function() {
 		$(".titlepage .legalnotice").toggle();
 	});
 });
+
+// css coderunner //
 
 $(function() {
 $('.style1link a.ulink').attr('target','');
@@ -84,5 +88,3 @@ $(function() {
 $('.reset').click(function() {
     location.reload();
 	});
-
-
