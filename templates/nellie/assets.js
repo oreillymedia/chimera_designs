@@ -5,10 +5,25 @@ $(function() {
 	});
 });
 
-$(function() {
-	alert('hello');
-});
+//$(function() {
+//	alert('hello');
+//});
 
 $(function() {
-.each.$(".coderunner .ulink").attr("target","_self");
+$(".coderunner .ulink").attr("target","_self");
+});
+
+//$(function() {
+//	$('.style6link a.ulink').click(function() {
+//	alert('success');
+//	});
+//});
+
+$(function() {
+	$('.style6link a.ulink').click(function() {
+		$('.button1').css('transition-duration','4s');
+		$('.button1').css('-moz-transition-duration','4s');
+		$('.button1').css('-webkit-transition-duration','4s');
+		$('.button1').css('-o-transition-duration','4s');
+	});
 });
