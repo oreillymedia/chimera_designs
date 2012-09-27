@@ -69,7 +69,7 @@ header table a {
 	position: fixed;
 	top: 50px;
 	display: block;
-	background-color: #333;
+	background-color: #D8D8D8;
 	padding: 7px 15px;
 	color: #FFF;
 	-webkit-border-radius: 5px;
@@ -98,7 +98,7 @@ section, .book .titlepage, .book .toc {
 	padding: 60px 80px 20px 40px;
 	background-color: #FFF;
 	border-right: 1px dashed #D8D8D8;
-	border-left: 1px dashed #D8D8D8;
+	border-left: 1px solid #D8D8D8;
 }
 
 /* Title Page
@@ -570,12 +570,17 @@ text-align: center;
 border-radius: 4px;
 }
 
+.reset a.ulink {
+width: 100%;
+}
+
 div.note {
-height: 8px;
+background-color: transparent;
+height: 14px;
 overflow: hidden;
 border: 0px solid #BFBFBF;
 padding-left: 100px;
-margin: 0 -200px 0 0;
+margin: 0 -200px 0px 0;
 transition-property: height; 
 transition-duration: 1s;
 -moz-transition-property:height; /* Firefox 4 */
@@ -593,9 +598,10 @@ height: auto;
 .note h3.title {
 font-size: .9em;
 text-align: right;
-padding-bottom: 0;
+padding: 10px;
 margin-bottom: 0;
 border: 0px;
+background-color: #EDEDED;
 }
 
 .note pre {
