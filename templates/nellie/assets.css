@@ -981,7 +981,7 @@ padding-top: 40px;
 
 /* -------- Final code ------------ */
 
-div.contents {
+div.sidebar.final div.contents {
 background-image: url('images/arrow3.png');
 background-repeat: no-repeat;
 background-position: left top;
@@ -995,7 +995,7 @@ min-height: 80px;
 z-index: 2;
 }
 
-div.contents-body {
+div.sidebar.final div.contents-body {
 background-color: #fff;
 padding: 10px 20px 10px 20px;
 border: 2px solid #00B2EE;
@@ -1020,42 +1020,27 @@ transition-duration: 1s;
 -o-transition-duration: 1s;
 }
 
-div.contents-body:hover {
+div.sidebar.final div.contents-body:hover {
 opacity: .9;
 margin-left: 30px;
 }
 
-div.toc h1 {
-font-size: 1.2em;
-color: #111;
-}
-
-div.toc a {
-color: #111;
-text-decoration: none;
-}
-
-div.toc ul {
+div.sidebar.final ul {
 margin-left: 0;
 padding-left: 0;
 text-indent: 0;
 }
 
-div.toc ul:first-of-type {
+div.sidebar.final ul:first-of-type {
 border-bottom: 1px solid #00B2EE;
 }
 
-div.toc ul li {
+div.sidebar.final ul li {
 list-style-type: none;
 list-style-position: outside;
 margin-left: 0;
 padding: 5px 0 5px 0;
 text-indent: 0;
-}
-
-div.toc ul li.chapter {
-font-weight: bold;
-border-bottom: 2px solid #00B2EE;
 }
 
 /* Processing JS Live Coding
