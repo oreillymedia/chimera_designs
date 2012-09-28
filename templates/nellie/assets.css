@@ -589,18 +589,19 @@ overflow-y: hidden;
 border: 0px solid #BFBFBF;
 padding-left: 100px;
 margin: 0 -200px 0px 0px;
-transition-property: height; 
-transition-duration: 1s;
--moz-transition-property:height; /* Firefox 4 */
--moz-transition-duration: 1s;
--webkit-transition-property: height; /* Safari and Chrome */
--webkit-transition-duration: 1s;
--o-transition-property: height; /* Opera */
--o-transition-duration: 1s;
+transition-property: height,overflow; 
+transition-duration: 0s;
+-moz-transition-property:height,overflow; /* Firefox 4 */
+-moz-transition-duration: 0s;
+-webkit-transition-property: height,overflow; /* Safari and Chrome */
+-webkit-transition-duration: 0s;
+-o-transition-property: height,overflow; /* Opera */
+-o-transition-duration: 0s;
 }
 
 div.note:hover {
 height: auto;
+overflow: visible;
 }
 
 .note h3.title {
@@ -610,8 +611,13 @@ padding: 10px;
 margin-bottom: 0;
 border: 0px;
 background-color: #EDEDED;
-width: 800px;
-margin-left: -250px;
+width: 679px;
+margin-left: -100px;
+}
+
+.sidebar .note h3.title {
+width: 660px;
+margin-left: -100px;
 }
 
 .note pre {
