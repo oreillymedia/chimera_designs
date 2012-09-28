@@ -103,7 +103,7 @@ section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 0 0 70px;
 	width: 600px;
-	padding: 60px 80px 20px 40px;
+	padding: 60px 80px 20px 60px;
 	background-color: #FFF;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 1px solid #D8D8D8;
@@ -585,10 +585,10 @@ width: 100%;
 div.note {
 background-color: transparent;
 height: 50px;
-overflow: hidden;
+overflow-y: hidden;
 border: 0px solid #BFBFBF;
 padding-left: 100px;
-margin: 0 -200px 0px 0;
+margin: 0 -200px 0px 0px;
 transition-property: height; 
 transition-duration: 1s;
 -moz-transition-property:height; /* Firefox 4 */
@@ -610,6 +610,8 @@ padding: 10px;
 margin-bottom: 0;
 border: 0px;
 background-color: #EDEDED;
+width: 800px;
+margin-left: -250px;
 }
 
 .note pre {
