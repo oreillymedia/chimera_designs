@@ -986,7 +986,7 @@ background-image: url('images/arrow3.png');
 background-repeat: no-repeat;
 background-position: left top;
 background-size: 70px;
-position: fixed;
+position: absolute;
 top: 50px;
 border-top: 2px dashed #CD2626;
 /*border-bottom: 2px dashed #CD2626;*/
@@ -1000,7 +1000,7 @@ background-color: #fff;
 padding: 10px 20px 10px 20px;
 border: 2px solid #00B2EE;
 opacity: 0;
-position: fixed;
+position: absolute;
 top: 50px;
 width: 380px;
 height: auto;
