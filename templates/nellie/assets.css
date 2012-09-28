@@ -383,11 +383,12 @@ footer {
 ------------------------------------------------ */
 
 .comments {
-	margin: 0 auto;
-	width: 600px;
-	padding: 0px 80px 20px 80px;
-	border-right: 1px dashed #D8D8D8;
-	border-left: 1px dashed #D8D8D8;
+	margin: 40px 0 0 100px;
+	width: 620px;
+	padding: 30px 80px 20px 60px;
+	border-top: 1px dashed #D8D8D8;
+	border-right: 0px dashed #D8D8D8;
+	border-left: 1px solid #D8D8D8;
 }
 
 form#new_comment input[type="submit"] {
