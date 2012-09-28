@@ -101,7 +101,7 @@ header table a[accesskey="n"] {
 
 section, .book .titlepage, .book .toc {
 	position: relative;
-	margin: 0 0 0 70px;
+	margin: 0 0 0 100px;
 	width: 620px;
 	padding: 60px 80px 20px 60px;
 	background-color: #FFF;
