@@ -981,7 +981,7 @@ padding-top: 40px;
 
 /* -------- Final code ------------ */
 
-div.sidebar.final div.contents {
+div.sidebar.final div.note:first-of-type {
 background-image: url('images/arrow3.png');
 background-repeat: no-repeat;
 background-position: left top;
@@ -995,7 +995,7 @@ min-height: 80px;
 z-index: 2;
 }
 
-div.sidebar.final div.contents-body {
+div.sidebar.final div.note:nth-of-type(2) {
 background-color: #fff;
 padding: 10px 20px 10px 20px;
 border: 2px solid #00B2EE;
@@ -1020,7 +1020,7 @@ transition-duration: 1s;
 -o-transition-duration: 1s;
 }
 
-div.sidebar.final div.contents-body:hover {
+div.sidebar.final div.note:nth-of-type(2):hover {
 opacity: .9;
 margin-left: 30px;
 }
