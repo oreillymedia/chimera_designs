@@ -19,6 +19,8 @@ $(function() {
 		$('.button1').css('-moz-transition-property','width');
 		$('.button1').css('-webkit-transition-property','width');
 		$('.button1').css('-o-transition-property','width');
+		$('.style1link').css('border','2px solid black');
+		$('.style2link').css('border','1px solid #888');
 	});
 });
 
@@ -28,6 +30,8 @@ $(function() {
 		$('.button1').css('-moz-transition-property','background-color');
 		$('.button1').css('-webkit-transition-property','background-color');
 		$('.button1').css('-o-transition-property','background-color');
+		$('.style1link').css('border','1px solid #888');
+		$('.style2link').css('border','2px solid black');
 	});
 });
 
@@ -37,6 +41,8 @@ $(function() {
 		$('.button1').css('-moz-transition-duration','2s');
 		$('.button1').css('-webkit-transition-duration','2s');
 		$('.button1').css('-o-transition-duration','2s');
+		$('.style3link').css('border','2px solid black');
+		$('.style4link').css('border','1px solid #888');
 	});
 });
 
@@ -46,6 +52,8 @@ $(function() {
 		$('.button1').css('-moz-transition-duration','4s');
 		$('.button1').css('-webkit-transition-duration','4s');
 		$('.button1').css('-o-transition-duration','4s');
+		$('.style3link').css('border','1px solid #888');
+		$('.style4link').css('border','2px solid black');
 	});
 });
 
@@ -55,6 +63,8 @@ $(function() {
 		$('.button1').css('-moz-transition-timing-function','ease-out');
 		$('.button1').css('-webkit-transition-timing-function','ease-out');
 		$('.button1').css('-o-transition-timing-function','ease-out');
+		$('.style5link').css('border','2px solid black');
+		$('.style6link').css('border','1px solid #888');
 	});
 });
 
@@ -64,27 +74,43 @@ $(function() {
 		$('.button1').css('-moz-transition-timing-function','ease-in-out');
 		$('.button1').css('-webkit-transition-timing-function','ease-in-out');
 		$('.button1').css('-o-transition-timing-function','ease-in-out');
+		$('.style5link').css('border','1px solid #888');
+		$('.style6link').css('border','2px solid black');
 	});
 });
 
 $(function() {
-	$('.style4link a.ulink').click(function() {
+	$('.style7link a.ulink').click(function() {
 		$('.button1').css('transition-delay','2s');
 		$('.button1').css('-moz-transition-delay','2s');
 		$('.button1').css('-webkit-transition-delay','2s');
 		$('.button1').css('-o-transition-delay','2s');
+		$('.style7link').css('border','2px solid black');
+		$('.style8link').css('border','1px solid #888');
 	});
 });
 
 $(function() {
-	$('.style4link a.ulink').click(function() {
+	$('.style8link a.ulink').click(function() {
 		$('.button1').css('transition-delay','4s');
 		$('.button1').css('-moz-transition-delay','4s');
 		$('.button1').css('-webkit-transition-delay','4s');
 		$('.button1').css('-o-transition-delay','4s');
+		$('.style7link').css('border','1px solid #888');
+		$('.style8link').css('border','2px solid black');
 	});
 });
 
-$('.reset').click(function() {
-    location.reload();
+$(function() {
+	$('.reset').click(function() {
+    	location.reload();
+    	$('.style1link').css('border','1px solid #888');
+    	$('.style2link').css('border','1px solid #888');
+    	$('.style3link').css('border','1px solid #888');
+    	$('.style4link').css('border','1px solid #888');
+    	$('.style5link').css('border','1px solid #888');
+    	$('.style6link').css('border','1px solid #888');
+    	$('.style7link').css('border','1px solid #888');
+    	$('.style8link').css('border','1px solid #888');
 	});
+});
