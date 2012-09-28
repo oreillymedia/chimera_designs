@@ -647,16 +647,16 @@ list-style-type: none;
 }
 
 div.sidebar.chart > div.itemizedlist {
+background-color: #fff;
 width: 480px;
 height: 480px;
 border: 1px solid black;
 overflow: hidden;
-/*-webkit-border-radius: 250px;
--moz-border-radius: 250px;
-border-radius: 250px;*/
 }
 
+/* the NO box */
 div.sidebar.chart > div.itemizedlist > ul > li:first-of-type {
+background-color: #FFE4E1;
 font-size: .7em;
 display: block;
 border: 1px solid black;
@@ -682,8 +682,10 @@ width: 300px;
 font-size: 1.5em;
 }
 
+/* the IE sub-box */
 div.sidebar.chart > div.itemizedlist > ul > li:first-of-type > div.itemizedlist > 
 ul > li {
+background-color: #D44942;
 font-size: .7em;
 text-align: center;
 padding-top: 10px;
@@ -714,8 +716,9 @@ font-size: 1.5em;
 padding-top: 80px;
 }
 
+/* the YES box */
 div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) {
-background-color: #fff;
+background-color: #C5E3BF;
 font-size: .7em;
 padding: 10px;
 float: left;
@@ -743,9 +746,10 @@ height: 400px;
 top: -100px;
 }
 
+/* webkit sub-box */
 div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
 ul > li.listitem:first-of-type {
-background-color: #fff;
+background-color: #86C67C;
 font-size: .7em;
 padding: 10px;
 float: left;
@@ -775,9 +779,11 @@ height: 300px;
 z-index: 100;
 }
 
+/* chrome sub-sub-box */
 div.sidebar.chart > div.itemizedlist > ul > 
 li:nth-of-type(2) > div.itemizedlist > ul > 
 li.listitem:first-of-type li.listitem:first-of-type {
+background-color: #699864;
 font-size: .7em;
 padding-top: 10px;
 padding-left: 10px;
@@ -809,10 +815,11 @@ font-size: 1.5em;
 padding-top: 40px;
 }
 
+/* safari sub-sub-box */
 div.sidebar.chart > div.itemizedlist > ul > 
 li:nth-of-type(2) > div.itemizedlist > ul > 
 li.listitem:first-of-type li.listitem:nth-of-type(2) {
-background-color: #fff;
+background-color: #458B74;
 font-size: .7em;
 padding-top: 10px;
 padding-left: 10px;
@@ -844,9 +851,10 @@ font-size: 1.5em;
 padding-top: 40px;
 }
 
+/* -o- sub-box */
 div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
 ul > li.listitem:nth-of-type(2) {
-background-color: #fff;
+background-color: #66CDAA;
 font-size: .7em;
 padding: 10px;
 float: right;
@@ -876,10 +884,11 @@ height: 300px;
 z-index: 100;
 }
 
+/* Opera sub-sub-box */
 div.sidebar.chart > div.itemizedlist > ul > 
 li:nth-of-type(2) > div.itemizedlist > 
 ul > li.listitem:nth-of-type(2) li.listitem {
-background-color: #fff;
+background-color: #238E68;
 font-size: .7em;
 padding-top: 10px;
 padding-left: 10px;
@@ -911,9 +920,10 @@ font-size: 1.5em;
 padding-top: 40px;
 }
 
+/* -moz sub-box */
 div.sidebar.chart > div.itemizedlist > ul > li:nth-of-type(2) > div.itemizedlist > 
 ul > li.listitem:nth-of-type(3) {
-background-color: #fff;
+background-color: #92CCA6;
 font-size: .7em;
 padding: 10px;
 float: left;
@@ -944,10 +954,11 @@ height: 300px;
 z-index: 100;
 }
 
+/* firefox sub-sub-box */
 div.sidebar.chart > div.itemizedlist > ul > 
 li:nth-of-type(2) > div.itemizedlist > 
 ul > li.listitem:nth-of-type(3) li.listitem {
-background-color: #fff;
+background-color: #78A489;
 font-size: .7em;
 padding-top: 10px;
 padding-left: 10px;
