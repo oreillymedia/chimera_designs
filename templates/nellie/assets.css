@@ -981,27 +981,27 @@ padding-top: 40px;
 
 /* -------- Final code ------------ */
 
-div.sidebar.final div.note:first-of-type {
+div.sidebar.final {
+min-height: 200px;
+overflow: visible;
+}
+
+div.sidebar.final > div.note:nth-child(2) {
 background-image: url('images/arrow3.png');
 background-repeat: no-repeat;
 background-position: left top;
 background-size: 70px;
-position: absolute;
-top: 50px;
-border-top: 2px dashed #CD2626;
-/*border-bottom: 2px dashed #CD2626;*/
 width: 200px;
 min-height: 80px;
-z-index: 2;
 }
 
-div.sidebar.final div.note:nth-of-type(2) {
+div.sidebar.final div.note:nth-child(3) {
 background-color: #fff;
 padding: 10px 20px 10px 20px;
 border: 2px solid #00B2EE;
 opacity: 0;
 position: absolute;
-top: 50px;
+top: 30px;
 width: 380px;
 height: auto;
 max-height: 600px;
@@ -1009,7 +1009,6 @@ padding: 10px 40px 10px 20px;
 margin-left: -320px;
 border-radius:10px;
 overflow-y: scroll;
-z-index: 3;
 transition-property: margin-left,opacity; 
 transition-duration: 1s;
 -moz-transition-property: margin-left,opacity; /* Firefox 4 */
@@ -1020,27 +1019,40 @@ transition-duration: 1s;
 -o-transition-duration: 1s;
 }
 
-div.sidebar.final div.note:nth-of-type(2):hover {
+div.sidebar.final div.note:nth-child(3):hover {
 opacity: .9;
 margin-left: 30px;
 }
 
 div.sidebar.final ul {
+margin-top: 0;
+padding-top: 0;
 margin-left: 0;
-padding-left: 0;
-text-indent: 0;
-}
-
-div.sidebar.final ul:first-of-type {
-border-bottom: 1px solid #00B2EE;
+margin-bottom: 0;
+padding-bottom: 0;
 }
 
 div.sidebar.final ul li {
 list-style-type: none;
 list-style-position: outside;
 margin-left: 0;
-padding: 5px 0 5px 0;
-text-indent: 0;
+padding: 0px 0 0px 0;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+div.sidebar.final div.note div.itemizedlist {
+padding: 0;
+margin: 0;
+}
+
+div.sidebar.final div.note > div.itemizedlist > ul.itemizedlist > li.listitem {
+border-bottom: 1px solid #00B2EE;
+}
+
+div.sidebar.final div.note p.simpara {
+padding: 0;
+margin: 0;
 }
 
 /* Processing JS Live Coding
