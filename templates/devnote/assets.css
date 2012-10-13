@@ -249,7 +249,7 @@ div.variablelist ol li, div.variablelist ul li {
 list-style-position: inside;
 }
 
-.sidebar:[id~="quickest_possible_description"] dt span.term {
+.sidebar[id*="quickest_possible_description"] dt span.term {
 	font-family: monospace;
 }
 
