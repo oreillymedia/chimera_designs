@@ -249,6 +249,10 @@ div.variablelist ol li, div.variablelist ul li {
 list-style-position: inside;
 }
 
+.tip div.variablelist dt, .note div.variablelist dt {
+	font-family: monospace;
+}
+
 /* Pre
 ------------------------------------------------ */
 
