@@ -240,6 +240,15 @@ div.variablelist dd {
 	margin-bottom: 6px;
 }
 
+div.variablelist ol, div.variablelist ul {
+margin-left: 0;
+padding-left: 0;
+}
+
+div.variablelist ol li, div.variablelist ul li {
+list-style-position: inside;
+}
+
 /* Pre
 ------------------------------------------------ */
 
