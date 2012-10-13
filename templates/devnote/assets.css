@@ -290,10 +290,11 @@ div.example-title {
 }
 
 .tip .title, .note .title, .sidebar .sidebar-title {
+	font-family: monospace;
 	margin-top: 0px;
 	font-size: 15px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px dashed #E5E5E5;
 }
 
 .tip p:last-child,
