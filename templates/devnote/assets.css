@@ -93,6 +93,16 @@ header table a[accesskey="n"] {
 	right: 10px;
 }
 
+/* TOC */
+
+div.toc ul {
+  list-style-type: none;
+}
+
+div.toc a { text-decoration: none; }
+
+div.toc a:visited { color: #333; }
+
 
 /* Main Sections
 ------------------------------------------------ */
