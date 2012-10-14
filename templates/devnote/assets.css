@@ -99,13 +99,19 @@ div.toc ul {
   list-style-type: none;
 }
 
+div.toc > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 div.toc > ul > li {
   border-top: 1px dashed #D8D8D8;
+  padding-top: 5px;
 }
 
 div.toc a { text-decoration: none; }
 
-div.toc a:visited { color: #333; }
+div.toc a:visited { color: #009ACD; }
 
 
 /* Main Sections
