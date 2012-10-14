@@ -84,14 +84,12 @@ header table a {
 header table a[accesskey="p"] {
 	content: url('devnote-prev.png');
 	text-align: center;
-    width: 100px;
 	left: 10px;
 }
 
 header table a[accesskey="n"] {
 	content: url('devnote-next.png');
 	text-align: center;
-    width: 100px;
 	right: 10px;
 }
 
