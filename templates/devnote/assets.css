@@ -121,7 +121,7 @@ div.toc a:visited { color: #6CA6CD; }
 /* Main Sections
 ------------------------------------------------ */
 
-section, .book .titlepage, .book .toc, div.index:first-of-type {
+section, .book .titlepage, .book .toc, div.index {
 	position: relative;
 	margin: 0 auto;
 	width: 600px;
@@ -129,6 +129,16 @@ section, .book .titlepage, .book .toc, div.index:first-of-type {
 	background-color: #FFF;
 	border-right: 1px solid #D8D8D8;
 	border-left: 1px solid #D8D8D8;
+}
+
+div.index div.index {
+	position: relative;
+	margin: auto;
+	width: auto;
+	padding: auto;
+	background-color: #FFF;
+	border-right: 0px solid #D8D8D8;
+	border-left: 0px solid #D8D8D8;
 }
 
 /* Title Page
