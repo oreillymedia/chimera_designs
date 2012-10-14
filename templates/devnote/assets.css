@@ -414,11 +414,12 @@ footer {
 ------------------------------------------------ */
 
 .comments {
+	background-color: #fff;
 	margin: 0 auto;
 	width: 600px;
 	padding: 0px 80px 20px 80px;
-	border-right: 1px dashed #D8D8D8;
-	border-left: 1px dashed #D8D8D8;
+	border-right: 1px solid #D8D8D8;
+	border-left: 1px solid #D8D8D8;
 }
 
 form#new_comment input[type="submit"] {
