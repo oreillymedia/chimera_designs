@@ -121,7 +121,7 @@ div.toc a:visited { color: #6CA6CD; }
 /* Main Sections
 ------------------------------------------------ */
 
-section, .book .titlepage, .book .toc {
+section, .book .titlepage, .book .toc, div.index {
 	position: relative;
 	margin: 0 auto;
 	width: 600px;
