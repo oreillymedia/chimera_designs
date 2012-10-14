@@ -99,6 +99,10 @@ div.toc ul {
   list-style-type: none;
 }
 
+div.toc > ul > li {
+  border-top: 1px dashed #D8D8D8;
+}
+
 div.toc a { text-decoration: none; }
 
 div.toc a:visited { color: #333; }
