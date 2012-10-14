@@ -106,12 +106,12 @@ div.toc > ul {
 
 div.toc > ul > li {
   border-top: 1px dashed #D8D8D8;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 div.toc a { text-decoration: none; }
 
-div.toc a:visited { color: #009ACD; }
+div.toc a:visited { color: #6CA6CD; }
 
 
 /* Main Sections
