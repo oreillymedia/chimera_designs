@@ -583,6 +583,8 @@ border-radius: 4px;
 width: 100%;
 }
 
+/* the pop-out notes */
+
 div.note {
 background-color: transparent;
 height: 50px;
@@ -602,6 +604,7 @@ transition-duration: 0s;
 
 div.note:hover {
 height: auto;
+max-height: 300px;
 overflow: visible;
 }
 
