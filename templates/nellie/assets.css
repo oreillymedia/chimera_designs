@@ -604,8 +604,8 @@ transition-duration: 0s;
 
 div.note:hover {
 height: auto;
-max-height: 300px;
-overflow: visible;
+max-height: 400px;
+overflow: scroll;
 }
 
 .note h3.title {
