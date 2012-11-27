@@ -360,6 +360,23 @@ div.table-title {
 	margin-bottom: 10px;
 }
 
+/* Solutions
+------------------------------------------------------------ */
+
+.solution-bar {
+	padding: 10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: #EDEDED;
+	border: 1px dashed #BFBFBF;
+	margin-bottom: 5px;
+}
+
+.solution-bar h4 {
+	margin: 0px;
+	padding: 0px;
+}
+
 /* Footnotes
 ------------------------------------------------ */
 
