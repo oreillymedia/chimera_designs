@@ -150,6 +150,18 @@ section, .book .titlepage, .book .toc {
 	margin-bottom: 20px;
 }
 
+.book .toc ul { 
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.book .toc ul ul {
+  padding-left: 20px;
+}
+
+.book .toc a { text-decoration: none; }
+
 /* Blockquotes
 ------------------------------------------------ */
 
