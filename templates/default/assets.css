@@ -250,6 +250,28 @@ div.variablelist dd {
 	margin-bottom: 6px;
 }
 
+/* Equations
+------------------------------------------------ */
+
+div.equation-title {
+    font-size: 12px;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	padding: 6px 0px 0px 0px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+div.equation-contents {
+	margin-bottom: 20px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	background-color: #ECECEC;
+	padding: 10px 50px 10px 30px;
+	font-size: 20px;
+}
+
 /* Pre
 ------------------------------------------------ */
 
