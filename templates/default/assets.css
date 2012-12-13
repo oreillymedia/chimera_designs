@@ -444,6 +444,14 @@ footer {
 
 *[id] > .comment-bubble {
 	display: none;
+	background-color: #333;
+	position: absolute;
+	text-align: center;
+	padding: 5px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 10000;
 }
 
 *[id] > .comment-bubble a {
@@ -453,13 +461,6 @@ footer {
 
 *[id]:hover > .comment-bubble {
 	display: block;
-	background-color: #333;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	text-align: center;
-	padding: 3px 0px;
-	margin-top: 5px;
 }
 
 .new-comment textarea {
