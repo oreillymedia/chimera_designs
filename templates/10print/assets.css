@@ -262,7 +262,7 @@ img {
 	padding: 6px 30px 0px 30px;
 	margin-top: 20px;
 	line-height: 20px;
-	border-top: 1px solid #0082c8;
+	border-top: 1px solid #dcf3ff;
 	color: #0082c8;
 }
 
@@ -331,7 +331,7 @@ div.equation-contents {
 pre {
 	margin-left: 30px;
 	margin-right: -15px;
-	padding: 15px;
+	padding: 15px 0px 15px 0px;
 	background-color: transparent;
 	color: #000;
 	margin-bottom: 20px;
@@ -344,7 +344,6 @@ pre {
 div.example-title {
 	font-style: italic;
 	margin-left: 30px;
-	color: #0082c8;
 }
 
 /* Basic Boxes
