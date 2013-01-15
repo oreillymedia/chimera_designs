@@ -57,11 +57,11 @@ a {
 
 /* Menu */
 
-div.menu ul h1 {
+#menu h1 {
 	background-color: transparent;
 }
 
-div.menu ul {
+#menu {
 	background-color: transparent;
 	background-image: url('http://10print.org/10print.gif');
 	background-repeat: repeat;
