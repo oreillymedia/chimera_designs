@@ -55,6 +55,18 @@ a {
 	color: #1F3C99;
 }
 
+/* Menu */
+
+div.menu h1 {
+	background-color: transparent;
+}
+
+div.menu {
+	background-color: transparent;
+	background-image: url('http://10print.org/10print.gif');
+	background-repeat: repeat;
+}
+
 /* Header
 ------------------------------------------------ */
 
