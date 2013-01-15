@@ -262,6 +262,8 @@ img {
 	padding: 6px 30px 0px 30px;
 	margin-top: 20px;
 	line-height: 20px;
+	border-top: 1px solid #0082c8;
+	color: #0082c8;
 }
 
 /* Lists
@@ -341,6 +343,8 @@ pre {
 
 div.example-title {
 	font-style: italic;
+	margin-left: 30px;
+	color: #0082c8;
 }
 
 /* Basic Boxes
@@ -392,6 +396,10 @@ div.example-title {
 /* Tables
 ------------------------------------------------ */
 
+div.table {
+	margin: 40px 0px 50px 0px;
+}
+
 div.table table thead tr {
 	border-bottom: 2px solid #D8D8D8;
 }
@@ -417,6 +425,7 @@ div.table table thead td {
 div.table-title {
 	font-style: italic;
 	margin-bottom: 10px;
+	color: #0082c8;
 }
 
 /* Solutions
