@@ -22,9 +22,9 @@ h1 {
 	font-family: "heading", Georgia, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 36px;
-	line-height: 46px;
-	margin: 0px -30px 20px -30px;
+	font-size: 42px;
+	line-height: 120%;
+	margin: 0px -30px 60px -30px;
 	letter-spacing: -1px;
 	padding: 130px 30px 50px 30px;
 	color: #fff;
@@ -205,6 +205,10 @@ section, .book .titlepage, .book .toc {
 }
 
 .book .toc a { text-decoration: none; }
+
+.book .toc a:link {
+	color: #0082c8;
+}
 
 /* Blockquotes
 ------------------------------------------------ */
