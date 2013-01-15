@@ -81,8 +81,13 @@ a {
 	font-family: monospace;
 }
 
+#menu li a {
+	font-family: monospace;
+}
+
 h1#book-title {
 	background-color: #333;
+	font-family: monospace;
 }
 
 /* Header
