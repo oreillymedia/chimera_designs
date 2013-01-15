@@ -81,6 +81,10 @@ a {
 	font-family: monospace;
 }
 
+h1#book-title {
+	background-color: #333;
+}
+
 /* Header
 ------------------------------------------------ */
 
