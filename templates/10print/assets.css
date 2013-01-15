@@ -77,23 +77,8 @@ a {
 
 /* Menu */
 
-/*#menu {
-	background-color: transparent;
-	background-image: url('10print.jpg');
-	background-repeat: repeat;
-}
-
-#menu li a {
-	color: #000;
-}
-
-#search-form input {
-	border: 1px solid #999;
-}
-*/
-
-h1#book-title {
-	background-color: #333;
+#menu {
+	font-family: monospace;
 }
 
 /* Header
@@ -191,6 +176,7 @@ section, .book .titlepage, .book .toc {
 .book .toc {
 	padding-top: 0px;
 	font-family: monospace;
+	font-weight: bold;
 }
 
 .book .toc-title {
