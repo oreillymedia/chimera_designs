@@ -190,10 +190,11 @@ section, .book .titlepage, .book .toc {
 
 .book .toc {
 	padding-top: 0px;
+	font-family: monospace;
 }
 
 .book .toc-title {
-	font-family: "heading", Georgia, sans-serif;
+	/*font-family: "heading", Georgia, sans-serif;*/
 	font-size: 18px;
 	margin-bottom: 20px;
 }
