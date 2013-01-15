@@ -115,6 +115,7 @@ header table a {
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 12px;
+	font-family: monospace;
 }
 
 header table a[accesskey="p"] {
