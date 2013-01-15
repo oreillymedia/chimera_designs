@@ -57,14 +57,23 @@ a {
 
 /* Menu */
 
-#menu h1 {
-	background-color: transparent;
-}
-
 #menu {
 	background-color: transparent;
-	background-image: url('http://10print.org/10print.gif');
+	background-image: url('10print.jpg');
 	background-repeat: repeat;
+}
+
+#menu li a {
+	color: #000;
+}
+
+#search-form input {
+	border: 1px solid #999;
+}
+
+h1#book-title {
+	color: #000;
+	background-color: transparent;
 }
 
 /* Header
