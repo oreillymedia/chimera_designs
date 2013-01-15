@@ -45,7 +45,7 @@ h3 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 1.2em;
 	text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -53,7 +53,7 @@ h4 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 1.1em;
 	text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ h5 {
 	font-size: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -141,11 +141,11 @@ section, .book .titlepage, .book .toc {
 	width: 600px;
 	padding: 0px 30px 20px 30px;
 	background-color: #FFF;
-	border-right: 1px solid #D8D8D8;
-	border-left: 1px solid #D8D8D8;
+	/*border-right: 1px solid #D8D8D8;
+	border-left: 1px solid #D8D8D8;*/
 }
 
-.sect1, .sect2, .sect3, .sect4, .sect5 {
+.sect1, .sect2 {
 	margin-bottom: 60px;
 }
 
