@@ -36,8 +36,8 @@ h2 {
 	text-transform: uppercase;
 	color: #0082c8;
 	font-size: 1.5em;
-	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	letter-spacing: -1px;
 }
 
@@ -45,16 +45,25 @@ h3 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 1.2em;
 	text-transform: uppercase;
-	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 h4 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 1.1em;
 	text-transform: uppercase;
-	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h5 {
+	font-family: sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 p {
@@ -134,6 +143,10 @@ section, .book .titlepage, .book .toc {
 	background-color: #FFF;
 	border-right: 1px solid #D8D8D8;
 	border-left: 1px solid #D8D8D8;
+}
+
+.sect1, .sect2, .sect3, .sect4, .sect5 {
+	margin-bottom: 60px;
 }
 
 /* Title Page
@@ -236,7 +249,8 @@ img {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border: 1px solid #D8D8D8;
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
 	margin-left: -30px;
 	margin-right: -30px;
 	padding: 15px 50px 5px 15px;
@@ -247,6 +261,7 @@ img {
 	font-style: italic;
 	letter-spacing: 0.5px;
 	padding: 6px 0px 0px 0px;
+	margin-top: 20px;
 	line-height: 20px;
 }
 
@@ -337,7 +352,7 @@ div.example-title {
 ------------------------------------------------ */
 
 .tip, .note, .sidebar, .processingjslive {
-	padding: 15px 30px;
+	padding: 40px 30px 40px 30px;
 	margin-bottom: 20px;
 	margin-left: -30px;
 	margin-right: -30px;
@@ -348,8 +363,6 @@ div.example-title {
 .tip .title, .note .title, .sidebar .sidebar-title {
 	margin-top: 0px;
 	font-size: 15px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #E5E5E5;
 }
 
 .tip p:last-child,
