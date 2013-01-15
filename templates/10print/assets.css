@@ -195,6 +195,13 @@ section, .book .titlepage, .book .toc {
 	font-weight: bold;
 }
 
+.book > .titlepage > div {
+	background-image: url('http://10print.org/10print.gif');
+	background-repeat: repeat-x;
+	margin: 0px -30px 60px -30px;
+	padding: 90px 0px 0px 0px;
+}
+
 .book .toc-title {
 	/*font-family: "heading", Georgia, sans-serif;*/
 	font-size: 18px;
