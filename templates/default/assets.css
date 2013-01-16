@@ -301,7 +301,7 @@ div.example-title {
 /* Basic Boxes
 ------------------------------------------------ */
 
-.tip, .note, .sidebar, .processingjslive {
+.tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
 	padding: 15px 20px;
 	margin-bottom: 20px;
 	-webkit-border-top-left-radius: 5px;
@@ -317,7 +317,8 @@ div.example-title {
 	border: 1px dashed #BFBFBF;
 }
 
-.tip .title, .note .title, .sidebar .sidebar-title {
+.tip .title, .note .title, .sidebar .sidebar-title, 
+ .warning .title, .caution .title, .important .title {
 	margin-top: 0px;
 	font-size: 15px;
 	padding-bottom: 10px;
@@ -343,6 +344,11 @@ div.example-title {
 
 .note {
 /*	background-color: #faf7da;*/
+}
+
+.warning {
+  background-color: FFFAFA;
+  border-color: #DB2929 ;
 }
 
 /* Sidebar Box
