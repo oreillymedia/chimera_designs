@@ -772,16 +772,6 @@ div.table-title {
 	margin-right: 20px;
 }
 
-/* top menu */
-
-#menu, #menu-left, #menu-left li {
-	font-size: 1.5em;
-}
-
-#menu ul li:first-of-type {
-	content: "←";
-}
-
 /* chapter nav */
 
 /*header table tr:first-child {
@@ -794,7 +784,7 @@ header hr {
 
 header table a {
 	position: fixed;
-	top: 50px;
+	bottom: 0px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
