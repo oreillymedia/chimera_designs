@@ -790,15 +790,17 @@ footer {
 	display: block;
 }
 
+footer table tr td {
+	padding: .3em;
+	background-color: #333;
+}
+
 footer table a {
 	position: absolute;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
 	color: #FFF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	text-decoration: none;
 	font-size: 1.5em;
 }
@@ -807,14 +809,12 @@ footer table a[accesskey="p"] {
 	left: 0px;
 	z-index: 10;
 	width: 50%;
-	height: 2em;
 }
 
 footer table a[accesskey="n"] {
 	right: 0px;
 	z-index: 11;
 	width: 50%;
-	height: 2em;
 }
 
 }
