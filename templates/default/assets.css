@@ -778,10 +778,15 @@ header {
   display: none;
 }
 
+footer table {
+	border-collapse:collapse;
+}
+
 footer table tr td:nth-of-type(1) {
 	width: 50%;
 	text-align: left;
 	color: #fff;
+	vertical-align: top;
 }
 
 footer table tr td:nth-of-type(2) {
@@ -792,6 +797,7 @@ footer table tr td:nth-of-type(3) {
 	width: 50%;
 	text-align: right;
 	color: #fff;
+	vertical-align: top;
 }
 
 footer hr {
