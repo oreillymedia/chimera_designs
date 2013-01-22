@@ -774,17 +774,24 @@ div.table-title {
 
 /* chapter nav */
 
-/*header table tr:first-child {
+header {
+  display: none;
+}
+
+footer table tr td:nth-of-type(2) {
 	display: none;
 }
 
-header hr {
+footer hr {
 	display: none;
-}*/
+}
 
-header table a {
+footer {
+	display: block;
+}
+
+footer table a {
 	position: absolute;
-	bottom: 0px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
@@ -796,14 +803,14 @@ header table a {
 	font-size: 1.5em;
 }
 
-header table a[accesskey="p"] {
+footer table a[accesskey="p"] {
 	left: 0px;
 	z-index: 10;
 	width: 50%;
 	height: 2em;
 }
 
-header table a[accesskey="n"] {
+footer table a[accesskey="n"] {
 	right: 0px;
 	z-index: 11;
 	width: 50%;
