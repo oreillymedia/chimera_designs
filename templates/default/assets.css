@@ -784,13 +784,13 @@ div.table-title {
 
 /* chapter nav */
 
-header table tr:first-child {
+/*header table tr:first-child {
 	display: none;
 }
 
 header hr {
 	display: none;
-}
+}*/
 
 header table a {
 	position: fixed;
@@ -807,11 +807,11 @@ header table a {
 }
 
 header table a[accesskey="p"] {
-	left: 10px;
+	left: 0px;
 }
 
 header table a[accesskey="n"] {
-	right: 10px;
+	right: 0px;
 }
 
 }
