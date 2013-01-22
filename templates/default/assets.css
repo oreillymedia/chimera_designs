@@ -784,7 +784,7 @@ header hr {
 
 header table a {
 	position: fixed;
-	bottom: 0px;
+	top: 40px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
