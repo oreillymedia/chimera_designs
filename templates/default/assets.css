@@ -581,6 +581,11 @@ footer {
 	padding: 0;
 }
 
+header {
+	height: auto;
+	overflow: hidden;
+}
+
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0;
