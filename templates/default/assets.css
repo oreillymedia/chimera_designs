@@ -800,12 +800,14 @@ header table a[accesskey="p"] {
 	left: 0px;
 	z-index: 10;
 	width: 50%;
+	height: 2em;
 }
 
 header table a[accesskey="n"] {
 	right: 0px;
 	z-index: 11;
 	width: 50%;
+	height: 2em;
 }
 
 }
