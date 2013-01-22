@@ -610,7 +610,7 @@ h3 {
 
 .figure-title, .tip .title, .note .title, .sidebar .sidebar-title, 
  .warning .title, .caution .title, .important .title {
-	font-size: 2em;
+	/*font-size: 2em;*/
 	}
 
 .tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
