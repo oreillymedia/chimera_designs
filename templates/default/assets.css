@@ -555,7 +555,7 @@ footer {
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
-	width: 700px;
+	width: 70%;
 	padding: 60px 0px 20px 0px;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 0px dashed #D8D8D8;
