@@ -20,7 +20,7 @@ header {
 h1 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 36px;
-	line-height: 115%;
+	line-height: 130%;
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
@@ -552,6 +552,10 @@ footer {
 
 	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+	body {
+	font-size: 1.5em;
+}
+
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
@@ -580,6 +584,24 @@ footer {
 	padding: 60px 20px 20px 20px;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 0px dashed #D8D8D8;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+} 
+
+h2 {
+	font-size: 2.5em;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: 2.1em;
+	margin-top: 3em;
+	margin-bottom: 1em;
 }
 
 .tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
