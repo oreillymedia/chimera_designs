@@ -208,7 +208,7 @@ img {
 }
 
 .figure-title {
-	font-size: 12px;
+	font-size: 1em;
 	font-style: italic;
 	letter-spacing: 0.5px;
 	padding: 6px 0px 0px 0px;
@@ -226,7 +226,7 @@ ol, ul {
 
 ol li, ul li {
 	margin-bottom: 8px;
-	line-height: 18px;
+	line-height: 140%;
 }
 
 ol {
@@ -254,11 +254,11 @@ div.variablelist dd {
 ------------------------------------------------ */
 
 div.equation-title {
-    font-size: 12px;
+    font-size: 1em;
 	font-style: italic;
 	letter-spacing: 0.5px;
 	padding: 6px 0px 0px 0px;
-	line-height: 20px;
+	line-height: 140%;
 	margin-bottom: 5px;
 }
 
@@ -289,6 +289,10 @@ pre {
 	border-top-right-radius: 5px;
 	margin-bottom: 20px;
 	overflow-x: auto;
+}
+
+code.literal {
+	font-size: inherit;
 }
 
 /* Example Titles
