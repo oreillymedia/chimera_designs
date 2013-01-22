@@ -24,7 +24,7 @@ h1 {
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
-	border-bottom: 1px dashed #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
 	color: #333;
 } 
 
@@ -201,7 +201,7 @@ img {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border: 1px dashed #D8D8D8;
+	border: 1px solid #D8D8D8;
 	margin-left: -15px;
 	margin-right: -15px;
 	padding: 15px 50px 5px 15px;
@@ -315,6 +315,14 @@ div.example-title {
 	position: relative;
 	background-color: #EDEDED;
 	border: 1px dashed #BFBFBF;
+}
+
+.tip, .note, .warning, .caution, .important {
+	border: 1px dashed #BFBFBF;
+}
+
+.sidebar, .processingjslive {
+	border: 1px solid #BFBFBF;
 }
 
 .tip .title, .note .title, .sidebar .sidebar-title, 
@@ -546,3 +554,77 @@ footer {
 	text-decoration: none;
 	font-size: 12px;
 }
+
+/* iPad/tablet [portrait + landscape] */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+	section, .book .titlepage, .book .toc {
+	position: relative;
+	margin: 0 auto;
+	width: 600px;
+	padding: 60px 80px 20px 80px;
+	border-right: 1px dashed #D8D8D8;
+	border-left: 1px dashed #D8D8D8;
+}
+
+}
+
+/* iPhone [portrait + landscape] */
+@media screen and (max-device-width: 480px) {
+
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+	section, .book .titlepage, .book .toc {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding: 60px 10px 20px 10px;
+	border-right: 0px dashed #D8D8D8;
+	border-left: 0px dashed #D8D8D8;
+}
+
+.tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
+	padding: 15px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+pre {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+}
+
+/* Other small devices */
+@media screen and (max-width: 699px) {
+
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+	section, .book .titlepage, .book .toc {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding: 60px 10px 20px 10px;
+	border-right: 0px dashed #D8D8D8;
+	border-left: 0px dashed #D8D8D8;
+}
+
+.tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
+	padding: 15px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+pre {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+	}
