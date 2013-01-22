@@ -555,10 +555,10 @@ footer {
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0 auto;
-	width: 600px;
-	padding: 60px 80px 20px 80px;
-	border-right: 1px dashed #D8D8D8;
-	border-left: 1px dashed #D8D8D8;
+	width: 700px;
+	padding: 60px 0px 20px 0px;
+	border-right: 0px dashed #D8D8D8;
+	border-left: 0px dashed #D8D8D8;
 }
 
 }
@@ -584,13 +584,13 @@ footer {
 
 .tip, .note, .warning, .caution, .important, .sidebar, .processingjslive {
 	padding: 15px 20px;
-	margin-left: -20px;
-	margin-right: -20px;
+	margin-left: -30px;
+	margin-right: -30px;
 }
 
 pre {
-	margin-left: -20px;
-	margin-right: -20px;
+	margin-left: -30px;
+	margin-right: -30px;
 	padding: 20px;
 	margin-bottom: 20px;
 }
