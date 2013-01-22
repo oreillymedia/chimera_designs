@@ -576,11 +576,16 @@ footer {
 
 	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+	body {
+	font-size: 2em;
+	padding: 0;
+}
+
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0;
 	width: 100%;
-	padding: 60px 10px 20px 10px;
+	padding: 60px 20px 20px 20px;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 0px dashed #D8D8D8;
 }
@@ -605,11 +610,15 @@ pre {
 
 	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+	body {
+	padding: 0;
+}
+
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0;
 	width: 100%;
-	padding: 60px 10px 20px 10px;
+	padding: 60px 20px 20px 20px;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 0px dashed #D8D8D8;
 }
