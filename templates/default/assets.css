@@ -581,11 +581,6 @@ footer {
 	padding: 0;
 }
 
-header {
-	height: auto;
-	overflow: hidden;
-}
-
 	section, .book .titlepage, .book .toc {
 	position: relative;
 	margin: 0;
@@ -779,7 +774,7 @@ div.table-title {
 
 /* top menu */
 
-#menu {
+#menu, #menu-left, #menu-left li {
 	font-size: 1.5em;
 }
 
