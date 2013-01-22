@@ -783,8 +783,8 @@ header hr {
 }*/
 
 header table a {
-	position: fixed;
-	top: 40px;
+	position: absolute;
+	bottom: 0px;
 	display: block;
 	background-color: #333;
 	padding: 7px 15px;
@@ -799,11 +799,13 @@ header table a {
 header table a[accesskey="p"] {
 	left: 0px;
 	z-index: 10;
+	width: 50%;
 }
 
 header table a[accesskey="n"] {
 	right: 0px;
 	z-index: 11;
+	width: 50%;
 }
 
 }
