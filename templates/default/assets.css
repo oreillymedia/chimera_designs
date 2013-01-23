@@ -24,7 +24,7 @@ h1 {
 	margin-bottom: 20px;
 	letter-spacing: -1px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #BFBFBF;
+	border-bottom: 1px dashed #BFBFBF;
 	color: #333;
 } 
 
@@ -270,7 +270,7 @@ div.equation-contents {
 	background-color: #ECECEC;
 	padding: 10px 50px 10px 30px;
 	font-size: 20px;
-	overflow-x: auto;
+	overflow-x: scroll;
 }
 
 /* Pre
