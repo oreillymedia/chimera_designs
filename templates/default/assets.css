@@ -270,7 +270,7 @@ div.equation-contents {
 	background-color: #ECECEC;
 	padding: 10px 50px 10px 30px;
 	font-size: 20px;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 
 /* Pre
@@ -681,6 +681,7 @@ div.equation-contents {
 	margin-bottom: 1.5em;
 	padding: 1em 0 1em 0;
 	font-size: 2em;
+	overflow-x: scroll;
 }
 
 /* Pre
