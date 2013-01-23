@@ -844,6 +844,10 @@ footer table a[accesskey="n"] {
 	padding: .5em;
 }
 
+footer table a[accesskey="h"] {
+	display: none;
+}
+
 }
 
 /* Other small devices */
