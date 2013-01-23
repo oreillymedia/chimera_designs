@@ -780,7 +780,11 @@ header {
 
 footer table {
 	border-collapse:collapse;
-	border-color: #333;
+}
+
+footer table tr:first-of-type {
+	background-color: #333;
+	vertical-align: top;
 }
 
 footer table tr td:nth-of-type(1) {
@@ -809,7 +813,6 @@ footer {
 
 footer table tr td {
 	padding: .3em;
-	background-color: #333;
 	border-width: 0px;
 	vertical-align: top;
 }
@@ -824,9 +827,13 @@ footer table a {
 }
 
 footer table a[accesskey="p"] {
+	margin: 0;
+	padding: .5em;
 }
 
 footer table a[accesskey="n"] {
+	margin: 0;
+	padding: .5em;
 }
 
 }
