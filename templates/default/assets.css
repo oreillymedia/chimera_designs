@@ -596,7 +596,7 @@ h1 {
 	font-size: 3em;
 	margin-bottom: 1em;
 	padding-bottom: .5em;
-	word-break: break-all;
+	word-break: hyphenate;
 } 
 
 h2 {
