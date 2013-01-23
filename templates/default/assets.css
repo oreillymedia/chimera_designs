@@ -669,6 +669,15 @@ img {
 	line-height: 140%;
 }
 
+div.informalfigure {
+	margin: 1.5em -30px 1.5em -30px;
+	height: auto;
+}
+
+div.informalfigure iframe {
+	width: 100%;
+}
+
 /* Equations
 ------------------------------------------------ */
 
