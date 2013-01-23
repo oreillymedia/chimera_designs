@@ -216,13 +216,13 @@ img {
 }
 
 div.informalfigure {
-	margin: 1.5em -80px 1.5em -80px;
+	margin: 50px -80px 50px -80px;
 	height: auto;
 }
 
 div.informalfigure iframe {
 	width: 100%;
-	height: 600px;
+	height: 450px;
 }
 
 /* Lists
