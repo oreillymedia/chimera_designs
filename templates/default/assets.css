@@ -676,6 +676,7 @@ div.informalfigure {
 
 div.informalfigure iframe {
 	width: 100%;
+	height: auto;
 }
 
 /* Equations
