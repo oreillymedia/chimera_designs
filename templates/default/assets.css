@@ -637,6 +637,7 @@ footer hr {
 }
 
 footer table a {
+	background-color: #333;
 	position: fixed;
 	display: block;
 	padding: 7px 15px;
@@ -650,7 +651,6 @@ footer table a {
 	border-bottom-left-radius: 5px;
 	text-decoration: none;
 	font-size: 1.2em;
-	z-index: 10;
 }
 
 footer table a[accesskey="p"] {
