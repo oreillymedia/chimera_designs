@@ -612,12 +612,12 @@ header table a {
 }
 
 header table a[accesskey="p"] {
-	left: 10px;
+	left: 0px;
 	top: 50px;
 }
 
 header table a[accesskey="n"] {
-	right: 10px;
+	left: 0px;
 	top: 100px;
 }
 
