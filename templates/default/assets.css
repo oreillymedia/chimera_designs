@@ -614,11 +614,13 @@ header table a {
 header table a[accesskey="p"] {
 	left: 0px;
 	top: 50px;
+	width: 10%;
 }
 
 header table a[accesskey="n"] {
 	left: 0px;
 	top: 100px;
+	width: 10%;
 }
 
 footer {
