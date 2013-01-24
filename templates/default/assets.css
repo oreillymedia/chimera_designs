@@ -596,8 +596,9 @@ h3 {
 }
 
 header table a {
-	background-color: #F0F0F0;
-	font-size: 1.2em;
+	background-color: #fff;
+	border: 1px solid #F0F0F0;
+	color: #F0F0F0;	font-size: 1.2em;
 	text-align: right;
 	-webkit-border-top-left-radius: 0px;
 	-webkit-border-top-right-radius: 5px;
@@ -638,12 +639,13 @@ footer hr {
 }
 
 footer table a {
-	background-color: #F0F0F0;
+	background-color: #fff;
+	border: 1px solid #F0F0F0;
+	color: #F0F0F0;
 	position: fixed;
 	display: block;
 	padding: 7px 15px;
 	text-align: left;
-	color: #FFF;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
 	border-top-left-radius: 5px;
