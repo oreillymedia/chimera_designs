@@ -597,26 +597,15 @@ h3 {
 
 header table a {
 	font-size: 1.3em;
-	color: transparent;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-size: 50px 100px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	text-decoration: none;
-	height: 100px;
-	width: 50px;
+	background-color: #333;
 }
 
 header table a[accesskey="p"] {
 	left: 10px;
-	background-image: url('ipad-nav-p.png');
 }
 
 header table a[accesskey="n"] {
 	right: 10px;
-	background-image: url('ipad-nav-n.png');
 }
 
 }
