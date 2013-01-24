@@ -600,13 +600,13 @@ header table a {
 	color: transparent;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-size: 100px 200px;
+	background-size: 50px 100px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
 	text-decoration: none;
-	height: 200px;
-	width: 100px;
+	height: 100px;
+	width: 50px;
 }
 
 header table a[accesskey="p"] {
