@@ -596,6 +596,7 @@ h3 {
 }
 
 header table a {
+	background-color: #F0F0F0;
 	font-size: 1.2em;
 	text-align: right;
 	-webkit-border-top-left-radius: 0px;
@@ -637,7 +638,7 @@ footer hr {
 }
 
 footer table a {
-	background-color: #333;
+	background-color: #F0F0F0;
 	position: fixed;
 	display: block;
 	padding: 7px 15px;
