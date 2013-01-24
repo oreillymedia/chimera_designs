@@ -90,33 +90,73 @@ header table a[accesskey="n"]:hover:after{
   box-shadow: 4px -4px 5px rgba(0, 0, 0, 0.25);
 }
 
-.comments {
-  margin: 0 10%;
-  width: 600px;
-  padding: 20px 80px 0 0;
+/* Comments
+--------------------------------------------------------- */
+
+/* First comment should have border-top */
+*:not(.comment) + .comment  {
+	border-top: 1px dashed #BFBFBF
 }
 
-form#new_comment input[type="submit"] {
+.comment {
+	background-color: #f0f4fd;
+	padding: 10px 15px 10px 15px;
+	margin-left: -80px;
+	margin-right: -80px;
+	border-bottom: 1px dashed #BFBFBF;
+}
+
+.comment .user-image img {
+	border: 1px solid #dde1e9;
+}
+
+*[id] > .comment-bubble {
+	display: none;
 	background-color: #333;
-	color: #FFF;
-	border: none;
-	padding: 8px 15px;
+	position: absolute;
+	text-align: center;
+	padding: 5px 10px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	font-family: Verdana;
-	font-size: 11px;
-	margin-top: 10px;
+	z-index: 10000;
 }
 
-#comment-form textarea {
-	width: 535px;
-	resize: none;
+*[id] > .comment-bubble a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+*[id]:hover > .comment-bubble {
+	display: block;
+}
+
+.new-comment textarea {
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
-	border: 1px dashed #CCC;
-	padding: 10px;
+	padding: 5px;
+	border: 1px solid #D8D8D8;
+	width: 100%;
+	height: 60px;
+	font-family: Helvetica;
+	font-size: 13px;
+}
+
+.new-comment a.submit-form,
+.new-comment a.cancel-form {
+	display: inline-block;
+	border: none;
+	padding: 5px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #9CB0C8;
+	margin-top: 5px;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: Verdana;
+	color: #FFF;
 }
 
 footer { display: none; }
