@@ -598,6 +598,7 @@ h3 {
 header table a {
 	font-size: 1.3em;
 	background-color: #333;
+	color: #fff;
 }
 
 header table a[accesskey="p"] {
