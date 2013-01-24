@@ -604,6 +604,7 @@ header table a[accesskey="p"] {
 }
 
 header table a[accesskey="n"] {
+	position: absolute;
 	right: 10px;
 	top: 75px;
 }
@@ -638,6 +639,7 @@ footer table a[accesskey="p"] {
 }
 
 footer table a[accesskey="n"] {
+	position: absolute;
 	right: 10px;
 	top: 75px;
 }
