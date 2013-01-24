@@ -597,6 +597,18 @@ h3 {
 
 header table a {
 	font-size: 1.2em;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 5px;
 }
 
 header table a[accesskey="p"] {
@@ -626,20 +638,23 @@ footer table a {
 	display: block;
 	padding: 7px 15px;
 	color: #FFF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
 	text-decoration: none;
 	font-size: 1.2em;
 }
 
 footer table a[accesskey="p"] {
-	right: 10px;
+	right: 0px;
 	top: 50px;
 }
 
 footer table a[accesskey="n"] {
-	right: 10px;
+	right: 0px;
 	top: 100px;
 }
 
