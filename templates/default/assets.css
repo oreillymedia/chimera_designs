@@ -582,7 +582,7 @@ footer {
 
 h1 {
 	font-family: Helvetica, sans-serif;
-	font-size: 2em;
+	font-size: 3em;
 } 
 
 h2 {
@@ -597,6 +597,7 @@ h3 {
 
 header table a {
 	font-size: 1.3em;
+	background-color: #F0F0F0;
 }
 
 }
