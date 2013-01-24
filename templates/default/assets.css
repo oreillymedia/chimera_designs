@@ -582,14 +582,21 @@ footer {
 
 h1 {
 	font-family: Helvetica, sans-serif;
+	font-size: 2em;
 } 
 
 h2 {
 	font-family: Helvetica, sans-serif;
+	font-size: 1.7em;
 }
 
 h3 {
 	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+}
+
+header table a {
+	font-size: 1.3em;
 }
 
 }
