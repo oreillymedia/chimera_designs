@@ -597,7 +597,6 @@ h3 {
 
 header table a {
 	font-size: 1.2em;
-	background-color: #333;
 }
 
 header table a[accesskey="p"] {
@@ -606,11 +605,51 @@ header table a[accesskey="p"] {
 
 header table a[accesskey="n"] {
 	right: 10px;
+	top: 75px;
+}
+
+footer {
+	display: block;
+}
+
+footer table tr:nth-of-type(2) {
+	display: none;
+}
+
+footer hr {
+	display: none;
+}
+
+footer table a {
+	position: fixed;
+	top: 50px;
+	display: block;
+	padding: 7px 15px;
+	color: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+footer table a[accesskey="p"] {
+	right: 10px;
+}
+
+footer table a[accesskey="n"] {
+	right: 10px;
+	top: 75px;
 }
 
 .figure {
 	margin-left: -80px;
 	margin-right: -80px;
+	text-align: center;
+}
+
+.informalfigure {
+	text-align: center;
 }
 
 }
