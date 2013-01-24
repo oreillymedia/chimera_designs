@@ -597,7 +597,7 @@ h3 {
 
 header table a {
 	font-size: 1.3em;
-	background-color: transparent;
+	background-color: #000;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
