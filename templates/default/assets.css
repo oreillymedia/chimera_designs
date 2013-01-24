@@ -601,10 +601,10 @@ header table a {
 
 header table a[accesskey="p"] {
 	left: 10px;
+	top: 50px;
 }
 
 header table a[accesskey="n"] {
-	position: absolute;
 	right: 10px;
 	top: 75px;
 }
@@ -623,7 +623,6 @@ footer hr {
 
 footer table a {
 	position: fixed;
-	top: 50px;
 	display: block;
 	padding: 7px 15px;
 	color: #FFF;
@@ -636,10 +635,10 @@ footer table a {
 
 footer table a[accesskey="p"] {
 	right: 10px;
+	top: 50px;
 }
 
 footer table a[accesskey="n"] {
-	position: absolute;
 	right: 10px;
 	top: 75px;
 }
