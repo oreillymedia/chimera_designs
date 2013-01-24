@@ -597,6 +597,7 @@ h3 {
 
 header table a {
 	font-size: 1.2em;
+	text-align: right;
 	-webkit-border-top-left-radius: 0px;
 	-webkit-border-top-right-radius: 5px;
 	-moz-border-radius-topleft: 0px;
@@ -639,6 +640,7 @@ footer table a {
 	position: fixed;
 	display: block;
 	padding: 7px 15px;
+	text-align: left;
 	color: #FFF;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -653,11 +655,13 @@ footer table a {
 footer table a[accesskey="p"] {
 	right: 0px;
 	top: 50px;
+	width: 10%;
 }
 
 footer table a[accesskey="n"] {
 	right: 0px;
 	top: 100px;
+	width: 10%;
 }
 
 .figure {
