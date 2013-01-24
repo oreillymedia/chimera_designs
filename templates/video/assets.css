@@ -25,8 +25,7 @@ h3 {
   color: #333;
 }
 
-
-div.mediaobject video {
+div.mediaobject video, div.mediaobject object {
   width: 100%;
 }
 
