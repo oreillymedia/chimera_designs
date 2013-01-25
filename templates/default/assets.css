@@ -216,7 +216,7 @@ img {
 }
 
 div.informalfigure {
-	margin: 50px 0px 50px 0px;
+	margin: 50px -15px 50px -15px;
 	height: auto;
 	text-align: center;
 }
