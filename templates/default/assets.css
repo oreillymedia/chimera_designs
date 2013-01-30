@@ -113,6 +113,10 @@ section, .book .titlepage, .book .toc, .part {
 	min-height: 100%;
 }
 
+.part {
+	background-color: #D8D8D8;
+}
+
 /* Parts
 ------------------------------------------------ */
 
