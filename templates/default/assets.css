@@ -91,7 +91,7 @@ header table a[accesskey="n"] {
 /* Main Sections
 ------------------------------------------------ */
 
-section, .book .titlepage, .book .toc {
+section, .book .titlepage, .book .toc, .part {
 	position: relative;
 	margin: 0 auto;
 	width: 600px;
@@ -100,6 +100,11 @@ section, .book .titlepage, .book .toc {
 	border-right: 1px dashed #D8D8D8;
 	border-left: 1px dashed #D8D8D8;
 }
+
+/* Parts
+------------------------------------------------ */
+
+
 
 /* Title Page
 ------------------------------------------------ */
