@@ -104,6 +104,16 @@ section, .book .titlepage, .book .toc, .part {
 /* Parts
 ------------------------------------------------ */
 
+.part h1 {
+	font-family: "heading", Georgia, sans-serif;
+	font-size: 4em;
+	line-height: 130%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
+	color: #333;
+} 
 
 
 /* Title Page
