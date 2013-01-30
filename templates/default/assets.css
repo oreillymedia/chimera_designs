@@ -102,7 +102,7 @@ header table a[accesskey="n"] {
 /* Main Sections
 ------------------------------------------------ */
 
-section, .book .titlepage, .book .toc, .part {
+section, .book .titlepage, .book .toc, div.part {
 	position: relative;
 	margin: 0 auto;
 	width: 700px;
@@ -113,14 +113,14 @@ section, .book .titlepage, .book .toc, .part {
 	min-height: 100%;
 }
 
-.part {
+div.part {
 	background-color: #D8D8D8;
 }
 
 /* Parts
 ------------------------------------------------ */
 
-.part h1 {
+div.part h1 {
 	font-family: "heading", Georgia, sans-serif;
 	font-size: 3.7em;
 	line-height: 130%;
