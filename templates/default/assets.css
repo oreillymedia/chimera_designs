@@ -7,6 +7,7 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #191919;
+	min-height: 100%;
 }
 
 header {
@@ -99,7 +100,6 @@ section, .book .titlepage, .book .toc, .part {
 	background-color: #FFF;
 	border-right: 1px dashed #D8D8D8;
 	border-left: 1px dashed #D8D8D8;
-	height: 100%;
 }
 
 /* Parts
