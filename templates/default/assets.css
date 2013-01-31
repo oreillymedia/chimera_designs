@@ -719,13 +719,14 @@ footer table a[accesskey="n"] {
 	padding: 0;
 }
 
-	section, .book .titlepage, .book .toc {
+	section, .book .titlepage, .book .toc, div.part {
 	position: relative;
 	margin: 0;
 	width: 100%;
 	padding: 60px 20px 20px 20px;
 	border-right: 0px dashed #D8D8D8;
 	border-left: 0px dashed #D8D8D8;
+	overflow-x: scroll;
 }
 
 h1 {
