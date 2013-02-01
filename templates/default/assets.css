@@ -704,7 +704,7 @@ h3 {
 	font-size: 1.4em;
 }
 
-header table a {
+/*header table a {
 	background-color: #fff;
 	border: 1px solid #F0F0F0;
 	color: #F0F0F0;	font-size: 1.2em;
@@ -775,6 +775,67 @@ footer table a[accesskey="n"] {
 	right: 0px;
 	top: 100px;
 	width: 10%;
+}*/
+
+/* Header  */
+
+/* Hide chapter name in table */
+
+header table a {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px;
+	background-color: #F0F0F0;
+	vertical-align: center;
+	text-align: center;
+	position: fixed;
+	display: block;
+	padding: 7px 15px;
+	color: transparent;
+	font-size: 12px;
+	height: 100%;
+	width: 40px;
+	text-decoration: none;
+}
+
+header table a:hover {
+	background-color: #D8D8D8;
+}
+
+header table a[accesskey="p"] {
+	background-image: url('prev.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	left: 0px;
+}
+
+header table a[accesskey="n"] {
+	background-image: url('next.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	right: 0px;
+}
+
+/* Footer */
+
+footer {
+	margin: 0 auto;
+	width: 90%;
+	padding: 20px 0px 20px 0px;
+	text-transform: uppercase;
+	font-size: .75em;
+	font-style: italic;
+	color: #333;
+}
+
+footer hr {
+	display: none;
+}
+
+footer table a[accesskey="h"], footer table a[accesskey="u"] {
+	display: none;
 }
 
 .informalfigure {
