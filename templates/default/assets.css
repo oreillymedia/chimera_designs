@@ -831,6 +831,7 @@ div.part {
 div.part h1 {
 	color: #333;
 	font-family: Helvetica, sans-serif;
+	text-align: center;
 }
 
 div.informalfigure {
