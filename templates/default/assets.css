@@ -833,9 +833,20 @@ div.part h1 {
 	font-family: Helvetica, sans-serif;
 }
 
-.informalfigure {
+div.informalfigure {
+	margin: 50px 0px 50px 0px;
+	min-height: auto;
 	text-align: center;
-	margin: 50px 30px 50px 30px;
+}
+
+div.informalfigure div.mediaobject {
+	text-align: center;
+}
+
+div.informalfigure iframe {
+	width: auto;
+	min-height: auto;
+	text-align: center;
 }
 
 }
