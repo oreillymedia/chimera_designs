@@ -171,7 +171,14 @@ section, .book .titlepage, .book .toc, div.part {
 	background-color: #FFF;
 	border-right: 1px dashed #D8D8D8;
 	border-left: 1px dashed #D8D8D8;
+}
+
+section, .book .titlepage, .book .toc {
 	min-height: 90%;
+}
+
+div.part {
+	min-height: 100%;
 }
 
 div.part {
