@@ -98,6 +98,43 @@ header table a[accesskey="n"] {
 	right: 10px;
 }*/
 
+header table a {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px;
+	background-color: #F0F0F0;
+	vertical-align: center;
+	text-align: center;
+	position: fixed;
+	display: block;
+	padding: 7px 15px;
+	color: transparent;
+	font-size: 12px;
+	height: 100%;
+	width: 40px;
+	text-decoration: none;
+}
+
+header table a:hover {
+	background-color: #D8D8D8;
+}
+
+header table a[accesskey="p"] {
+	background-image: url('prev.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	left: 0px;
+}
+
+header table a[accesskey="n"] {
+	background-image: url('next.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	right: 0px;
+}
+
 /* Footer
 ------------------------------------------------ */
 
@@ -105,10 +142,7 @@ header table a[accesskey="n"] {
 	display: none;
 }*/
 
-header {
-  display: none;
-}
-
+/*
 footer {
 	margin-top: 3em;
 	display: block;
@@ -127,10 +161,7 @@ footer table tr:nth-of-type(2) td {
 }
 
 /*footer table tr:nth-of-type(2) td {
-	text-transform: uppercase;
-	font-size: .75em;
-	font-style: italic;
-	color: #333;
+	
 }
 
 footer table tr:nth-of-type(2) td:first-child:before {
@@ -143,47 +174,23 @@ footer table tr:nth-of-type(2) td:nth-child(3):after {
 	margin-right: 50px;
 }*/
 
-footer table a {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 30px;
-	background-color: #F0F0F0;
-	vertical-align: center;
-	text-align: center;
-	position: fixed;
-	display: block;
-	padding: 7px 15px;
-	color: transparent;
-	font-size: 12px;
-	height: 100%;
-	width: 40px;
-	text-decoration: none;
+footer {
+	margin: 0 auto;
+	width: 700px;
+	padding: 60px 0px 20px 0px;
+	text-transform: uppercase;
+	font-size: .75em;
+	font-style: italic;
+	color: #333;
 }
 
-footer table a:hover {
-	background-color: #D8D8D8;
-}
-
-footer table a[accesskey="p"] {
-	background-image: url('prev.png');
-	margin: 0 0 0 0;
-	padding: .5em;
-	top: 0px;
-	left: 0px;
-}
-
-footer table a[accesskey="n"] {
-	background-image: url('next.png');
-	margin: 0 0 0 0;
-	padding: .5em;
-	top: 0px;
-	right: 0px;
-}
-
-footer table a[accesskey="h"] {
+footer hr {
 	display: none;
 }
 
+footer table a[accesskey="h"], footer table a[accesskey="u"] {
+	display: none;
+}
 
 /* Main Sections
 ------------------------------------------------ */
