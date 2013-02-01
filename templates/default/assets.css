@@ -200,6 +200,16 @@ div.part h1 {
 	color: #fff;
 } 
 
+div.part a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.part a:hover {
+	color: #000;
+}
+
 
 /* Title Page
 ------------------------------------------------ */
