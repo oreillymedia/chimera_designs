@@ -98,6 +98,87 @@ header table a[accesskey="n"] {
 	right: 10px;
 }
 
+/* Footer
+------------------------------------------------ */
+
+/*footer {
+	display: none;
+}*/
+
+header {
+  display: none;
+}
+
+footer {
+	margin-top: 3em;
+	display: block;
+}
+
+footer table {
+	border-collapse:collapse;
+}
+
+footer hr {
+	display: none;
+}
+
+footer table tr:nth-of-type(2) td:first-child:before {
+	content: "<< Previous: ";
+	margin-left: 50px;
+}
+
+footer table tr:nth-of-type(2) td:nth-child(3):after {
+	content: ": Next >>";
+	margin-right: 50px;
+}
+
+footer table tr:nth-of-type(2) td:first-child {
+
+}
+
+footer table a {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px;
+	vertical-align: center;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	display: block;
+	background-color: #F0F0F0;
+	padding: 7px 15px;
+	color: transparent;
+	font-size: 12px;
+	height: 100%;
+	width: 40px;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+footer table a:hover {
+	background-color: #D8D8D8;
+}
+
+footer table a[accesskey="p"] {
+	background-image: url('prev.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	left: 0px;
+}
+
+footer table a[accesskey="n"] {
+	background-image: url('next.png');
+	margin: 0 0 0 0;
+	padding: .5em;
+	top: 0px;
+	right: 0px;
+}
+
+footer table a[accesskey="h"] {
+	display: none;
+}
+
 
 /* Main Sections
 ------------------------------------------------ */
@@ -468,13 +549,6 @@ div.table-title {
 .footnotes .footnote a {
 	display: inline-block;
 	margin-right: 10px;
-}
-
-/* Footer
------------------------------------------------- */
-
-footer {
-	display: none;
 }
 
 /* Comments
