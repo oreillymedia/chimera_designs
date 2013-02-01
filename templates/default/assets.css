@@ -68,7 +68,7 @@ a {
 
 /* Hide chapter name in table */
 
-header table tr:first-child {
+/*header table tr:first-child {
 	display: none;
 }
 
@@ -96,7 +96,7 @@ header table a[accesskey="p"] {
 
 header table a[accesskey="n"] {
 	right: 10px;
-}
+}*/
 
 /* Footer
 ------------------------------------------------ */
@@ -140,19 +140,17 @@ footer table a {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 30px;
+	background-color: #F0F0F0;
 	vertical-align: center;
 	text-align: center;
-	color: #fff;
 	position: fixed;
 	display: block;
-	background-color: #F0F0F0;
 	padding: 7px 15px;
 	color: transparent;
 	font-size: 12px;
 	height: 100%;
 	width: 40px;
 	text-decoration: none;
-	font-size: 1.5em;
 }
 
 footer table a:hover {
@@ -329,14 +327,18 @@ img {
 }
 
 div.informalfigure {
-	margin: 50px -15px 50px -15px;
+	margin: 50px -80px 50px -80px;
 	height: auto;
+	text-align: center;
+}
+
+div.informalfigure div.mediaobject {
 	text-align: center;
 }
 
 div.informalfigure iframe {
 	width: 100%;
-	height: 450px;
+	height: auto;
 	text-align: center;
 }
 
