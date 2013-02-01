@@ -142,38 +142,6 @@ header table a[accesskey="n"] {
 	display: none;
 }*/
 
-/*
-footer {
-	margin-top: 3em;
-	display: block;
-}
-
-footer table {
-	border-collapse:collapse;
-}
-
-footer hr {
-	display: none;
-}
-
-footer table tr:nth-of-type(2) td {
-	display: none;
-}
-
-/*footer table tr:nth-of-type(2) td {
-	
-}
-
-footer table tr:nth-of-type(2) td:first-child:before {
-	content: "<< Previous: ";
-	margin-left: 50px;
-}
-
-footer table tr:nth-of-type(2) td:nth-child(3):after {
-	content: ": Next >>";
-	margin-right: 50px;
-}*/
-
 footer {
 	margin: 0 auto;
 	width: 700px;
@@ -203,7 +171,7 @@ section, .book .titlepage, .book .toc, div.part {
 	background-color: #FFF;
 	border-right: 1px dashed #D8D8D8;
 	border-left: 1px dashed #D8D8D8;
-	min-height: 100%;
+	min-height: 90%;
 }
 
 div.part {
