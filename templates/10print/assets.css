@@ -199,7 +199,7 @@ footer table a[accesskey="h"], footer table a[accesskey="u"] {
 
 section, .book .titlepage, .book .toc {
 	position: relative;
-	margin: 0 0 0 40%;
+	margin: 0 0 0 30%;
 	width: 600px;
 	padding: 0px 30px 20px 30px;
 	background-color: #FFF;
