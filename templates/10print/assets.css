@@ -153,7 +153,7 @@ header table a:hover {
 }
 
 header table a[accesskey="p"] {
-	background-image: url('prev.png');
+	background-image: url('../default/prev.png');
 	margin: 0 0 0 0;
 	padding: .5em;
 	top: 0px;
@@ -161,7 +161,7 @@ header table a[accesskey="p"] {
 }
 
 header table a[accesskey="n"] {
-	background-image: url('next.png');
+	background-image: url('../default/next.png');
 	margin: 0 0 0 0;
 	padding: .5em;
 	top: 0px;
@@ -199,7 +199,7 @@ footer table a[accesskey="h"], footer table a[accesskey="u"] {
 
 section, .book .titlepage, .book .toc {
 	position: relative;
-	margin: 0 0 0 15%;
+	margin: 0 0 0 40%;
 	width: 600px;
 	padding: 0px 30px 20px 30px;
 	background-color: #FFF;
