@@ -835,6 +835,7 @@ div.part h1 {
 
 div.informalfigure {
 	margin: 50px 0px 50px 0px;
+	width: 100%;
 	min-height: auto;
 	text-align: center;
 }
@@ -844,7 +845,7 @@ div.informalfigure div.mediaobject {
 }
 
 div.informalfigure iframe {
-	width: auto;
+	width: 100%;
 	min-height: auto;
 	text-align: center;
 }
