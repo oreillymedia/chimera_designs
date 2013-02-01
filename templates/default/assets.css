@@ -680,7 +680,7 @@ div.table-title {
 	font-size: 1.2em;
 }
 
-	section, .book .titlepage, .book .toc {
+	section, .book .titlepage, .book .toc, div.part {
 	position: relative;
 	margin: 0 auto;
 	width: 70%;
@@ -821,25 +821,20 @@ header table a[accesskey="n"] {
 /* Footer */
 
 footer {
-	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0px 20px 0px;
-	text-transform: uppercase;
-	font-size: .75em;
-	font-style: italic;
+	display: none;
+}
+
+div.part {
+	background-color: #fff;
+}
+
+div.part h1 {
 	color: #333;
-}
-
-footer hr {
-	display: none;
-}
-
-footer table a[accesskey="h"], footer table a[accesskey="u"] {
-	display: none;
 }
 
 .informalfigure {
 	text-align: center;
+	margin: 50px 0px 50px 0px;
 }
 
 }
