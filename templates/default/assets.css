@@ -330,6 +330,7 @@ div.informalfigure {
 	margin: 50px -80px 50px -80px;
 	height: auto;
 	text-align: center;
+	border: 1px solid #000;
 }
 
 div.informalfigure div.mediaobject {
