@@ -122,6 +122,10 @@ footer hr {
 	display: none;
 }
 
+footer table tr:nth-of-type(2) td {
+	display: none;
+}
+
 /*footer table tr:nth-of-type(2) td {
 	text-transform: uppercase;
 	font-size: .75em;
