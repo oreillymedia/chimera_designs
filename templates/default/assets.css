@@ -328,7 +328,7 @@ img {
 
 div.informalfigure {
 	margin: 50px -80px 50px -80px;
-	min-height: 450px;
+	min-height: auto;
 	text-align: center;
 }
 
@@ -338,7 +338,7 @@ div.informalfigure div.mediaobject {
 
 div.informalfigure iframe {
 	width: 100%;
-	height: auto;
+	min-height: 450px;
 	text-align: center;
 }
 
