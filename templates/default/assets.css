@@ -122,6 +122,13 @@ footer hr {
 	display: none;
 }
 
+footer table tr:nth-of-type(2) td {
+	text-transform: uppercase;
+	font-size: .75em;
+	font-style: italic;
+	color: #333;
+}
+
 footer table tr:nth-of-type(2) td:first-child:before {
 	content: "<< Previous: ";
 	margin-left: 50px;
