@@ -66,38 +66,6 @@ a {
 /* Header
 ------------------------------------------------ */
 
-/* Hide chapter name in table */
-
-/*header table tr:first-child {
-	display: none;
-}
-
-header hr {
-	display: none;
-}
-
-header table a {
-	position: fixed;
-	top: 50px;
-	display: block;
-	background-color: #333;
-	padding: 7px 15px;
-	color: #FFF;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	text-decoration: none;
-	font-size: 12px;
-}
-
-header table a[accesskey="p"] {
-	left: 10px;
-}
-
-header table a[accesskey="n"] {
-	right: 10px;
-}*/
-
 header table a {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -138,17 +106,10 @@ header table a[accesskey="n"] {
 /* Footer
 ------------------------------------------------ */
 
-/*footer {
-	display: none;
-}*/
-
 footer {
+	border-top: 1px dashed #D8D8D8;
 	margin: 0 auto;
-	width: 90%;
-	padding: 20px 0px 20px 0px;
-	text-transform: uppercase;
-	font-size: .75em;
-	font-style: italic;
+	padding: 20px 60px 20px 60px;
 	color: #333;
 }
 
@@ -158,6 +119,10 @@ footer hr {
 
 footer table a[accesskey="h"], footer table a[accesskey="u"] {
 	display: none;
+}
+
+footer table a[accesskey="p"], footer table a[accesskey="n"] {
+	font-size: 14px;
 }
 
 /* Main Sections
@@ -711,79 +676,6 @@ h3 {
 	font-family: Helvetica, sans-serif;
 	font-size: 1.4em;
 }
-
-/*header table a {
-	background-color: #fff;
-	border: 1px solid #F0F0F0;
-	color: #F0F0F0;	font-size: 1.2em;
-	text-align: right;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 0px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-radius-bottomleft: 0px;
-	-moz-border-radius-bottomright: 5px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 5px;
-}
-
-header table a[accesskey="p"] {
-	left: 0px;
-	top: 50px;
-	width: 10%;
-}
-
-header table a[accesskey="n"] {
-	left: 0px;
-	top: 100px;
-	width: 10%;
-}
-
-footer {
-	display: block;
-}
-
-footer table tr:nth-of-type(2) {
-	display: none;
-}
-
-footer hr {
-	display: none;
-}
-
-footer table a {
-	background-color: #fff;
-	border: 1px solid #F0F0F0;
-	color: #F0F0F0;
-	position: fixed;
-	display: block;
-	padding: 7px 15px;
-	text-align: left;
-	-webkit-border-top-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	border-top-left-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;
-	text-decoration: none;
-	font-size: 1.2em;
-}
-
-footer table a[accesskey="p"] {
-	right: 0px;
-	top: 50px;
-	width: 10%;
-}
-
-footer table a[accesskey="n"] {
-	right: 0px;
-	top: 100px;
-	width: 10%;
-}*/
 
 /* Header  */
 
