@@ -53,8 +53,6 @@ It is a good idea to use DNS-compatible bucket names. That for instance means yo
 * Finally "s3://my-bucket.s3tools.org" is DNS compatible and FQDN provided you own the s3tools.org domain and can create the domain record for "my-bucket.s3tools.org".
 ====
 
-
-
 === Install s3cmd 
 
 Here are the link:http://populationjim.com/2011/02/21/install-and-setup-s3cmd-on-a-mac/[installation instructions for a Mac link]:
