@@ -545,11 +545,7 @@ div.table-title {
 
 .comment-element:hover {
 	cursor: pointer;
-}
-
-p.comment-element:hover {
 	background-color: #f0f4fd;
-	color: #333;
 }
 
 /* New Comment Form
