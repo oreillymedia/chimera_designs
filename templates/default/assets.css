@@ -540,26 +540,20 @@ div.table-title {
 	height: 40px;
 }
 
-*[id] > .comment-bubble {
-	display: none;
-	background-color: #333;
-	position: absolute;
-	text-align: center;
-	padding: 5px 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	z-index: 10000;
+/* Comment element styling
+--------------------------------------------------------- */
+
+.comment-element:hover {
+	cursor: pointer;
 }
 
-*[id] > .comment-bubble a {
-	color: #FFF;
-	text-decoration: none;
+p.comment-element:hover {
+	background-color: #f0f4fd;
+	color: #333;
 }
 
-*[id]:hover > .comment-bubble {
-	display: block;
-}
+/* New Comment Form
+--------------------------------------------------------- */
 
 .new-comment textarea {
 	box-sizing:border-box;
